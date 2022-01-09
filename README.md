@@ -1,8 +1,8 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/pumba-dev/pumba-dev-website?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/pumba-dev/pumba-dev-website?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/pumba-dev/pumba-dev-website?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/pumba-dev/pumba-dev-website?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/pumba-dev/pumba-dev-website?style=for-the-badge)
 
 <img src="landing-page-prototype.png" alt="Página Inicial da Aplicação Web">
 
