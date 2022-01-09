@@ -1,13 +1,16 @@
 <template>
   <main class="font-body">
-    <HeaderSection></HeaderSection>
+    <Header></Header>
+    <Home></Home>
   </main>
 </template>
 
 <script>
-import HeaderSection from "./components/header/HeaderSection.vue";
+import Header from "./components/header/Header.vue";
+import Home from "./components/home/Home.vue";
+
 export default {
-  components: { HeaderSection },
+  components: { Header, Home },
 };
 </script>
 

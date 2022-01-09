@@ -1,15 +1,15 @@
 <template>
   <section class="header-section">
     <Logo :width="80" :height="80"></Logo>
-    <HeaderNavContainer></HeaderNavContainer>
+    <HeaderNavigation></HeaderNavigation>
   </section>
 </template>
 
 <script>
-import HeaderNavContainer from "./HeaderNavContainer.vue";
+import HeaderNavigation from "./HeaderNavigation.vue";
 import Logo from "../shared/Logo.vue";
 export default {
-  components: { Logo, HeaderNavContainer },
+  components: { Logo, HeaderNavigation },
 };
 </script>
 

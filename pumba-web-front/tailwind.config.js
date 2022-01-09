@@ -16,6 +16,9 @@ module.exports = {
       'gray-blue': '#D8DEF2'
     },
     extend: {
+      spacing: {
+        '180': '40rem'
+      }
     },
   },
   plugins: [],
