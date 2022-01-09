@@ -1,20 +1,15 @@
 <template>
-  <main>
-    <Logo :width="80" :height="80"></Logo>
-    <CurriculumBtn></CurriculumBtn>
+  <main class="font-body">
+    <HeaderSection></HeaderSection>
   </main>
 </template>
 
 <script>
-import CurriculumBtn from "./components/header/curriculum-btn.vue";
-import Logo from "./components/shared/logo.vue";
+import HeaderSection from "./components/header/HeaderSection.vue";
 export default {
-  components: { Logo, CurriculumBtn },
+  components: { HeaderSection },
 };
 </script>
 
 <style>
-#App {
-  font-family: "Baloo Bhai 2";
-}
 </style>

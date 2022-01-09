@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",],
   theme: {
+    fontFamily: {
+      'body': ['"Baloo Bhaijaan 2"']
+    },
     colors: {
       'blue': '#405ABA',
       'disable-blue': '#6C6F9B',
@@ -12,14 +15,8 @@ module.exports = {
       'gray': '#717689',
       'gray-blue': '#D8DEF2'
     },
-    fontFamily: {
-      great: ['Baloo Bhaijaan 2'],
-      light: []
+    extend: {
     },
-    spacing: {
-      10: '1rem'
-    },
-    extend: {},
   },
   plugins: [],
 }
