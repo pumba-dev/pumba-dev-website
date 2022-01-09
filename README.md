@@ -1,4 +1,4 @@
-<img src="./landing-page-prototype.png" alt="Página Inicial da Aplicação Web">
+<img src="landing-page-prototype.png" alt="Página Inicial da Aplicação Web">
 
 # Pumba Dev Website
 
