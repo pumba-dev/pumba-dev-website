@@ -10,7 +10,7 @@
 export default {
   data() {
     return {
-      imageSrc: "src/assets/general/dev-avatar.svg",
+      imageSrc: "src/assets/svg/general/dev-avatar.svg",
     };
   },
 };

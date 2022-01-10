@@ -1,16 +1,38 @@
 <template>
-  <section class="last-repos"></section>
+  <section class="last-repos">
+    <img class="github-icon" :src="imageSrc" alt="Icone do GitHub" />
+    <h1 class="title">Últimos Repositórios</h1>
+    <Repos></Repos>
+  </section>
 </template>
 
 <script>
-export default {};
+import Repos from "./Repos.vue";
+export default {
+  components: { Repos },
+  data() {
+    return {
+      imageSrc: "/src/assets/svg/github/github-logo.svg",
+    };
+  },
+};
 </script>
 
 <style scoped>
 .last-repos {
-  @apply w-900 h-500
-  bg-white-gray rounded-halffull
+  @apply box-border px-24 py-12
+  flex flex-col gap-4
+  items-center justify-around
+  bg-white-gray rounded-2xlarge
   shadow-gray-blue shadow-lg 
   border-2 border-b-gray-blue;
+}
+
+.github-icon {
+  @apply h-20 w-20;
+}
+
+.title {
+  @apply text-dark-blue font-bold text-5xl;
 }
 </style>

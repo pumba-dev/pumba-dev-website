@@ -23,7 +23,8 @@ module.exports = {
       'lg': '0.5rem',
       'full': '9999px',
       'large': '12px',
-      'halffull': '50px',
+      'xlarge': '24px',
+      '2xlarge': '48px',
     },
     extend: {
       spacing: {

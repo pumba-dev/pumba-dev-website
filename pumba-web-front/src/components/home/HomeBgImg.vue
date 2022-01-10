@@ -10,7 +10,7 @@
 export default {
   data() {
     return {
-      imageSrc: "/src/assets/general/devices.svg",
+      imageSrc: "/src/assets/svg/general/devices.svg",
     };
   },
 };
