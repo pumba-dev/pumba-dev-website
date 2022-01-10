@@ -1,11 +1,9 @@
 <template>
-  <div class="home-bg-img">
-    <img
-      class="home-img"
-      :src="imageSrc"
-      alt="Imagem de fundo com vários dispositivos de acesso a rede"
-    />
-  </div>
+  <img
+    class="home-img"
+    :src="imageSrc"
+    alt="Imagem de fundo com vários dispositivos de acesso a rede"
+  />
 </template>
 
 <script>
@@ -19,11 +17,7 @@ export default {
 </script>
 
 <style>
-.home-bg-img {
-  @apply flex justify-center pt-12;
-}
-
 .home-img {
-  @apply w-180;
+  @apply w-180 pt-12;
 }
 </style>

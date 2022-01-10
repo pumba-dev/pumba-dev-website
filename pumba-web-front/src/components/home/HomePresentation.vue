@@ -1,9 +1,9 @@
 <template>
   <section class="home-presentation">
     <h1 class="home-title">Design, Desenvolvedor Full-Stack & Estudante</h1>
-    <h4 class="home-subtitle">
+    <h2 class="home-subtitle">
       Meu trabalho é codificar simples e belas coisas, e eu amo o que faço!
-    </h4>
+    </h2>
   </section>
 </template>
 

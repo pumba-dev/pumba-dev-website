@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="home">
     <HomePresentation></HomePresentation>
     <HomeProfileImage></HomeProfileImage>
     <HomeBgImg></HomeBgImg>
@@ -16,4 +16,7 @@ export default {
 </script>
 
 <style>
+.home {
+  @apply flex flex-col items-center;
+}
 </style>

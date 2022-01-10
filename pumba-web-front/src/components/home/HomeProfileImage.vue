@@ -1,11 +1,9 @@
 <template>
-  <div class="profile-image-container">
-    <img
-      class="profile-image"
-      :src="imageSrc"
-      alt="Desenho de um desenvolvedor"
-    />
-  </div>
+  <img
+    class="profile-image"
+    :src="imageSrc"
+    alt="Desenho de um desenvolvedor"
+  />
 </template>
 
 <script>
@@ -19,10 +17,6 @@ export default {
 </script>
 
 <style scoped>
-.profile-image-container {
-  @apply flex justify-center pb-12;
-}
-
 .profile-image {
   @apply w-48 h-52;
 }

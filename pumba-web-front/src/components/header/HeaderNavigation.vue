@@ -1,6 +1,6 @@
 <template>
   <ul class="nav-btn-list">
-    <li><p class="btn-text">Patrocine</p></li>
+    <li><p class="btn-text">Ajude o Dev</p></li>
     <li><p class="btn-text">Baixar CV</p></li>
     <li><MailBtn></MailBtn></li>
   </ul>
