@@ -7,7 +7,7 @@
 
 <script>
 import HeaderNavigation from "./HeaderNavigation.vue";
-import Logo from "../shared/Logo.vue";
+import Logo from "../shared/logo.vue";
 export default {
   components: { Logo, HeaderNavigation },
 };
