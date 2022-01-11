@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .repository {
   @apply flex justify-between gap-2
   p-8 rounded-xlarge

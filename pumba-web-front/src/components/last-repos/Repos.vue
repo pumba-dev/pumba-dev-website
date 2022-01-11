@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .Repos {
   @apply grid grid-cols-2 grid-rows-2 gap-5;
 }

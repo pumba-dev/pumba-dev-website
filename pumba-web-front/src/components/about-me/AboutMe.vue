@@ -17,7 +17,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .about-me-text {
   @apply w-950 text-gray-blue;
 }

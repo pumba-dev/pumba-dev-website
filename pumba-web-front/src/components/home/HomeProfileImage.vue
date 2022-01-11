@@ -18,6 +18,6 @@ export default {
 
 <style scoped>
 .profile-image {
-  @apply w-48 h-52;
+  @apply w-48;
 }
 </style>

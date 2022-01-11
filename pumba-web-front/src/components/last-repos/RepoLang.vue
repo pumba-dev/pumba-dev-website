@@ -23,7 +23,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .repo-lang {
   @apply flex gap-3;
 }

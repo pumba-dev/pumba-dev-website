@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .repo-data {
   @apply flex flex-col gap-2
   text-left;

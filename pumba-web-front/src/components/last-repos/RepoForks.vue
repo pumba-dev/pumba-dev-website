@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .repo-forks {
   @apply flex gap-3;
 }

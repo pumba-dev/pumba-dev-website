@@ -18,6 +18,6 @@ export default {
 
 <style>
 .home-img {
-  @apply w-180 pt-12;
+  @apply w-180;
 }
 </style>

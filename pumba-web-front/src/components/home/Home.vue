@@ -1,8 +1,8 @@
 <template>
   <section class="home">
-    <HomePresentation></HomePresentation>
-    <HomeProfileImage></HomeProfileImage>
-    <HomeBgImg></HomeBgImg>
+    <HomePresentation class="home-presentation"></HomePresentation>
+    <HomeProfileImage class="home-profile-img"></HomeProfileImage>
+    <HomeBgImg class="home-bg-img"></HomeBgImg>
   </section>
 </template>
 
@@ -15,8 +15,20 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .home {
   @apply flex flex-col items-center;
+}
+
+.home-presentation {
+  @apply py-12;
+}
+
+.home-profile-img {
+  @apply pb-6;
+}
+
+.home-bg-img {
+  @apply pt-24;
 }
 </style>

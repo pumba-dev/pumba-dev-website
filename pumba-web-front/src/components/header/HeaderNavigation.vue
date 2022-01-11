@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .nav-btn-list {
   @apply flex justify-center items-center gap-5;
 }

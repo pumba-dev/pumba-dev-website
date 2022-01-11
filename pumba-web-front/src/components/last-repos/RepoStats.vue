@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .repo-stats {
   @apply flex gap-12
   text-sm;

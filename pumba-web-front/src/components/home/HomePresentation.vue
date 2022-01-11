@@ -13,7 +13,7 @@ export default {};
 
 <style scoped>
 .home-presentation {
-  @apply text-dark-blue flex flex-col justify-center items-center py-12;
+  @apply text-dark-blue flex flex-col justify-center items-center;
 }
 .home-title {
   @apply text-4xl font-bold;
