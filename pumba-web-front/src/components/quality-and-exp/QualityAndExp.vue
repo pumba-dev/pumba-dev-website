@@ -1,5 +1,6 @@
 <template>
   <section class="quality-and-exp">
+    <h1 class="title"></h1>
     <!-- Quality Card -->
     <CardBackground>
       <h1 class="title">QUALIDADES</h1>
