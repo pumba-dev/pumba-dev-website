@@ -30,6 +30,6 @@ export default {
 }
 
 .repo-icon {
-  @apply h-12;
+  @apply h-14 mt-1;
 }
 </style>

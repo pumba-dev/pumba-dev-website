@@ -1,6 +1,10 @@
 <template>
   <section class="last-repos">
-    <img class="github-icon" :src="imageSrc" alt="Icone do GitHub" />
+    <img
+      class="github-icon"
+      src="/src/assets/svg/github/github-logo.svg"
+      alt="Icone do GitHub"
+    />
     <h1 class="title">Últimos Repositórios</h1>
     <Repos></Repos>
   </section>
@@ -10,11 +14,6 @@
 import Repos from "./Repos.vue";
 export default {
   components: { Repos },
-  data() {
-    return {
-      imageSrc: "/src/assets/svg/github/github-logo.svg",
-    };
-  },
 };
 </script>
 
