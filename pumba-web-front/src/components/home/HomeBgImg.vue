@@ -1,23 +1,13 @@
 <template>
   <img
     class="home-img"
-    :src="imageSrc"
+    src="/src/assets/svg/general/devices.svg"
     alt="Imagem de fundo com vários dispositivos de acesso a rede"
   />
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      imageSrc: "/src/assets/svg/general/devices.svg",
-    };
-  },
-};
-</script>
-
 <style>
 .home-img {
-  @apply w-180;
+  @apply w-[40rem];
 }
 </style>

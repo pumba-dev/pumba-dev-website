@@ -13,10 +13,6 @@
   </div>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style scoped>
 .about-me-text {
   @apply w-950 text-gray-blue;

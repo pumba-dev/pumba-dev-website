@@ -1,11 +1,12 @@
 <template>
   <main class="main">
-    <Header></Header>
-    <Home></Home>
-    <BackgroungBlue class="background-am-lr">
-      <AboutMe></AboutMe>
-      <LastRepos class="last-repos"></LastRepos>
+    <Header class="header"></Header>
+    <Home class="home"></Home>
+    <BackgroungBlue class="first-bg-blue">
+      <AboutMe class="about-me"></AboutMe>
     </BackgroungBlue>
+    <LastRepos class="last-repos"></LastRepos>
+    <MySkills class="my-skills"></MySkills>
   </main>
 </template>
 
@@ -15,24 +16,37 @@ import BackgroungBlue from "./components/shared/BackgroungBlue.vue";
 import Header from "./components/header/Header.vue";
 import Home from "./components/home/Home.vue";
 import LastRepos from "./components/last-repos/LastRepos.vue";
+import MySkills from "./components/my-skills/MySkills.vue";
 
 export default {
-  components: { AboutMe, Header, Home, BackgroungBlue, LastRepos },
+  components: { AboutMe, Header, Home, BackgroungBlue, LastRepos, MySkills },
 };
 </script>
 
-<style>
+<style >
 .main {
-  @apply bg-white-gray font-body w-full h-min
+  @apply bg-white-gray font-body w-full
   flex flex-col
   box-border;
 }
 
-.background-am-lr {
-  @apply relative;
+.header {
+  @apply w-full px-48 py-12;
+}
+
+.first-bg-blue {
+  @apply w-full mt-6;
+}
+
+.about-me {
+  @apply pt-36;
 }
 
 .last-repos {
-  @apply absolute mt-80;
+  @apply -mt-48;
+}
+
+.my-skills {
+  @apply pt-24;
 }
 </style>

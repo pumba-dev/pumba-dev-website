@@ -7,10 +7,6 @@
   </section>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style scoped>
 .home-presentation {
   @apply text-dark-blue flex flex-col justify-center items-center;

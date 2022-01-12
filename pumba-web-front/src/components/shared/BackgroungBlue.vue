@@ -15,7 +15,7 @@ export default {
 <style scoped>
 .first-bg {
   @apply flex flex-col items-center
-  h-180 mt-4 pt-32
+  h-[40rem]
   bg-blue
   text-2xl;
 }

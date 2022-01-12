@@ -15,7 +15,6 @@ export default {
 
 <style scoped>
 .header-section {
-  @apply flex justify-between
-  px-48 py-12;
+  @apply flex justify-between;
 }
 </style>

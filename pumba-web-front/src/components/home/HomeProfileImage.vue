@@ -1,20 +1,10 @@
 <template>
   <img
     class="profile-image"
-    :src="imageSrc"
+    src="/src/assets/svg/general/dev-avatar.svg"
     alt="Desenho de um desenvolvedor"
   />
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      imageSrc: "src/assets/svg/general/dev-avatar.svg",
-    };
-  },
-};
-</script>
 
 <style scoped>
 .profile-image {
