@@ -7,6 +7,7 @@
     </BackgroungBlue>
     <LastRepos class="last-repos"></LastRepos>
     <MySkills class="my-skills"></MySkills>
+    <QualityAndExp class="quality-and-exp"></QualityAndExp>
   </main>
 </template>
 
@@ -17,9 +18,18 @@ import Header from "./components/header/Header.vue";
 import Home from "./components/home/Home.vue";
 import LastRepos from "./components/last-repos/LastRepos.vue";
 import MySkills from "./components/my-skills/MySkills.vue";
+import QualityAndExp from "./components/quality-and-exp/QualityAndExp.vue";
 
 export default {
-  components: { AboutMe, Header, Home, BackgroungBlue, LastRepos, MySkills },
+  components: {
+    AboutMe,
+    Header,
+    Home,
+    BackgroungBlue,
+    LastRepos,
+    MySkills,
+    QualityAndExp,
+  },
 };
 </script>
 
@@ -48,5 +58,9 @@ export default {
 
 .my-skills {
   @apply pt-24;
+}
+
+.quality-and-exp {
+  @apply p-24;
 }
 </style>

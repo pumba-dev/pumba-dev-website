@@ -16,8 +16,7 @@ export default {
 .my-skills-container {
   @apply flex flex-col
   gap-12 w-full h-max
-  items-center
-  pb-12;
+  items-center;
 }
 
 .title {
