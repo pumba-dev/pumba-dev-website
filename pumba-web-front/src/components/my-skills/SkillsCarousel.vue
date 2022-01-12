@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel-container">
+  <div class="skill-carousel-container">
     <div class="carousel-wall">
       <SkillList></SkillList>
       <SkillList></SkillList>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style scoped>
-.carousel-container {
+.skill-carousel-container {
   @apply flex justify-center relative overflow-hidden
   w-full h-48;
 }

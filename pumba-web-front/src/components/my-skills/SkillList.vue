@@ -11,12 +11,12 @@
 <script>
 import { reactive, toRefs } from "vue";
 import Skill from "./Skill.vue";
-import ArrayOfSkill from "./ArrayOfSkills";
+import ArrayOfSkills from "../../assets/javascripts/MySkillsList";
 export default {
   components: { Skill },
   setup() {
     const data = reactive({
-      skillListArray: ArrayOfSkill,
+      skillListArray: ArrayOfSkills,
     });
 
     return { ...toRefs(data) };
