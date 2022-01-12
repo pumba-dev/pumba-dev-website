@@ -17,7 +17,9 @@ export default {
 <style scoped>
 .my-skills-container {
   @apply flex flex-col
-  gap-12 w-full h-max;
+  gap-12 w-full h-max
+  items-center
+  pb-12;
 }
 
 .title {

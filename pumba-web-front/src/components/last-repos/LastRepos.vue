@@ -1,5 +1,5 @@
 <template>
-  <section class="last-repos">
+  <div class="last-repos">
     <img
       class="github-icon"
       src="/src/assets/svg/github/github-logo.svg"
@@ -7,7 +7,7 @@
     />
     <h1 class="title">Últimos Repositórios</h1>
     <Repos></Repos>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -20,7 +20,7 @@ export default {
 <style scoped>
 .last-repos {
   @apply box-border px-24 py-12
-  flex flex-col gap-4
+  flex flex-col gap-4 h-max w-max
   items-center justify-around
   bg-white-gray rounded-2xlarge
   shadow-gray-blue shadow-lg 

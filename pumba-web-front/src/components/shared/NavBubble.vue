@@ -23,7 +23,8 @@ export default {
 <style>
 .nav-bubble {
   @apply bg-disable-blue
-  border border-opacity-50 border-gray-blue;
+  border-2 border-opacity-50 border-gray-blue
+  rounded-full;
 }
 
 .nav-bubble.activate {

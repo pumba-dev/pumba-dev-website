@@ -15,6 +15,6 @@ export default {
 
 <style scoped>
 .header-section {
-  @apply flex justify-between;
+  @apply flex justify-between w-full;
 }
 </style>

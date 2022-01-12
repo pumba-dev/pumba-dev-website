@@ -31,11 +31,11 @@ export default {
 }
 
 .header {
-  @apply w-full px-48 py-12;
+  @apply px-48 py-12;
 }
 
 .first-bg-blue {
-  @apply w-full mt-6;
+  @apply mt-6;
 }
 
 .about-me {
@@ -43,7 +43,7 @@ export default {
 }
 
 .last-repos {
-  @apply -mt-48;
+  @apply -mt-48 mx-auto;
 }
 
 .my-skills {
