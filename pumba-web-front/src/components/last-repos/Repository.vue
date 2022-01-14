@@ -1,12 +1,14 @@
 <template>
-  <section class="repository">
-    <img
-      class="repo-icon"
-      src="/src/assets/svg/github/repo-icon.svg"
-      alt="Icone do Repositório"
-    />
-    <RepoData :repoData="repoData"></RepoData>
-  </section>
+  <a :href="repoData.html_url" target="_blank">
+    <section class="repository">
+      <img
+        class="repo-icon"
+        src="/src/assets/svg/github/repo-icon.svg"
+        alt="Icone do Repositório"
+      />
+      <RepoData :repoData="repoData"></RepoData>
+    </section>
+  </a>
 </template>
 
 <script>
