@@ -1,15 +1,22 @@
 <template>
   <ul class="nav-btn-list">
-    <li><p class="btn-text">Ajude o Dev</p></li>
-    <li><a href="src/assets/downloads/pumba-dev-curriculo.pdf" target="_blank" ><p class="btn-text">Baixar CV</p></a></li>
-    <li><MailBtn></MailBtn></li>
+    <li>
+      <a
+        href="https://nubank.com.br/pagar/1ou9f/ifu2K7YNO7"
+        target="_blank"
+        class="btn-text"
+      >
+        Ajude o Dev
+      </a>
+    </li>
+    <li><CVButton></CVButton></li>
   </ul>
 </template>
 
 <script>
-import MailBtn from "./MailBtn.vue";
+import CVButton from "./CVButton.vue";
 export default {
-  components: { MailBtn },
+  components: { CVButton },
 };
 </script>
 

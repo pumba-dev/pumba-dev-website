@@ -1,6 +1,11 @@
 <template>
   <div class="btn-background">
-    <p class="btn-text">Diga Olá!</p>
+    <a
+      href="src/assets/downloads/pumba-dev-curriculo.pdf"
+      target="_blank"
+      class="btn-text"
+      >Baixar CV</a
+    >
   </div>
 </template>
 
