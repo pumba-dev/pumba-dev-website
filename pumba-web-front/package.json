@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "eslint": "^8.6.0",
     "vue": "^3.2.25"
   },
   "devDependencies": {

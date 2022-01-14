@@ -1,10 +1,13 @@
 <template>
   <div class="experience-list">
-    <CardData
-      v-for="(experience, index) in experienceListArray"
-      :key="index"
-      :CardData="experience"
-    ></CardData>
+    <transition-group>
+      <CardData
+        v-for="(experience, index) in experienceListArray"
+        :key="index"
+        :CardData="experience"
+      ></CardData>
+    </transition-group>
+    <BubbleNav></BubbleNav>
   </div>
 </template>
 
@@ -12,9 +15,10 @@
 import { reactive, toRefs } from "vue";
 import ArrayOfExperience from "../../assets/javascripts/MyExperienceList";
 import CardData from "./CardData.vue";
+import BubbleNav from '../shared/BubbleNav.vue';
 
 export default {
-  components: { CardData },
+  components: { CardData, BubbleNav },
   setup() {
     const data = reactive({
       experienceListArray: ArrayOfExperience,

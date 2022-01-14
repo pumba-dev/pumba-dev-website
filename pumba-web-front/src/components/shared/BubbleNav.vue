@@ -1,6 +1,7 @@
 <template>
   <div
     class="nav-bubble"
+    type="radio"
     :style="{ width: width + 'px', height: height + 'px' }"
   ></div>
 </template>
@@ -27,7 +28,7 @@ export default {
   rounded-full;
 }
 
-.nav-bubble.activate {
+.nav-bubble.active {
   @apply bg-blue;
 }
 </style>

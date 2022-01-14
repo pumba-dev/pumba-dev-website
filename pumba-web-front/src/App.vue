@@ -7,7 +7,7 @@
     </BackgroungBlue>
     <LastRepos class="last-repos"></LastRepos>
     <MySkills class="my-skills"></MySkills>
-    <QualityAndExp class="quality-and-exp"></QualityAndExp>
+    <CardsList class="quality-and-exp"></CardsList>
   </main>
 </template>
 
@@ -18,7 +18,7 @@ import Header from "./components/header/Header.vue";
 import Home from "./components/home/Home.vue";
 import LastRepos from "./components/last-repos/LastRepos.vue";
 import MySkills from "./components/my-skills/MySkills.vue";
-import QualityAndExp from "./components/quality-and-exp/QualityAndExp.vue";
+import CardsList from "./components/skill-cards/CardsList.vue";
 
 export default {
   components: {
@@ -28,7 +28,7 @@ export default {
     BackgroungBlue,
     LastRepos,
     MySkills,
-    QualityAndExp,
+    CardsList,
   },
 };
 </script>

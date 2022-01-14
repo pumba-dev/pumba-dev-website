@@ -1,5 +1,5 @@
 <template>
-  <div class="card-carousel-nav">
+  <div class="card-nav">
     <BubbleNav :width="15" :height="15"></BubbleNav>
   </div>
 </template>
@@ -11,8 +11,8 @@ export default {
 };
 </script>
 
-<style>
-.card-carousel-nav {
+<style scoped>
+.card-nav {
   @apply flex gap-4;
 }
 </style>

@@ -4,11 +4,7 @@
   </div>
 </template>
 
-<script>
-export default {};
-</script>
-
-<style>
+<style scoped>
 .card-background {
   @apply box-border
   flex flex-col gap-3 

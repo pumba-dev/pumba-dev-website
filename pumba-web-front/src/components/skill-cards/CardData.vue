@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import { onMounted } from "vue";
+
 export default {
   props: {
     CardData: {
@@ -21,7 +23,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .card-data-box {
   @apply flex gap-2 w-[28.5rem];
 }
