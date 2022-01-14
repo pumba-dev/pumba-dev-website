@@ -1,7 +1,7 @@
 <template>
   <ul class="nav-btn-list">
     <li><p class="btn-text">Ajude o Dev</p></li>
-    <li><p class="btn-text">Baixar CV</p></li>
+    <li><a href="src/assets/downloads/pumba-dev-curriculo.pdf" target="_blank" ><p class="btn-text">Baixar CV</p></a></li>
     <li><MailBtn></MailBtn></li>
   </ul>
 </template>
