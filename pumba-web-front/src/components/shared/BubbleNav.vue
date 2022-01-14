@@ -23,9 +23,9 @@ export default {
 
 <style>
 .bubble-nav {
-  @apply bg-disable-blue
-  border-2 border-opacity-50 border-gray-blue
-  rounded-full;
+  @apply bg-disable-blue border-gray-blue
+  border-2 border-opacity-50 rounded-full
+  hover:cursor-pointer;
 }
 
 .bubble-nav.active {
