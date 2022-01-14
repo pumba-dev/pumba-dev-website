@@ -9,7 +9,7 @@
     <!-- Experiences Card -->
     <CardBackground>
       <h1 class="title">EXPERIÊNCIAS</h1>
-      <!-- <Experiences></Experiences> -->
+      <Experiences></Experiences>
     </CardBackground>
   </section>
 </template>

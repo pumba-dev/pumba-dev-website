@@ -9,7 +9,6 @@
         ></CardData>
       </template>
     </transition-group>
-
     <div class="qualities-nav">
       <BubbleNav
         v-for="(quality, index) in qualityListArray"
@@ -24,7 +23,7 @@
 </template>
 
 <script>
-import { reactive, toRefs } from "vue";
+import { onMounted, reactive, toRefs } from "vue";
 import CardData from "./CardData.vue";
 import ArrayOfqualitys from "../../assets/javascripts/MyQualityList.js";
 import BubbleNav from "../shared/BubbleNav.vue";
@@ -39,12 +38,33 @@ export default {
       cardView: 0,
     });
 
+    onMounted(() => {
+      // Set First Navigation with Class Active
+      const setDefaultNav = () => {
+        const $firstBubbleNav = document.querySelector(
+          ".qualities .bubble-nav"
+        );
+        $firstBubbleNav.classList.add("active");
+      };
+      setDefaultNav();
+    });
+
     return { ...toRefs(data) };
   },
   methods: {
     setViewCard(event) {
-      console.log(event.target);
+      this.resetBubbleNav();
       this.cardView = event.target.id;
+      this.setBubbleNavActive(event.target);
+    },
+    resetBubbleNav() {
+      const $bubbleNav = document.querySelectorAll(".qualities .bubble-nav");
+      $bubbleNav.forEach((nav) => {
+        nav.classList.remove("active");
+      });
+    },
+    setBubbleNavActive($nav) {
+      $nav.classList.add("active");
     },
   },
 };
@@ -52,28 +72,23 @@ export default {
 
 <style scoped>
 .qualities {
-  @apply flex flex-col items-center gap-3;
+  @apply flex flex-col items-center gap-6;
 }
 
 .qualities-nav {
   @apply flex gap-3;
 }
 
-.slide-fade-enter-active {
-  transition: all 1s linear;
-}
-
-.slide-fade-leave-active {
-  transition: all 1s linear;
-}
-
 .slide-fade-enter-from {
-  transform: translateX(350px);
+  transform: translateX(80px);
   opacity: 0;
 }
 
-.slide-fade-leave-to {
-  transform: translateX(-350px);
-  opacity: 0;
+.slide-fade-enter-active {
+  transition: all 0.5s linear;
+}
+
+.slide-fade-leave-from {
+  display: none;
 }
 </style>
