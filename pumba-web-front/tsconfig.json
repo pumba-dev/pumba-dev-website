@@ -1,17 +1,12 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-            "@/*": [
-                "src/*"
-            ]
-        }
-    },
     "include": [
-        "src/**/*"
+        "./src/**/*"
     ],
-    "exclude": [
-        "node_modules",
-        "**/*.spec.ts"
-    ]
+    "compilerOptions": {
+        "module": "es2015",
+        "moduleResolution": "node",
+        "target": "es5",
+        "sourceMap": true,
+        "allowJs": true
+    }
 }
