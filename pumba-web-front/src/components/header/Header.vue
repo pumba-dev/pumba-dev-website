@@ -1,13 +1,13 @@
 <template>
   <section class="header-section">
-    <Logo :width="80" :height="80"></Logo>
+    <Logo></Logo>
     <HeaderNavigation></HeaderNavigation>
   </section>
 </template>
 
 <script>
 import HeaderNavigation from "./HeaderNavigation.vue";
-import Logo from "../shared/logo.vue";
+import Logo from "../shared/Logo.vue";
 export default {
   components: { Logo, HeaderNavigation },
 };
