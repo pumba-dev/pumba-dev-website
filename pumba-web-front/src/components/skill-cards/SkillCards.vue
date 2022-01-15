@@ -1,5 +1,5 @@
 <template>
-  <section class="quality-and-exp-cards">
+  <section class="skill-cards">
     <h1 class="title"></h1>
     <!-- Quality Card -->
     <CardBackground>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-.quality-and-exp-cards {
+.skill-cards {
   @apply flex justify-center gap-12 w-full;
 }
 
