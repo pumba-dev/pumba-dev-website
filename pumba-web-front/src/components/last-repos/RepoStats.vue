@@ -2,7 +2,7 @@
   <div class="repo-stats">
     <RepoStars :starsCount="repoData.stargazers_count"></RepoStars>
     <RepoForks :forkCount="repoData.forks_count"></RepoForks>
-    <RepoLang :language="repoData.language"></RepoLang>
+    <RepoLang :language="repoLanguage"></RepoLang>
   </div>
 </template>
 
@@ -16,6 +16,13 @@ export default {
     repoData: {
       typeof: Object,
       required: true,
+    },
+  },
+  computed: {
+    repoLanguage() {
+      return this.repoData.language == null
+        ? "No Lang"
+        : this.repoData.language;
     },
   },
 };

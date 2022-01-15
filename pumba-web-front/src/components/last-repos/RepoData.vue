@@ -1,7 +1,7 @@
 <template>
   <div class="repo-data">
     <h1 class="repo-name">{{ repoData.name }}</h1>
-    <h2 class="repo-desc">{{ repoData.description }}</h2>
+    <h2 class="repo-desc">{{ repoDescription }}</h2>
     <RepoStats :repoData="repoData"></RepoStats>
   </div>
 </template>
@@ -14,6 +14,13 @@ export default {
     repoData: {
       typeof: Object,
       required: true,
+    },
+  },
+  computed: {
+    repoDescription() {
+      return this.repoData.description == null
+        ? "Repositório sem descrição."
+        : this.repoData.description;
     },
   },
 };

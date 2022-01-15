@@ -6,14 +6,14 @@
       alt="Icone do GitHub"
     />
     <h1 class="title">Últimos Repositórios</h1>
-    <Repos></Repos>
+    <RepoList></RepoList>
   </div>
 </template>
 
 <script>
-import Repos from "./Repos.vue";
+import RepoList from "./RepoList.vue";
 export default {
-  components: { Repos },
+  components: { RepoList },
 };
 </script>
 
