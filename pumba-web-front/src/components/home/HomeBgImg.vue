@@ -6,7 +6,7 @@
   />
 </template>
 
-<style>
+<style scoped>
 .home-img {
   @apply w-[40rem];
 }

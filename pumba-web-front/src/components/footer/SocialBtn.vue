@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .social-btn {
   @apply w-12 h-12
   flex justify-center items-center

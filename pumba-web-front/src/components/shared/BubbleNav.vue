@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .bubble-nav {
   @apply bg-disable-blue border-gray-blue
   border-2 border-opacity-50 rounded-full

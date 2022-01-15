@@ -12,7 +12,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .send-mail {
   @apply flex flex-col gap-12;
 }

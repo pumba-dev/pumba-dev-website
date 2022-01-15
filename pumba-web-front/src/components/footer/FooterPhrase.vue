@@ -4,7 +4,7 @@
   </span>
 </template>
 
-<style>
+<style scoped>
 .footer-phrase {
   @apply text-2xl font-bold text-gray-blue text-center tracking-wide select-none;
 }

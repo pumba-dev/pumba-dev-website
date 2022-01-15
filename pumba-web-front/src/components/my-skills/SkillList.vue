@@ -11,7 +11,7 @@
 <script>
 import { reactive, toRefs } from "vue";
 import Skill from "./Skill.vue";
-import ArrayOfSkills from "../../assets/javascripts/MySkillsList";
+import ArrayOfSkills from "../../assets/javascripts/SkillsList";
 export default {
   components: { Skill },
   setup() {

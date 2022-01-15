@@ -25,7 +25,7 @@
 <script>
 import { onMounted, reactive, toRefs } from "vue";
 import CardData from "./CardData.vue";
-import ArrayOfExp from "../../assets/javascripts/MyExperienceList.js";
+import ArrayOfExp from "../../assets/javascripts/ExperiencesList.js";
 import BubbleNav from "../shared/BubbleNav.vue";
 export default {
   components: {

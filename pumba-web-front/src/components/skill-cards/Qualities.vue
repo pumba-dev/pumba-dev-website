@@ -25,7 +25,7 @@
 <script>
 import { onMounted, reactive, toRefs } from "vue";
 import CardData from "./CardData.vue";
-import ArrayOfqualitys from "../../assets/javascripts/MyQualityList.js";
+import ArrayOfqualitys from "../../assets/javascripts/QualitiesList.js";
 import BubbleNav from "../shared/BubbleNav.vue";
 export default {
   components: {

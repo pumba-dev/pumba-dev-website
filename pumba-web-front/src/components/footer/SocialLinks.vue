@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import SocialMediaArray from "../../assets/javascripts/SocialMidias.js";
+import SocialMediaArray from "../../assets/javascripts/SocialList.js";
 import SocialBtn from "./SocialBtn.vue";
 
 export default {
@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .social-links {
   @apply flex gap-6 justify-center;
 }

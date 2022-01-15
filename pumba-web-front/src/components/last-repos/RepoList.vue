@@ -26,7 +26,6 @@ export default {
       });
     });
 
-    console.log(data.repoList);
     return { ...toRefs(data) };
   },
 };
