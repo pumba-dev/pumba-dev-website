@@ -1,12 +1,12 @@
 <template>
-  <div class="btn-background">
+  <button class="btn-background">
     <a
       href="src/assets/downloads/pumba-dev-curriculo.pdf"
       target="_blank"
       class="btn-text"
       >Baixar CV</a
     >
-  </div>
+  </button>
 </template>
 
 <style scoped>

@@ -6,8 +6,10 @@
       <AboutMe class="about-me"></AboutMe>
     </BackgroungBlue>
     <LastRepos class="last-repos"></LastRepos>
-    <MySkills class="my-skills"></MySkills>
-    <CardsList class="quality-and-exp"></CardsList>
+    <MySkills class="my-skills">
+      <SkillCards class="skill-cards"></SkillCards>
+    </MySkills>
+    <SendMail class="send-mail"></SendMail>
   </main>
 </template>
 
@@ -18,7 +20,8 @@ import Header from "./components/header/Header.vue";
 import Home from "./components/home/Home.vue";
 import LastRepos from "./components/last-repos/LastRepos.vue";
 import MySkills from "./components/my-skills/MySkills.vue";
-import CardsList from "./components/skill-cards/CardsList.vue";
+import SkillCards from "./components/skill-cards/SkillCards.vue";
+import SendMail from "./components/send-mail/SendMail.vue";
 
 export default {
   components: {
@@ -28,7 +31,8 @@ export default {
     BackgroungBlue,
     LastRepos,
     MySkills,
-    CardsList,
+    SkillCards,
+    SendMail,
   },
 };
 </script>
@@ -37,11 +41,12 @@ export default {
 .main {
   @apply bg-white-gray font-body w-full
   flex flex-col
-  box-border;
+  box-border
+  pb-48;
 }
 
 .header {
-  @apply px-48 py-12;
+  @apply px-48 my-12;
 }
 
 .first-bg-blue {
@@ -49,7 +54,7 @@ export default {
 }
 
 .about-me {
-  @apply pt-36;
+  @apply mt-36;
 }
 
 .last-repos {
@@ -57,10 +62,14 @@ export default {
 }
 
 .my-skills {
-  @apply pt-24;
+  @apply mt-24;
 }
 
-.quality-and-exp {
-  @apply p-24;
+.send-mail {
+  @apply mt-24;
+}
+/* Global Styles */
+.title {
+  @apply text-dark-blue font-bold text-5xl text-center;
 }
 </style>

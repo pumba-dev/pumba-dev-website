@@ -1,0 +1,75 @@
+<template>
+  <form class="mail-form">
+    <div class="userdata-box">
+      <FormInput :inputName="'Nome'">
+        <input
+          class="input-area"
+          type="text"
+          placeholder="Insira aqui seu Nome"
+          v-model="formInput.name"
+          maxlength="30"
+          required
+        />
+      </FormInput>
+      <FormInput :inputName="'Email'">
+        <input
+          class="input-area"
+          type="email"
+          placeholder="Insira aqui seu Email"
+          v-model="formInput.email"
+          maxlength="45"
+          required
+        />
+      </FormInput>
+    </div>
+    <FormInput :inputName="'Mensagem'">
+      <textarea
+        class="text-area"
+        placeholder="Deixe seu recado..."
+        v-model="formInput.message"
+        cols="150"
+        maxlength="650"
+        required
+      />
+    </FormInput>
+    <InputBtn></InputBtn>
+  </form>
+</template>
+
+<script>
+import FormInput from "./FormInput.vue";
+import InputBtn from "./InputBtn.vue";
+export default {
+  components: { FormInput, InputBtn },
+  data() {
+    return {
+      formInput: {
+        name: "",
+        email: "",
+        message: "",
+      },
+    };
+  },
+};
+</script>
+
+<style scoped>
+.mail-form {
+  @apply flex flex-col gap-6 m-auto;
+}
+
+.userdata-box {
+  @apply flex justify-between;
+}
+
+.input-area {
+  @apply w-[22.5rem] h-12 px-2 text-2xl
+  border border-gray border-opacity-30 rounded-lg;
+}
+
+.text-area {
+  @apply w-750 h-250 p-2
+  resize-none text-2xl
+  border border-gray border-opacity-30 rounded-lg;
+}
+</style>
