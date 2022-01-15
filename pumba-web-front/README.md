@@ -8,9 +8,9 @@
 - [x] Requisição de Repositórios da API do GitHub.
 - [x] Carrosel Infinito de Habilidades.
 - [x] Carrosel com Botão de Navegação para Cartões.
-- [_] Movimentar Carrosel Infinito com Click+Arrasta do Mouse.
-- [_] Responsividade.
-- [_] Adicionar Action Mailer API.
+- [ ] Movimentar Carrosel Infinito com Click+Arrasta do Mouse.
+- [ ] Responsividade.
+- [ ] Adicionar Action Mailer API.
 
 
 ## 📫 Contribuindo com o Projeto
