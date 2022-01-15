@@ -1,7 +1,7 @@
 <template>
   <div class="about-me-text">
     <h1 class="about-me-title">
-      Oi, eu sou Paulo, fico feliz em lhe conhecer!
+      Oi, eu sou o Paulo, fico feliz em lhe conhecer!
     </h1>
     <h2 class="about-me-subtitle">
       Eu comecei na computação desde muito jovem, aos 16 anos já estava
