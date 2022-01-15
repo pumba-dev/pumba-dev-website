@@ -30,8 +30,4 @@ export default {
 .github-icon {
   @apply h-20 w-20;
 }
-
-.title {
-  @apply text-dark-blue font-bold text-5xl;
-}
 </style>

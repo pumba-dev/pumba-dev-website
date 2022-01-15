@@ -2,6 +2,7 @@
   <section class="my-skills-container">
     <h1 class="title">Minhas Habilidades</h1>
     <SkillsCarousel></SkillsCarousel>
+    <slot></slot>
   </section>
 </template>
 
@@ -17,9 +18,5 @@ export default {
   @apply flex flex-col
   gap-12 w-full h-max
   items-center;
-}
-
-.title {
-  @apply text-dark-blue font-bold text-5xl text-center;
 }
 </style>
