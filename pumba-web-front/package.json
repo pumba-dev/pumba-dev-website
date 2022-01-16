@@ -4,11 +4,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "npm run build",
+    "start": "node-server.js",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
   },
   "dependencies": {
     "axios": "^0.24.0",
     "eslint": "^8.6.0",
+    "express": "^4.17.2",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12"
   },
