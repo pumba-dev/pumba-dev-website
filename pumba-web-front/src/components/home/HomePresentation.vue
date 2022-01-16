@@ -13,6 +13,10 @@
 }
 
 .home-subtitle {
-  @apply text-3xl font-light;
+  @apply font-light
+  sm:text-lg
+  md:text-xl
+  lg:text-2xl
+  xl:text-3xl;
 }
 </style>

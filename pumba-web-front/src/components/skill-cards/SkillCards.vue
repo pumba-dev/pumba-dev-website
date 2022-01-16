@@ -29,7 +29,9 @@ export default {
 
 <style scoped>
 .skill-cards {
-  @apply flex justify-center gap-12 w-full;
+  @apply flex justify-center gap-12 w-full items-center
+  lg:flex-col
+  xl:flex-row;
 }
 
 .card-title {

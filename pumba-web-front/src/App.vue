@@ -69,6 +69,10 @@ export default {
 
 /* Global Styles */
 .title {
-  @apply text-dark-blue font-bold text-5xl text-center tracking-wide;
+  @apply text-dark-blue font-bold text-center tracking-wide
+  sm:text-2xl
+  md:text-3xl
+  lg:text-4xl
+  xl:text-5xl;
 }
 </style>
