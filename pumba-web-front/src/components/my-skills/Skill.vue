@@ -1,7 +1,7 @@
 <template>
   <div class="skill">
     <a class="skill-icon-box" :href="skill.docLink" target="_blank">
-      <img class="skill-icon" :src="skill.src" :alt="skill.alt" />
+      <img class="skill-icon" :src="`../../${skill.src}`" :alt="skill.alt" />
     </a>
     <span class="skill-name">{{ skill.name }}</span>
   </div>
