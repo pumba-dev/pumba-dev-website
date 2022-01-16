@@ -6,7 +6,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "postinstall": "npm run build",
-    "start": "node-server.js",
+    "start": "node server.js",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
   },
   "dependencies": {
