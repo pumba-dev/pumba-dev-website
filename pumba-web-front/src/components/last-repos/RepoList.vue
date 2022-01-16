@@ -22,7 +22,7 @@ export default {
     onBeforeMount(() => {
       getRepos().then((response) => {
         const repoQuantity = 4;
-        data.repoList = response.data.slice(0, repoQuantity);
+        data.repoList = response.data.slice(0, repoQuantity).reverse();
       });
     });
 
