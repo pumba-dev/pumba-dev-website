@@ -1,7 +1,7 @@
 <template>
   <img
     :style="{ width: width + 'px', height: height + 'px' }"
-    src="../../assets/svg/general/logo.svg"
+    src="./src/assets/svg/general/logo.svg"
     alt="Pumba Developer Logo"
   />
 </template>
