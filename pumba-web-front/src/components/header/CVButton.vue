@@ -1,13 +1,21 @@
 <template>
   <button class="btn-background">
-    <a
-      href="src/assets/downloads/pumba-dev-curriculo.pdf"
-      target="_blank"
-      class="btn-text"
-      >Baixar CV</a
-    >
+    <a :href="getImgUrl" target="_blank" class="btn-text">Baixar CV</a>
   </button>
 </template>
+
+<script>
+export default {
+  computed: {
+    getImgUrl() {
+      return new URL(
+        "../../assets/downloads/pumbadev-resume.pdf",
+        import.meta.url
+      ).href;
+    },
+  },
+};
+</script>
 
 <style scoped>
 .btn-text {
