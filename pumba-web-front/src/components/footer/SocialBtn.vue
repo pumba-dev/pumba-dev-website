@@ -3,7 +3,7 @@
     <div class="icon-box">
       <img
         class="icon"
-        :src="socialMedia.iconSrc"
+        :src="getImgUrl"
         :alt="'Link para o' + socialMedia.name"
       />
     </div>
@@ -16,6 +16,14 @@ export default {
     socialMedia: {
       type: Object,
       required: true,
+    },
+  },
+  computed: {
+    getImgUrl() {
+      return new URL(
+        `../../assets/svg/social/${this.socialMedia.src}.svg`,
+        import.meta.url
+      ).href;
     },
   },
 };

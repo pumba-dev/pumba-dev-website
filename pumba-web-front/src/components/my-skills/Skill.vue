@@ -1,7 +1,7 @@
 <template>
   <div class="skill">
     <a class="skill-icon-box" :href="skill.docLink" target="_blank">
-      <img class="skill-icon" :src="`../../${skill.src}`" :alt="skill.alt" />
+      <img class="skill-icon" :src="getImgUrl" :alt="skill.alt" />
     </a>
     <span class="skill-name">{{ skill.name }}</span>
   </div>
@@ -13,6 +13,14 @@ export default {
     skill: {
       type: Object,
       required: true,
+    },
+  },
+  computed: {
+    getImgUrl() {
+      return new URL(
+        `../../assets/svg/my-skills/${this.skill.src}.svg`,
+        import.meta.url
+      ).href;
     },
   },
 };

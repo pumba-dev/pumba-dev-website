@@ -1,15 +1,17 @@
 {
-    "include": [
-        "./src/**/*",
-    ],
     "compilerOptions": {
-        "module": "commonjs",
-        "target": "es6",
-        "baseUrl": ".",
+        "target": "es2015",
+        "module": "esnext",
+        "baseUrl": "./",
         "paths": {
             "@/*": [
-                "./src/*"
-            ],
+                "/*"
+            ]
         }
-    }
+    },
+    "include": [
+        "./src/**/*",
+        "src/**/*.vue",
+        "src/**/*.js"
+    ]
 }

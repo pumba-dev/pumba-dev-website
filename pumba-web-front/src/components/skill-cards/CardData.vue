@@ -1,7 +1,7 @@
 <template>
   <div class="card-data-box">
     <div class="img-container">
-      <img class="card-data-icon" :src="CardData.iconSrc" :alt="CardData.alt" />
+      <img class="card-data-icon" :src="getImgUrl" :alt="CardData.alt" />
     </div>
     <div class="card-data-data">
       <h1 class="card-data-title">{{ CardData.title }}</h1>
@@ -18,6 +18,18 @@ export default {
     CardData: {
       type: Object,
       required: true,
+    },
+    CardType: {
+      type: String,
+      required: true,
+    },
+  },
+  computed: {
+    getImgUrl() {
+      return new URL(
+        `../../assets/svg/${this.CardType}/${this.CardData.src}.svg`,
+        import.meta.url
+      ).href;
     },
   },
 };

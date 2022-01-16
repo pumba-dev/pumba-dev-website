@@ -6,6 +6,7 @@
           v-if="cardView == index"
           :key="index"
           :CardData="card"
+          :CardType="'experiences'"
         ></CardData>
       </template>
     </transition-group>
