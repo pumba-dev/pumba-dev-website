@@ -2,7 +2,10 @@
   <a class="made-with" href="https://tailwindcss.com/" target="_blank">
     <span class="madewith-title">Made With</span>
     <div class="image-box">
-      <img src="/src/assets/svg/general/tailwind.svg" alt="Ícone do Tailwind" />
+      <img
+        src="./src/assets/svg/general/tailwind.svg"
+        alt="Ícone do Tailwind"
+      />
     </div>
   </a>
 </template>
