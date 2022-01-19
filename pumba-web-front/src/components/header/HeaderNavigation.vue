@@ -29,6 +29,6 @@ export default {
   @apply text-dark-blue font-normal 
   text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl
   hover:text-blue cursor-pointer
-  hidden sm:inline-block;
+  hidden 2xs:inline-block;
 }
 </style>
