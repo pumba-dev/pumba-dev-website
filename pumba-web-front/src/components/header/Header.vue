@@ -15,7 +15,9 @@ export default {
 
 <style scoped>
 .header-section {
-  @apply flex justify-between w-4/5 m-auto mt-6
+  @apply flex justify-between 
+  h-min w-11/12
+  mx-auto mt-6
   lg:mt-12;
 }
 

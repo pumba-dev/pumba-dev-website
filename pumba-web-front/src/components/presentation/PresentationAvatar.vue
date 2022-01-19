@@ -7,7 +7,4 @@
 </template>
 
 <style scoped>
-.profile-image {
-  @apply w-48;
-}
 </style>

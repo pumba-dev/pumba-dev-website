@@ -8,6 +8,6 @@
 
 <style scoped>
 .home-img {
-  @apply w-[40rem];
+  @apply w-full xs:w-[40rem];
 }
 </style>

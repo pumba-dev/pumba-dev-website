@@ -1,7 +1,6 @@
 <template>
   <main class="main">
-    <Header class="header"></Header>
-    <Home class="home"></Home>
+    <Home></Home>
     <BackgroundBlue class="first-bg-blue">
       <AboutMe class="about-me"></AboutMe>
     </BackgroundBlue>
@@ -15,10 +14,9 @@
 </template>
 
 <script>
+import Home from "./Views/Home.vue";
 import AboutMe from "./components/about-me/AboutMe.vue";
 import BackgroundBlue from "./components/shared/BackgroundBlue.vue";
-import Header from "./components/header/Header.vue";
-import Home from "./components/home/Home.vue";
 import LastRepos from "./components/last-repos/LastRepos.vue";
 import MySkills from "./components/my-skills/MySkills.vue";
 import SkillCards from "./components/skill-cards/SkillCards.vue";
@@ -27,9 +25,8 @@ import Footer from "./components/footer/Footer.vue";
 
 export default {
   components: {
-    AboutMe,
-    Header,
     Home,
+    AboutMe,
     BackgroundBlue,
     LastRepos,
     MySkills,

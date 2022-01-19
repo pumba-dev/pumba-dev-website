@@ -27,8 +27,11 @@ module.exports = {
       '2xlarge': '48px',
     },
     screens: {
+      '2xs': '375px',
+      // => @media (min-width: 375px) { ... }
+
       'xs': '425px',
-      // => @media (min-width: 320px) { ... }
+      // => @media (min-width: 425px) { ... }
 
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
