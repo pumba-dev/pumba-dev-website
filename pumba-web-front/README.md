@@ -1,4 +1,5 @@
 # 👨🏽‍💻 Front-End - Vue 3
+> <a href="https://pumbadev.com/">pumbadev.com</a>
 ## 💻 Desenvolvimento do Projeto
 
 🚧 O projeto ainda está em progresso e as features já desenvolvidas são as seguintes:
@@ -8,8 +9,8 @@
 - [x] Requisição de Repositórios da API do GitHub.
 - [x] Carrosel Infinito de Habilidades.
 - [x] Carrosel com Botão de Navegação para Cartões.
-- [ ] Movimentar Carrosel Infinito com Click+Arrasta do Mouse.
 - [ ] Responsividade.
+- [ ] Movimentar Carrosel Infinito com Click+Arrasta do Mouse.
 - [ ] Adicionar Action Mailer API.
 
 
