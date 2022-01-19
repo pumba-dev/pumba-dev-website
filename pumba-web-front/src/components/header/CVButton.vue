@@ -18,17 +18,19 @@ export default {
 </script>
 
 <style scoped>
-.btn-text {
-  @apply text-base md:text-2xl  font-normal;
-}
-
 .btn-background {
   @apply flex justify-center items-center 
-  max-w-max py-2 px-3 text-blue
-  border-solid border-2 border-blue rounded-full;
+  max-w-max text-blue
+  border-solid border-2 border-blue rounded-full
+  py-1 px-3 md:py-2 md:px-5;
 }
 
 .btn-background:hover {
   @apply text-white-gray bg-blue;
+}
+
+.btn-text {
+  @apply font-normal
+  text-base md:text-lg lg:text-xl  xl:text-2xl 2xl:text-3xl;
 }
 </style>
