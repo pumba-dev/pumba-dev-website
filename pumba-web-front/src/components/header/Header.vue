@@ -1,7 +1,7 @@
 <template>
   <section class="header-section">
-    <Logo></Logo>
-    <HeaderNavigation></HeaderNavigation>
+    <Logo class="header-logo"></Logo>
+    <HeaderNavigation class="header-nav"></HeaderNavigation>
   </section>
 </template>
 
@@ -15,6 +15,11 @@ export default {
 
 <style scoped>
 .header-section {
-  @apply flex justify-between w-full;
+  @apply flex justify-between w-4/5 m-auto mt-6
+  lg:mt-12;
+}
+
+.header-logo {
+  @apply w-12 sm:w-14 md:w-16 lg:w-20 xl:w-[5.5rem] 2xl:w-28;
 }
 </style>

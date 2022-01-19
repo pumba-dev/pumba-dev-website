@@ -19,14 +19,13 @@ export default {
 
 <style scoped>
 .btn-text {
-  @apply text-2xl font-normal;
+  @apply text-base md:text-2xl  font-normal;
 }
 
 .btn-background {
   @apply flex justify-center items-center 
-  w-36 h-12 text-blue
-  border-solid border-2 border-blue rounded-full
-  cursor-pointer;
+  max-w-max py-2 px-3 text-blue
+  border-solid border-2 border-blue rounded-full;
 }
 
 .btn-background:hover {

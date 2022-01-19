@@ -47,10 +47,6 @@ export default {
   box-border;
 }
 
-.header {
-  @apply px-48 my-12;
-}
-
 .first-bg-blue {
   @apply mt-6;
 }
@@ -69,10 +65,6 @@ export default {
 
 /* Global Styles */
 .title {
-  @apply text-dark-blue font-bold text-center tracking-wide
-  sm:text-2xl
-  md:text-3xl
-  lg:text-4xl
-  xl:text-5xl;
+  @apply text-dark-blue font-bold text-center tracking-wide text-4xl;
 }
 </style>
