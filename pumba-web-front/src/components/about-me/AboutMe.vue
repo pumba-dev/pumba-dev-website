@@ -7,8 +7,8 @@
       Eu comecei na computação desde muito jovem, aos 16 anos já estava
       oferecendo meus primeiros serviços como design. Logo depois, fui para a
       universidade estudar ciência da computação, onde aprendi sobre o mundo da
-      programação. Com minha curiosidade, comecei a estudar e desenvolver
-      aplicações web completa como esta.
+      programação. Hoje, meus dias são repletos de códigos e cursos que me
+      ajudam a desenvolver aplicações web completas como esta.
     </h2>
   </div>
 </template>
