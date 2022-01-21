@@ -6,11 +6,14 @@
 
 <style scoped>
 .card-background {
-  @apply box-border
-  flex flex-col gap-3 
-    items-center px-8 py-9 w-500
-  bg-white-gray rounded-2xlarge
+  @apply box-border flex flex-col items-center 
+  bg-white-gray rounded-2xlarge 
   shadow-gray-blue shadow-2xl
-  border border-solid  border-dark-blue border-opacity-10;
+  border border-solid  border-dark-blue border-opacity-10
+  
+  /* Reponsivity */
+  px-5 py-4 gap-2
+  xs:px-6 xs:py-5
+  md:py-8;
 }
 </style>

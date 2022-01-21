@@ -15,6 +15,6 @@ export default {
 
 <style scoped>
 .home {
-  @apply flex flex-col justify-between items-center min-h-[400px] h-screen;
+  @apply flex flex-col justify-between items-center h-full;
 }
 </style>

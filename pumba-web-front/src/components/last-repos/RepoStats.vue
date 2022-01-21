@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .repo-stats {
-  @apply flex gap-12
+  @apply flex w-10/12 justify-between pt-1
   text-sm;
 }
 </style>

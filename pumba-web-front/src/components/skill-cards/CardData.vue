@@ -3,7 +3,7 @@
     <div class="img-container">
       <img class="card-data-icon" :src="getImgUrl" :alt="CardData.alt" />
     </div>
-    <div class="card-data-data">
+    <div class="card-data-text">
       <h1 class="card-data-title">{{ CardData.title }}</h1>
       <span class="card-data-desc">{{ CardData.desc }}</span>
     </div>
@@ -37,26 +37,31 @@ export default {
 
 <style scoped>
 .card-data-box {
-  @apply flex gap-2 w-[28.5rem];
+  @apply flex flex-col items-center gap-2
+  md:flex-row
+  md:gap-4;
 }
 
 .img-container {
-  @apply w-48;
+  @apply w-[4rem] h-[4rem]
+  md:w-[5rem] md:h-[5rem];
 }
 
-.card-data-icon {
-  @apply w-full h-full;
-}
-
-.card-data-data {
-  @apply flex flex-col gap-1 left-0 text-dark-blue;
+.card-data-text {
+  @apply text-dark-blue
+  flex flex-col text-center gap-1
+  md:text-left;
 }
 
 .card-data-title {
-  @apply font-bold text-2xl;
+  @apply font-semibold text-xl;
 }
 
 .card-data-desc {
-  @apply font-medium text-base;
+  @apply font-medium 
+  text-base w-[15rem] h-[8rem]
+  xs:w-[17.5rem] xs:h-[7rem]
+  md:text-base md:w-[20rem] md:h-[6rem]
+  xl:w-[23em] xl:h-[5.25rem];
 }
 </style>

@@ -28,10 +28,11 @@ export default {
 
 <style scoped>
 .skill {
-  @apply flex flex-col gap-3 justify-center;
+  @apply flex flex-col gap-3 justify-center h-max;
 }
 
 .skill-icon-box {
+  /* Reponsivity */
   @apply w-36 h-36;
 }
 

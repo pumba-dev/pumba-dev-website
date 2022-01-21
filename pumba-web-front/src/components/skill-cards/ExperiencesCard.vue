@@ -1,18 +1,19 @@
 <template>
-  <div class="qualities">
+  <div class="experiences">
+    <h1 class="card-title">EXPERIÊNCIAS</h1>
     <transition-group name="slide-fade" tag="div">
-      <template v-for="(card, index) in qualityListArray" :key="index">
+      <template v-for="(card, index) in expListArray" :key="index">
         <CardData
           v-if="cardView == index"
           :key="index"
           :CardData="card"
-          :CardType="'qualities'"
+          :CardType="'experiences'"
         ></CardData>
       </template>
     </transition-group>
-    <div class="qualities-nav">
+    <div class="experiences-nav">
       <BubbleNav
-        v-for="(quality, index) in qualityListArray"
+        v-for="(exp, index) in expListArray"
         @click="setViewCard"
         :id="index"
         :key="index"
@@ -26,7 +27,7 @@
 <script>
 import { onMounted, reactive, toRefs } from "vue";
 import CardData from "./CardData.vue";
-import ArrayOfqualitys from "../../assets/javascripts/QualitiesList.js";
+import ArrayOfExp from "../../assets/javascripts/ExperiencesList.js";
 import BubbleNav from "../shared/BubbleNav.vue";
 export default {
   components: {
@@ -35,7 +36,7 @@ export default {
   },
   setup() {
     const data = reactive({
-      qualityListArray: ArrayOfqualitys,
+      expListArray: ArrayOfExp,
       cardView: 0,
     });
 
@@ -43,7 +44,7 @@ export default {
       // Set First Navigation with Class Active
       const setDefaultNav = () => {
         const $firstBubbleNav = document.querySelector(
-          ".qualities .bubble-nav"
+          ".experiences .bubble-nav"
         );
         $firstBubbleNav.classList.add("active");
       };
@@ -59,7 +60,7 @@ export default {
       this.setBubbleNavActive(event.target);
     },
     resetBubbleNav() {
-      const $bubbleNav = document.querySelectorAll(".qualities .bubble-nav");
+      const $bubbleNav = document.querySelectorAll(".experiences .bubble-nav");
       $bubbleNav.forEach((nav) => {
         nav.classList.remove("active");
       });
@@ -72,16 +73,17 @@ export default {
 </script>
 
 <style scoped>
-.qualities {
-  @apply flex flex-col items-center gap-6;
+.experiences {
+  @apply flex flex-col items-center gap-6
+  md:gap-4;
 }
 
-.qualities-nav {
+.experiences-nav {
   @apply flex gap-3;
 }
 
 .slide-fade-enter-from {
-  transform: translateX(80px);
+  transform: translateX(30px);
   opacity: 0;
 }
 

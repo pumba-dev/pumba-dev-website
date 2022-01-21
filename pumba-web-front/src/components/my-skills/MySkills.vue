@@ -2,7 +2,6 @@
   <section class="my-skills-container">
     <h1 class="title">Minhas Habilidades</h1>
     <SkillsCarousel></SkillsCarousel>
-    <slot></slot>
   </section>
 </template>
 
@@ -15,8 +14,11 @@ export default {
 
 <style scoped>
 .my-skills-container {
-  @apply flex flex-col
+  @apply hidden lg:flex flex-col
   gap-12 w-full h-max
-  items-center;
+  items-center
+  
+  /* Reponsivity */
+  hidden;
 }
 </style>

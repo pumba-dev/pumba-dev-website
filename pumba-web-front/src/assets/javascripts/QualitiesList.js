@@ -1,6 +1,6 @@
 export default [
     {
-        "title": "Junior",
+        "title": "Dev Junior",
         "desc": "Com mais de 1 ano estudando para me tornar desenvolvedor full-stack, tento ser hoje um profissional melhor do que fui ontem.",
         "src": "junior-icon",
         "alt": "Ícone de Desenvolvedor Júnior",

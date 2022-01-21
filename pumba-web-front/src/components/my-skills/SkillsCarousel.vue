@@ -17,7 +17,7 @@ export default {
 <style scoped>
 .skill-carousel-container {
   @apply flex justify-center relative overflow-hidden
-  w-full h-48;
+  w-full h-[14rem];
 }
 
 .carousel-wall {

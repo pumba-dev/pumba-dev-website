@@ -5,9 +5,8 @@
       <AboutMe class="about-me"></AboutMe>
     </BackgroundBlue>
     <LastRepos class="last-repos"></LastRepos>
-    <MySkills class="my-skills section-margin">
-      <SkillCards class="skill-cards"></SkillCards>
-    </MySkills>
+    <MySkills class="my-skills section-margin"> </MySkills>
+    <SkillCards class="skill-cards section-margin"></SkillCards>
     <SendMail class="send-mail section-margin"></SendMail>
     <Footer class="footer section-margin"></Footer>
   </main>
@@ -39,7 +38,7 @@ export default {
 
 <style >
 .main {
-  @apply bg-white-gray font-body w-full
+  @apply bg-white-gray font-body w-screen overflow-hidden
   flex flex-col
   box-border;
 }
@@ -54,6 +53,10 @@ export default {
 
 .last-repos {
   @apply -mt-48 mx-auto;
+}
+
+.skill-cards {
+  @apply xl:mt-12 !important;
 }
 
 .section-margin {

@@ -21,8 +21,7 @@ export default {
 <style scoped>
 .presentation {
   @apply flex flex-col justify-between items-center 
-  h-full 
-  /* pt-12 md:pt-16; */;
+  h-full gap-12;
 }
 
 .title-and-avatar {

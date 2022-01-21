@@ -33,6 +33,9 @@ export default {
 
 <style scoped>
 .repo-list {
-  @apply grid grid-cols-2 grid-rows-2 gap-5;
+  @apply gap-5 flex flex-col
+  
+  /* Reponsivity */
+  md:grid md:grid-cols-2 md:grid-rows-2 md:gap-7;
 }
 </style>
