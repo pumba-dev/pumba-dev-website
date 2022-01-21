@@ -5,8 +5,8 @@
 ![GitHub forks](https://img.shields.io/github/forks/pumba-dev/pumba-dev-website?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/github/issues-pr/pumba-dev/pumba-dev-website?style=for-the-badge)
 
-<center> <h2>☕ Em Desenvolvimento</h2> </center>
-<center> Clique nas Pastas para ler o README de cada JOB. </center>
+<h2 align="center">☕ Em Desenvolvimento</h2>
+<p align="center"> Clique nas Pastas para ler o README de cada JOB. </p>
 
 <br>
 
