@@ -6,7 +6,7 @@
         target="_blank"
         class="btn-text"
       >
-        Ajude o Dev
+        Pagar um Café
       </a>
     </li>
     <li><CVButton></CVButton></li>

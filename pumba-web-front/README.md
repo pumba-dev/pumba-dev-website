@@ -15,6 +15,7 @@
 - [ ] Adicionar Movimento de Puxar a Cartões de Skills.
 - [ ] Movimentar Carrosel Infinito com Click+Arrasta do Mouse.
 - [ ] Adicionar Action Mailer API.
+- [ ] Implementar modo Escuro
 
 
 ## 📫 Contribuindo com o Projeto
