@@ -13,7 +13,7 @@
   
   /* Reponsivity */
   px-5 py-4 gap-2
-  xs:px-12 xs:py-5
+  xs:px-8 xs:py-5
   md:p-7;
 }
 </style>
