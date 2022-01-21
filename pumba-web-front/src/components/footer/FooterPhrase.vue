@@ -6,6 +6,9 @@
 
 <style scoped>
 .footer-phrase {
-  @apply text-2xl font-bold text-gray-blue text-center tracking-wide select-none;
+  @apply font-bold text-gray-blue text-center tracking-wide select-none
+  text-lg
+  xs:text-xl
+  sm:text-2xl;
 }
 </style>

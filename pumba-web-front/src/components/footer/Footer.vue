@@ -36,7 +36,12 @@ export default {
 }
 
 .second-bg-blue {
-  @apply h-[30rem] py-12 flex flex-col items-center justify-between !important;
+  @apply py-12 flex flex-col items-center justify-between 
+  h-[25rem]
+  xs:h-[27rem]
+  sm:h-[28.5rem]
+  lg:h-[30rem]
+  !important;
 }
 
 .footer-logo {

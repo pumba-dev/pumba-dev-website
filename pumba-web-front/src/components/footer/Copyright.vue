@@ -4,6 +4,9 @@
 
 <style scoped>
 .copyright-text {
-  @apply text-2xl text-white-gray text-center select-none;
+  @apply text-white-gray text-center select-none
+  text-lg
+  xs:text-xl
+  sm:text-2xl;
 }
 </style>

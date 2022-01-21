@@ -24,6 +24,11 @@ export default {
 
 <style scoped>
 .social-links {
-  @apply flex gap-6 justify-center;
+  @apply flex justify-between
+  w-[18rem]
+  2xs:w-[20rem]
+  xs:w-[22rem]
+  sm:w-[24rem]
+  md:w-[26rem];
 }
 </style>

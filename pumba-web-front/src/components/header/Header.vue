@@ -20,8 +20,4 @@ export default {
   mx-auto mt-6
   lg:mt-12;
 }
-
-.header-logo {
-  @apply w-12 sm:w-14 md:w-16 lg:w-20 xl:w-[5.5rem] 2xl:w-28;
-}
 </style>

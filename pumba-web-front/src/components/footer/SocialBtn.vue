@@ -31,15 +31,18 @@ export default {
 
 <style scoped>
 .social-btn {
-  @apply w-12 h-12
-  flex justify-center items-center
+  @apply flex justify-center items-center
   rounded-full
   border border-solid border-gray-blue border-opacity-50
+  w-[2rem] h-[2rem]
+  2xs:w-[2.5rem] 2xs:h-[2.5rem]
+  xs:w-[3rem] xs:h-[3rem]
+
   !important;
 }
 
 .social-btn:hover {
-  @apply bg-gray-blue;
+  @apply lg:bg-gray-blue;
 }
 
 .social-btn:hover .icon {
@@ -48,10 +51,14 @@ export default {
 }
 
 .icon-box {
-  @apply w-6;
+  @apply flex items-center justify-center
+  h-[0.9rem] w-[0.9rem]
+  2xs:h-[1rem] 2xs:w-[1rem]
+  xs:h-[1.25rem] xs:w-[1.25rem]
+  sm:h-[1.5rem] sm:w-[1.5rem];
 }
 
 .icon {
-  @apply m-auto;
+  @apply w-full h-full;
 }
 </style>

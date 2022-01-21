@@ -13,10 +13,16 @@
 }
 
 .madewith-title {
-  @apply text-gray-blue text-base text-center;
+  @apply text-gray-blue text-center
+  text-xs
+  xs:text-sm
+  sm:text-base;
 }
 
 .image-box {
-  @apply w-40;
+  @apply w-[7rem]
+  xs:w-[8rem]
+  sm:w-[9rem]
+  md:w-[10rem];
 }
 </style>
