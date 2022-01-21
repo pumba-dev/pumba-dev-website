@@ -22,7 +22,8 @@ export default {
 
 <style scoped>
 .repo-forks {
-  @apply flex gap-3;
+  @apply flex gap-1
+  md:gap-2;
 }
 
 .fork-icon {

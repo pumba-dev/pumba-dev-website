@@ -22,7 +22,8 @@ export default {
 
 <style scoped>
 .repo-stars {
-  @apply flex gap-2;
+  @apply flex gap-1
+  md:gap-2;
 }
 
 .star-icon {

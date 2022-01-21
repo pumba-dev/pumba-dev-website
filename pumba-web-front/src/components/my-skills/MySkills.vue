@@ -16,9 +16,6 @@ export default {
 .my-skills-container {
   @apply hidden lg:flex flex-col
   gap-12 w-full h-max
-  items-center
-  
-  /* Reponsivity */
-  hidden;
+  items-center;
 }
 </style>

@@ -25,7 +25,8 @@ export default {
 
 <style scoped>
 .repo-lang {
-  @apply flex gap-3;
+  @apply flex gap-1
+  md:gap-2;
 }
 
 .lang-color {
