@@ -53,23 +53,32 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .mail-form {
-  @apply flex flex-col gap-6 m-auto;
+  @apply flex flex-col gap-6 
+  w-[90%]
+  xs:w-[82%]
+  sm:w-[75%]
+  md:w-[70%]
+  lg:w-[40rem]
+  xl:w-[45rem]
+  2xl:w-[47rem];
 }
 
 .userdata-box {
-  @apply flex justify-between;
+  @apply flex flex-col justify-between gap-6 
+  md:flex-row;
 }
 
 .input-area {
-  @apply w-[22.5rem] h-12 px-2 text-2xl
-  border border-gray border-opacity-30 rounded-lg;
+  @apply w-full h-12 px-2 text-xl sm:text-2xl 
+  border border-gray border-opacity-30 rounded-lg
+  2xl:w-[22.5rem];
 }
 
 .text-area {
-  @apply w-750 h-250 p-2
-  resize-none text-2xl
+  @apply w-full h-250 p-2
+  resize-none text-xl sm:text-2xl 
   border border-gray border-opacity-30 rounded-lg;
 }
 </style>

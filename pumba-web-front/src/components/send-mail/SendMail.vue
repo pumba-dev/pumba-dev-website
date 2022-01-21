@@ -14,10 +14,6 @@ export default {
 
 <style scoped>
 .send-mail {
-  @apply flex flex-col gap-12;
-}
-
-.mail-form {
-  @apply w-min;
+  @apply flex flex-col gap-12 items-center;
 }
 </style>

@@ -22,6 +22,8 @@ export default {
 }
 
 .name {
-  @apply text-2xl font-normal text-gray justify-start;
+  @apply font-normal text-gray justify-start
+  text-xl
+  xs:text-2xl;
 }
 </style>

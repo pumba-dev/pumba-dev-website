@@ -26,7 +26,7 @@ export default {
 }
 
 .btn-background:hover {
-  @apply text-white-gray bg-blue;
+  @apply lg:text-white-gray lg:bg-blue;
 }
 
 .btn-text {

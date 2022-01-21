@@ -38,7 +38,7 @@ export default {
 
 <style >
 .main {
-  @apply bg-white-gray font-body w-screen overflow-hidden
+  @apply bg-white-gray font-body w-full overflow-hidden
   flex flex-col
   box-border;
 }
@@ -65,6 +65,10 @@ export default {
 
 /* Global Styles */
 .title {
-  @apply text-dark-blue font-bold text-center tracking-wide text-4xl;
+  @apply text-dark-blue font-bold text-center tracking-wide 
+  text-[1.5rem]
+  xs:text-[1.75rem]
+  sm:text-[2rem]
+  md:text-[2.25rem];
 }
 </style>
