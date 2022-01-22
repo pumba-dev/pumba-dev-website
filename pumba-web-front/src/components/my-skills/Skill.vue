@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
 .skill {
-  @apply flex flex-col gap-3 justify-center h-max;
+  @apply flex flex-col gap-3 justify-center h-max select-none;
 }
 
 .skill-icon-box {

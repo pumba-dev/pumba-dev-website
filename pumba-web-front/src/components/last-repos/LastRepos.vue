@@ -37,8 +37,8 @@ export default {
 }
 
 .repo-title {
-  /* Reponsivity */
-  @apply text-[1.5rem]
+  @apply /* Reponsivity */
+  text-[1.5rem]
   xs:text-[1.6rem]
   sm:text-[1.7rem]
   md:text-[1.9rem]

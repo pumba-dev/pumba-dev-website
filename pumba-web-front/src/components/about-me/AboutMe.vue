@@ -15,7 +15,7 @@
 
 <style scoped>
 .about-me-text {
-  @apply text-gray-blue 
+  @apply text-gray-blue
   w-[18.75rem]
   2xs:w-[21.8rem]
   xs:w-[22.5rem]

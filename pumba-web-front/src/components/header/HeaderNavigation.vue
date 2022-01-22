@@ -22,7 +22,8 @@ export default {
 
 <style scoped>
 .nav-btn-list {
-  @apply flex justify-center items-center gap-5;
+  @apply flex justify-center items-center gap-5
+  lg:gap-7;
 }
 
 .btn-text {
