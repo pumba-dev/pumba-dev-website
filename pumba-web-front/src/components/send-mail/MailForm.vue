@@ -54,7 +54,7 @@ export default {
       },
       hasNotify: false,
       mockNotify: {
-        text: "Serviço de mensagens estará disponível em breve.",
+        text: "O serviço de mensagens estará disponível em breve!",
         type: "normal",
       },
     };
@@ -83,7 +83,7 @@ export default {
     hasNotify() {
       setTimeout(() => {
         this.hasNotify = false;
-      }, 2500);
+      }, 4000);
     },
   },
 };
