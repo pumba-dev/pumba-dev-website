@@ -1,5 +1,8 @@
 <template>
   <form class="mail-form">
+    <transition name="fade">
+      <FormNotify v-if="hasNotify" :Notify="mockNotify"></FormNotify>
+    </transition>
     <div class="userdata-box">
       <FormInput :inputName="'Nome'">
         <input
@@ -32,15 +35,16 @@
         required
       />
     </FormInput>
-    <InputBtn></InputBtn>
+    <InputBtn @click.prevent="sendEmail()"></InputBtn>
   </form>
 </template>
 
 <script>
 import FormInput from "./FormInput.vue";
 import InputBtn from "./InputBtn.vue";
+import FormNotify from "./FormNotify.vue";
 export default {
-  components: { FormInput, InputBtn },
+  components: { FormInput, InputBtn, FormNotify },
   data() {
     return {
       formInput: {
@@ -48,21 +52,39 @@ export default {
         email: "",
         message: "",
       },
+      hasNotify: false,
+      mockNotify: {
+        text: "Serviço de mensagens estará disponível em breve.",
+        type: "normal",
+      },
     };
+  },
+  methods: {
+    sendEmail() {
+      this.hasNotify = true;
+    },
+  },
+  watch: {
+    hasNotify() {
+      setTimeout(() => {
+        this.hasNotify = false;
+      }, 2500);
+    },
   },
 };
 </script>
 
 <style>
 .mail-form {
-  @apply flex flex-col gap-6 
+  @apply flex flex-col gap-6
   w-[90%]
   xs:w-[82%]
   sm:w-[75%]
   md:w-[70%]
   lg:w-[40rem]
   xl:w-[45rem]
-  2xl:w-[47rem];
+  2xl:w-[47rem]
+  relative;
 }
 
 .userdata-box {
@@ -80,5 +102,21 @@ export default {
   @apply w-full h-250 p-2
   resize-none text-xl sm:text-2xl 
   border border-gray border-opacity-30 rounded-lg;
+}
+
+/* Transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease-in-out;
+}
+
+.fade-enter-from {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.fade-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
 }
 </style>
