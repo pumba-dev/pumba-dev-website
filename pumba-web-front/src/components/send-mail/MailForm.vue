@@ -1,5 +1,5 @@
 <template>
-  <form class="mail-form">
+  <form id="mail-form" class="mail-form">
     <transition name="fade">
       <FormNotify v-if="hasNotify" :Notify="mockNotify"></FormNotify>
     </transition>
@@ -61,7 +61,22 @@ export default {
   },
   methods: {
     sendEmail() {
+      window.scroll({
+        left: 0,
+        top: this.findPos(document.getElementById("mail-form")),
+        behavior: "smooth",
+      });
       this.hasNotify = true;
+    },
+    //Finds y value of given object
+    findPos(obj) {
+      var curtop = 0;
+      if (obj.offsetParent) {
+        do {
+          curtop += obj.offsetTop;
+        } while ((obj = obj.offsetParent));
+        return [curtop - 100];
+      }
     },
   },
   watch: {
