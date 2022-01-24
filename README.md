@@ -5,14 +5,14 @@
 ![GitHub forks](https://img.shields.io/github/forks/pumba-dev/pumba-dev-website?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/github/issues-pr/pumba-dev/pumba-dev-website?style=for-the-badge)
 
-<h2 align="center">☕ Em Desenvolvimento</h2>
-<p align="center"> Clique nas Pastas para ler o README de cada JOB. </p>
+<h2 align="center">☕ Projeto Em Desenvolvimento</h2>
+<p align="center"> Clique nas Pastas para ver o Progresso de cada Trabalho. </p>
 
 <br>
 
 <img src="landing-page-prototype.png" alt="Página Inicial da Aplicação Web">
 
-> Esta é minha primeira web page pessoal, nela conterá informações profissionais e de contato. Com o desenvolvimento dessa aplicação irei praticar os conceitos de UI/UX design, Front-End Developer com Vue + Tailwind e criação de API RestFul com Ruby on Rails.
+> Esta é minha web page pessoal, nela conterá informações profissionais e de contato. Com o desenvolvimento dessa aplicação irei praticar os conceitos de UI/UX design, Front-End Developer com Vue + Tailwind e criação de API RestFul com Ruby on Rails.
 
 ## 💻 Feito Com:
 ![Linux](https://img.shields.io/badge/Linux-E34F26?style=for-the-badge&logo=linux&logoColor=black)
