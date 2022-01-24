@@ -5,7 +5,7 @@
       src="/src/assets/svg/github/github-logo.svg"
       alt="Icone do GitHub"
     />
-    <h1 class="title repo-title">Últimos Repositórios</h1>
+    <h1 class="title repo-title">Últimos Projetos</h1>
     <RepoList></RepoList>
   </div>
 </template>
