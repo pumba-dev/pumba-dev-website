@@ -11,11 +11,10 @@
 - [x] Carrosel com Botão de Navegação para Cartões.
 - [x] Responsividade.
 - [x] Adicionar Notificação para Seção de Emails.
-- [ ] Tornar Infinito o Carrosel de Skills.
-- [ ] Adicionar Movimento de Puxar a Cartões de Skills.
+- [ ] Adicionar Movimento de Click+Arrasta no Perfil Profissional
 - [ ] Movimentar Carrosel Infinito com Click+Arrasta do Mouse.
 - [ ] Adicionar Action Mailer API.
-- [ ] Implementar modo Escuro
+- [ ] Implementar modo Dark.
 
 
 ## 📫 Contribuindo com o Projeto

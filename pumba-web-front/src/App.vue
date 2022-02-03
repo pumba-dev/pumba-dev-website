@@ -4,7 +4,9 @@
     <AboutMe class="about-me"></AboutMe>
     <LastRepos class="last-repos"></LastRepos>
     <MySkills class="my-skills section-margin"> </MySkills>
-    <SkillCards class="skill-cards section-margin"></SkillCards>
+    <ProfessionalProfile
+      class="skill-cards section-margin"
+    ></ProfessionalProfile>
     <SendMail class="send-mail section-margin"></SendMail>
     <Footer class="footer section-margin"></Footer>
   </main>
@@ -16,7 +18,7 @@ import AboutMe from "./components/about-me/AboutMe.vue";
 import BackgroundBlue from "./components/shared/BackgroundBlue.vue";
 import LastRepos from "./components/last-repos/LastRepos.vue";
 import MySkills from "./components/my-skills/MySkills.vue";
-import SkillCards from "./components/skill-cards/SkillCards.vue";
+import ProfessionalProfile from "./components/professional-profile/ProfessionalProfile.vue";
 import SendMail from "./components/send-mail/SendMail.vue";
 import Footer from "./components/footer/Footer.vue";
 
@@ -27,7 +29,7 @@ export default {
     BackgroundBlue,
     LastRepos,
     MySkills,
-    SkillCards,
+    ProfessionalProfile,
     SendMail,
     Footer,
   },
