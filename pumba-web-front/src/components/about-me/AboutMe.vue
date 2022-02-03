@@ -1,21 +1,37 @@
 <template>
-  <div class="about-me-text">
-    <h1 class="about-me-title">
-      Oi, eu sou o Paulo, fico feliz em lhe conhecer!
-    </h1>
-    <h2 class="about-me-subtitle">
-      Eu comecei na computação desde muito jovem, aos 16 anos já estava
-      oferecendo meus primeiros serviços como design. Logo depois, fui para a
-      universidade estudar ciência da computação, onde aprendi sobre o mundo da
-      programação. Hoje, meus dias são repletos de códigos e cursos que me
-      ajudam a desenvolver aplicações web completas como esta.
-    </h2>
-  </div>
+  <BackgroundBlue class="first-bg-blue">
+    <div class="about-me-text">
+      <h1 class="about-me-title">
+        Oi, eu sou o Paulo, fico feliz em lhe conhecer!
+      </h1>
+      <h2 class="about-me-subtitle">
+        Eu comecei na computação desde muito jovem, aos 16 anos já estava
+        oferecendo meus primeiros serviços como design. Logo depois, fui para a
+        universidade estudar ciência da computação, onde aprendi sobre o mundo
+        da programação. Hoje, meus dias são repletos de códigos e cursos que me
+        ajudam a desenvolver aplicações web completas como esta.
+      </h2>
+    </div>
+  </BackgroundBlue>
 </template>
 
+<script>
+import BackgroundBlue from "../shared/BackgroundBlue.vue";
+
+export default {
+  components: {
+    BackgroundBlue,
+  },
+};
+</script>
+
 <style scoped>
+.first-bg-blue {
+  @apply mt-6;
+}
+
 .about-me-text {
-  @apply text-gray-blue
+  @apply text-gray-blue mt-36
   w-[18.75rem]
   2xs:w-[21.8rem]
   xs:w-[22.5rem]

@@ -1,9 +1,7 @@
 <template>
   <main class="main">
     <Home></Home>
-    <BackgroundBlue class="first-bg-blue">
-      <AboutMe class="about-me"></AboutMe>
-    </BackgroundBlue>
+    <AboutMe class="about-me"></AboutMe>
     <LastRepos class="last-repos"></LastRepos>
     <MySkills class="my-skills section-margin"> </MySkills>
     <SkillCards class="skill-cards section-margin"></SkillCards>
@@ -41,14 +39,6 @@ export default {
   @apply bg-white-gray font-body w-full overflow-hidden
   flex flex-col
   box-border;
-}
-
-.first-bg-blue {
-  @apply mt-6;
-}
-
-.about-me {
-  @apply mt-36;
 }
 
 .last-repos {
