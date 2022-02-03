@@ -12,6 +12,7 @@
           v-model="formInput.name"
           maxlength="30"
           required
+          disabled
         />
       </FormInput>
       <FormInput :inputName="'Email'">
@@ -22,6 +23,7 @@
           v-model="formInput.email"
           maxlength="45"
           required
+          disabled
         />
       </FormInput>
     </div>
@@ -33,6 +35,7 @@
         cols="150"
         maxlength="650"
         required
+        disabled
       />
     </FormInput>
     <InputBtn @click.prevent="sendEmail()"></InputBtn>
@@ -40,9 +43,9 @@
 </template>
 
 <script>
-import FormInput from "./FormInput.vue";
+import FormInput from "./Input.vue";
 import InputBtn from "./InputBtn.vue";
-import FormNotify from "./FormNotify.vue";
+import FormNotify from "./Notify.vue";
 export default {
   components: { FormInput, InputBtn, FormNotify },
   data() {
