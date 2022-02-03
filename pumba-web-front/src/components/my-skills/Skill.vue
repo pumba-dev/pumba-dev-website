@@ -28,12 +28,14 @@ export default {
 
 <style scoped>
 .skill {
-  @apply flex flex-col gap-3 justify-center h-max select-none;
+  @apply flex flex-col gap-3 justify-center h-max;
 }
 
 .skill-icon-box {
   /* Reponsivity */
-  @apply w-36 h-36;
+  @apply w-28 h-28
+  xl:w-32 xl:h-32
+  2xl:w-36 2xl:h-36;
 }
 
 .skill-icon {
@@ -41,6 +43,6 @@ export default {
 }
 
 .skill-name {
-  @apply text-dark-blue text-center font-medium text-2xl;
+  @apply text-dark-blue text-center font-medium text-2xl select-none;
 }
 </style>
