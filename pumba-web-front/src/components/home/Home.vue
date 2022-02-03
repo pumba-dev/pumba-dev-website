@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Header from "../components/header/Header.vue";
-import Presentation from "../components/presentation/Presentation.vue";
+import Header from "../header/Header.vue";
+import Presentation from "../presentation/Presentation.vue";
 export default {
   components: { Header, Presentation },
 };

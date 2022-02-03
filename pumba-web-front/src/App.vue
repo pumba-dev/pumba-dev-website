@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Home from "./Views/Home.vue";
+import Home from "./components/home/Home.vue";
 import AboutMe from "./components/about-me/AboutMe.vue";
 import BackgroundBlue from "./components/shared/BackgroundBlue.vue";
 import LastRepos from "./components/last-repos/LastRepos.vue";
