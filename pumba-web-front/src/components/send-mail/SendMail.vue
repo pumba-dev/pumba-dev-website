@@ -1,14 +1,15 @@
 <template>
   <section class="send-mail">
-    <h1 class="title">Mande Uma Mensagem</h1>
+    <SectionTitle :titleText="'Mande Uma Mensagem'"></SectionTitle>
     <MailForm class="mail-form"></MailForm>
   </section>
 </template>
 
 <script>
+import SectionTitle from "../shared/SectionTitle.vue";
 import MailForm from "./MailForm.vue";
 export default {
-  components: { MailForm },
+  components: { SectionTitle, MailForm },
 };
 </script>
 

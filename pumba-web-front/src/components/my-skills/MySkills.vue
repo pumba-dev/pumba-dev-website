@@ -1,14 +1,15 @@
 <template>
   <section class="my-skills-container">
-    <h1 class="title">Minhas Habilidades</h1>
+    <SectionTitle :titleText="'Minhas Habilidades'"></SectionTitle>
     <SkillsCarousel></SkillsCarousel>
   </section>
 </template>
 
 <script>
+import SectionTitle from "../shared/SectionTitle.vue";
 import SkillsCarousel from "./SkillsCarousel.vue";
 export default {
-  components: { SkillsCarousel },
+  components: { SectionTitle, SkillsCarousel },
 };
 </script>
 

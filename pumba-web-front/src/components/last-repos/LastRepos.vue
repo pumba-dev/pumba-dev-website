@@ -5,15 +5,19 @@
       src="/src/assets/svg/github/github-logo.svg"
       alt="Icone do GitHub"
     />
-    <h1 class="title repo-title">Últimos Projetos</h1>
+    <SectionTitle
+      :titleText="'Últimos Projetos'"
+      class="repo-title"
+    ></SectionTitle>
     <RepoList></RepoList>
   </div>
 </template>
 
 <script>
+import SectionTitle from "../shared/SectionTitle.vue";
 import RepoList from "./RepoList.vue";
 export default {
-  components: { RepoList },
+  components: { SectionTitle, RepoList },
 };
 </script>
 
@@ -54,7 +58,7 @@ export default {
   sm:w-[3.8rem]
   md:w-[4rem]
   lg:w-[4.5rem]
-  xl:w-[4.7rem]
-  2xl:w-[5rem];
+  xl:w-[5rem]
+  2xl:w-[5.5rem];
 }
 </style>

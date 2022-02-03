@@ -54,13 +54,4 @@ export default {
 .section-margin {
   @apply mt-24;
 }
-
-/* Global Styles */
-.title {
-  @apply text-dark-blue font-bold text-center tracking-wide
-  text-[1.5rem]
-  xs:text-[1.75rem]
-  sm:text-[2rem]
-  md:text-[2.25rem];
-}
 </style>

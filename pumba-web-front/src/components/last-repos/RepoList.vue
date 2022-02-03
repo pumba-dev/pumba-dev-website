@@ -23,7 +23,6 @@ export default {
       getRepos().then((response) => {
         const repoQuantity = 4;
         data.repoList = response.data.slice(0, repoQuantity).reverse();
-        console.log(data.repoList);
       });
     });
 
