@@ -49,7 +49,7 @@ module.exports = {
       'xl': '1440px',
       // => @media (min-width: 1440px) { ... }
 
-      '2xl': '1536px',
+      '2xl': '2560px',
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
