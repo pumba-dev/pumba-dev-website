@@ -7,20 +7,37 @@
 ![Bitbucket open pull requests](https://img.shields.io/github/issues-pr/pumba-dev/pumba-dev-website?style=for-the-badge)
 
 <h2 align="center">☕ Projeto Em Desenvolvimento</h2>
-<p align="center"> Clique nas Pastas para ver o Progresso de cada Trabalho. </p>
 
-<br>
+<br />
 
-<img src="landing-page-prototype.png" alt="Página Inicial da Aplicação Web">
+<img src="landing-page-prototype.png" alt="Página Inicial da Aplicação Web" />
 
-> Esta é minha web page pessoal, nela conterá informações profissionais e de contato. Com o desenvolvimento dessa aplicação irei praticar os conceitos de UI/UX design, Front-End Developer com Vue + Tailwind e criação de API RestFul com Ruby on Rails.
+> Esta é minha web page pessoal, nela conterá informações profissionais e de contato. Com o desenvolvimento dessa aplicação irei praticar os conceitos de UI/UX design, Front-End Developer com Vue + Tailwind e criação de API RestFul com Ruby on Rails. [Clique aqui para visualizar a página!](https://pumbadev.com)
+
+<br />
+
+## 💻 Desenvolvimento do Projeto
+
+🚧 O projeto ainda está em progresso e as features já desenvolvidas são as seguintes:
+
+- [x] Criar Estrutura do HTML e CSS.
+- [x] Anexar Currículo e Área de Donate.
+- [x] Requisição de Repositórios da API do GitHub.
+- [x] Carrosel Infinito de Habilidades.
+- [x] Carrosel com Botão de Navegação para Cartões.
+- [x] Responsividade.
+- [x] Adicionar Notificação para Seção de Emails.
+- [ ] Adicionar Mailer API.
+- [ ] Adicionar Movimento de Click+Arrasta no Perfil Profissional
+- [ ] Movimentar Carrosel Infinito com Click+Arrasta do Mouse.
+- [ ] Implementar modo Dark.
 
 ## 💻 Feito Com:
 ![Linux](https://img.shields.io/badge/Linux-E34F26?style=for-the-badge&logo=linux&logoColor=black)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![RubyOnRails](https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
 ![Vue](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![EmailJS](https://img.shields.io/badge/-EmailJS-orange?style=for-the-badge&logo=gmail&logoColor=white)
 
 ## 📫 Contribuindo com o Projeto
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
@@ -64,3 +81,5 @@ Entre em contato para se tornar um contribuidor.
 ## 📝 Licença
 
 Copyright © 2022 Pumba Developer
+
+[⬆ Voltar ao topo](#pumba-dev-website)<br>
