@@ -7,7 +7,7 @@ export default [
     },
     {
         "title": "Iniciação Científica",
-        "desc": "Pesquisa na área de Redes Ópticas Elásticas com Multiplexação por Divisal Espacial. Foi produzido um artigo ciêntífico que foi apresentação no SBRC 2021.",
+        "desc": "Pesquisa na área de Redes Ópticas Elásticas com Multiplexação por Divisal Espacial. Foi desenvolvido um algoritmo de alocação que foi apresentado no SBRC 2021.",
         "src": "cnpq-icon",
         "alt": "Ícone do CNPQ",
     },
