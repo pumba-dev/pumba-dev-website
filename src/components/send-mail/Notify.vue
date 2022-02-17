@@ -19,14 +19,15 @@ export default {
 .notify {
   @apply w-full border-2 border-dark-blue border-opacity-30 border-solid 
   rounded-large shadow-md
-  bg-gray p-[0.5rem];
+  bg-gray p-[0.5rem]
+  absolute mt-[-3rem];
 }
 
 .notify.normal {
   @apply bg-blue;
 }
 
-.notify.danger {
+.notify.error {
   @apply bg-orange-red;
 }
 

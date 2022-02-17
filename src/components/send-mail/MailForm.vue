@@ -1,7 +1,7 @@
 <template>
   <form id="mail-form" class="mail-form">
     <transition name="fade">
-      <FormNotify v-if="hasNotify" :Notify="mockNotify"></FormNotify>
+      <FormNotify v-if="hasNotify" :Notify="Notify"></FormNotify>
     </transition>
     <div class="userdata-box">
       <FormInput :inputName="'Nome'">
@@ -12,7 +12,6 @@
           v-model="formInput.name"
           maxlength="30"
           required
-          disabled
         />
       </FormInput>
       <FormInput :inputName="'Email'">
@@ -23,7 +22,6 @@
           v-model="formInput.email"
           maxlength="45"
           required
-          disabled
         />
       </FormInput>
     </div>
@@ -35,7 +33,6 @@
         cols="150"
         maxlength="650"
         required
-        disabled
       />
     </FormInput>
     <InputBtn @click.prevent="sendEmail()"></InputBtn>
@@ -43,6 +40,8 @@
 </template>
 
 <script>
+import emailjs from "@emailjs/browser";
+
 import FormInput from "./Input.vue";
 import InputBtn from "./InputBtn.vue";
 import FormNotify from "./Notify.vue";
@@ -56,7 +55,7 @@ export default {
         message: "",
       },
       hasNotify: false,
-      mockNotify: {
+      Notify: {
         text: "O serviço de mensagens estará disponível em breve!",
         type: "normal",
       },
@@ -64,6 +63,45 @@ export default {
   },
   methods: {
     sendEmail() {
+      // Data
+      const SERVICEID = "service_18xgfsm";
+      const TEMPLATEID = "template_wdjv41l";
+      const USERID = "user_fFjRZ4nh2baVVBbo9WDTb";
+      const MAILFORM = {
+        user_name: this.formInput.name,
+        user_email: this.formInput.email,
+        message: this.formInput.message,
+      };
+
+      // Verify if the form is filled
+      if (this.formFilled(MAILFORM)) {
+        // Send EMAIL
+        emailjs
+          .send(SERVICEID, TEMPLATEID, MAILFORM, USERID)
+          .then((sendMailResult) => {
+            if (sendMailResult.status === 200) {
+              this.showNotify("Mensagem enviada com sucesso!", "sucess");
+              this.resetInput();
+            } else {
+              this.showNotify("Erro ao enviar mensagem!", "error");
+              this.resetInput();
+            }
+          });
+      } else {
+        this.showNotify("Preencha todos os campos!", "error");
+      }
+    },
+    formFilled(form) {
+      for (let key in form) {
+        if (form[key] === "") {
+          return false;
+        }
+      }
+      return true;
+    },
+    showNotify(text, type) {
+      this.Notify.text = text;
+      this.Notify.type = type;
       window.scroll({
         left: 0,
         top: this.findPos(document.getElementById("mail-form")),
@@ -71,7 +109,6 @@ export default {
       });
       this.hasNotify = true;
     },
-    //Finds y value of given object
     findPos(obj) {
       var curtop = 0;
       if (obj.offsetParent) {
@@ -81,12 +118,17 @@ export default {
         return [curtop - 100];
       }
     },
+    resetInput() {
+      this.formInput.name = "";
+      this.formInput.email = "";
+      this.formInput.message = "";
+    },
   },
   watch: {
     hasNotify() {
       setTimeout(() => {
         this.hasNotify = false;
-      }, 4000);
+      }, 3500);
     },
   },
 };

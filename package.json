@@ -13,6 +13,7 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.4.0",
     "axios": "^0.24.0",
     "eslint": "^8.6.0",
     "express": "^4.17.2",
