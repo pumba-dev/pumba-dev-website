@@ -22,7 +22,11 @@ export default {
     onBeforeMount(() => {
       getRepos().then((response) => {
         const repoQuantity = 4;
-        data.repoList = response.data.slice(0, repoQuantity).reverse();
+        console.log(response);
+        data.repoList = response.data
+          .filter((repo) => repo.language != null)
+          .slice(0, repoQuantity)
+          .reverse();
       });
     });
 
