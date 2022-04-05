@@ -1,6 +1,6 @@
 <template>
   <section class="home-presentation">
-    <h1 class="home-title">Design, Desenvolvedor Full-Stack & Estudante</h1>
+    <h1 class="home-title">Designer, Desenvolvedor Full-Stack & Estudante</h1>
     <h2 class="home-subtitle"></h2>
   </section>
 </template>
