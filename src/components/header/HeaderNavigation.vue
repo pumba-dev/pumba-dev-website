@@ -1,6 +1,6 @@
 <template>
   <ul class="nav-btn-list">
-    <li>
+    <!-- <li>
       <a
         href="https://nubank.com.br/pagar/1ou9f/ifu2K7YNO7"
         target="_blank"
@@ -8,7 +8,7 @@
       >
         Pagar um Café
       </a>
-    </li>
+    </li> -->
     <li><CVButton></CVButton></li>
   </ul>
 </template>
