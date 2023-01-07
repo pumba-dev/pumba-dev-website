@@ -64,4 +64,9 @@ export default {
   md:text-base md:w-[20rem] md:h-[6rem]
   xl:w-[23rem] xl:h-[5.25rem];
 }
+
+.card-data-icon {
+  filter: brightness(0) saturate(100%) invert(8%) sepia(39%) saturate(2526%)
+    hue-rotate(209deg) brightness(96%) contrast(95%);
+}
 </style>

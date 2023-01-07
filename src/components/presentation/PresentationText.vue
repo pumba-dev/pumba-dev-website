@@ -1,7 +1,9 @@
 <template>
   <section class="home-presentation">
-    <h1 class="home-title">Designer, Desenvolvedor Full-Stack & Estudante</h1>
-    <h2 class="home-subtitle"></h2>
+    <h1 class="home-title">Designer, Desenvolvedor Front-End & Estudante</h1>
+    <h2 class="home-subtitle">
+      Meu trabalho é codificar belas coisas e eu amo o que faço!
+    </h2>
   </section>
 </template>
 
@@ -23,10 +25,10 @@
 }
 
 .home-subtitle {
-  @apply after:content-['Meu_Trabalho_é_codificar_simples_e_belas_coisas\.']
+  @apply /* after:content-['Meu_trabalho_é_codificar_belas_coisas_e_eu_amo_o_que_faço\!'] */
   text-sm font-light
   sm:text-base
-  md:text-lg md:after:content-['Meu_Trabalho_é_codificar_simples_e_belas_coisas\,_e_eu_amo_o_que_faço\!']
+  /* md:text-lg md:after:content-['Meu_trabalho_é_codificar_belas_coisas_e_eu_amo_o_que_faço\!'] */
   lg:text-xl
   xl:text-2xl
   2xl:text-3xl;

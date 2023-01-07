@@ -25,8 +25,7 @@ export default {
         console.log(response);
         data.repoList = response.data
           .filter((repo) => repo.language != null)
-          .slice(0, repoQuantity)
-          .reverse();
+          .slice(0, repoQuantity);
       });
     });
 

@@ -11,4 +11,10 @@ export default [
     src: "cnpq-icon",
     alt: "Ícone do CNPQ",
   },
+  {
+    title: "Ponto Sistemas Soluções Web",
+    desc: "Desenvolvedor Front-End e UI/UX Design de aplicações web. Durante o desenvolvimento foram utilizado tecnologias como VueJS 3 e SASS para criação dos componentes visuais.",
+    src: "ponto-sistemas-icon",
+    alt: "Ícone da Ponto Sistemas Soluções Web",
+  },
 ];
