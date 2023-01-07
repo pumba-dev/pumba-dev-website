@@ -1,14 +1,8 @@
 <template>
   <ul class="nav-btn-list">
-    <!-- <li>
-      <a
-        href="https://nubank.com.br/pagar/1ou9f/ifu2K7YNO7"
-        target="_blank"
-        class="btn-text"
-      >
-        Pagar um Café
-      </a>
-    </li> -->
+    <li>
+      <a :href="getImgUrl" target="_blank" class="btn-text"> English CV </a>
+    </li>
     <li><CVButton></CVButton></li>
   </ul>
 </template>
@@ -17,6 +11,14 @@
 import CVButton from "./CVButton.vue";
 export default {
   components: { CVButton },
+  computed: {
+    getImgUrl() {
+      return new URL(
+        "../../assets/downloads/pumbadev-english-resume.pdf",
+        import.meta.url
+      ).href;
+    },
+  },
 };
 </script>
 
