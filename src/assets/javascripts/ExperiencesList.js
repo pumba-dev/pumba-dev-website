@@ -1,7 +1,7 @@
 export default [
   {
     title: "Ciência da Computação",
-    desc: "Bacharel no curso de ciência da computação em andamento na Universidade Federal do Piauí - UFPI.      2017 - 2023",
+    desc: "Bacharel no curso de ciência da computação em andamento na Universidade Federal do Piauí - UFPI.               80% concluído",
     src: "university-icon",
     alt: "Ícone da Universidade",
   },
