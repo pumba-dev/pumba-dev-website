@@ -1,6 +1,6 @@
 export default [
   {
-    title: "Dev Junior/Pleno",
+    title: "Desenvolvedor Pleno",
     desc: "Com mais de 4 anos de estudo em computação e 2 anos trabalhando como desenvolvedor, tento ser a cada dia um profissional melhor do que fui ontem.",
     src: "junior-icon",
     alt: "Ícone de Desenvolvedor Júnior",

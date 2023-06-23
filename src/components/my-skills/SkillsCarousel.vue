@@ -21,6 +21,7 @@ export default {
 }
 
 .carousel-wall {
+  animation-duration: 25s !important;
   @apply flex animation absolute left-0;
 }
 

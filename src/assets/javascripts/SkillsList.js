@@ -30,10 +30,22 @@ export default [
     docLink: "https://tailwindcss.com/",
   },
   {
+    name: "Vuetify",
+    src: "vuetify-skill-icon",
+    alt: "Ícone do Vuetify",
+    docLink: "https://vuetifyjs.com/",
+  },
+  {
     name: "JavaScript",
     src: "js-skill-icon",
     alt: "Ícone do JavaScript",
     docLink: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+  },
+  {
+    name: "Node",
+    src: "node-skill-icon",
+    alt: "Ícone do Node",
+    docLink: "https://nodejs.org/",
   },
   {
     name: "Vue",
