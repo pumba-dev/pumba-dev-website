@@ -2,7 +2,7 @@
   "name": "pumba-web-front",
   "version": "0.0.0",
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   },
   "scripts": {
     "dev": "vite",
