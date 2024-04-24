@@ -1,25 +1,25 @@
 export default [
   {
     title: "Ciência da Computação",
-    desc: "Bacharel no curso de ciência da computação em andamento na Universidade Federal do Piauí - UFPI (85% concluído).",
+    desc: "Bacharelado em Ciência da Computação pela Universidade Federal do Piauí - UFPI.",
     src: "university-icon",
     alt: "Ícone da Universidade",
   },
   {
     title: "Iniciação Científica",
-    desc: "Pesquisa na área de Redes Ópticas Elásticas. Apresentei oralmente os resultados do estudo no XXXIX Simpósio Brasileiro de Redes de Computadores por meio de um artigo.",
+    desc: "Pesquisa na área de Redes Ópticas Elásticas. Os resultados do estudo foram apresentados no XXXIX Simpósio Brasileiro de Redes de Computadores.",
     src: "cnpq-icon",
     alt: "Ícone do CNPQ",
   },
   {
     title: "Ponto Sistemas Soluções Web",
-    desc: "Desenvolvedor Front-End e UI/UX Design de aplicações web. Durante o desenvolvimento foram utilizado tecnologias como Vue 3 e SASS para criação dos componentes visuais.",
+    desc: "Desenvolvimento de sistema web em tempo real para vistorias aduaneiras. Utilizando-se de tecnologias como Vue 2, SASS e Spring Boot.",
     src: "ponto-sistemas-icon",
     alt: "Ícone da Ponto Sistemas Soluções Web",
   },
   {
     title: "IndeCX",
-    desc: "Desenvolvedor Front-End nas plataformas web da empresa. No cotidiano, a metodologia SCRUM e tecnologias como Typescript, Vue e Node ajudam a entregar o melhor produto.",
+    desc: "Desenvolvimento de plataforma de pesquisas de satisfação multinacional B2B. Auxiliando-se de tecnologias como Vue 3, Node.js e MongoDB.",
     src: "indecx-icon",
     alt: "Ícone da IndeCX",
   },
