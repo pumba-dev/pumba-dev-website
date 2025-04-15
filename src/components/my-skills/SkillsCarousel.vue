@@ -30,7 +30,8 @@ export default {
     left: 0%;
   }
   to {
-    left: -150%;
+    /* Metade do width da animation */
+    left: -200%;
   }
 }
 

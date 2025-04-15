@@ -30,6 +30,12 @@ export default [
     docLink: "https://tailwindcss.com/",
   },
   {
+    name: "Ant Design",
+    src: "antdesign-skill-icon",
+    alt: "Ícone do Ant Design",
+    docLink: "https://ant.design/",
+  },
+  {
     name: "Vuetify",
     src: "vuetify-skill-icon",
     alt: "Ícone do Vuetify",
