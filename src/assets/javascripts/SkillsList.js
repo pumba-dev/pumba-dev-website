@@ -83,4 +83,16 @@ export default [
     alt: "Ícone do SQL",
     docLink: "https://pt.wikipedia.org/wiki/SQL",
   },
+  {
+    name: "MongoDB",
+    src: "mongodb-skill-icon",
+    alt: "Ícone do MongoDB",
+    docLink: "https://www.mongodb.com/",
+  },
+  {
+    name: "Firebase",
+    src: "firebase-skill-icon",
+    alt: "Ícone do Firebase",
+    docLink: "https://firebase.google.com/",
+  },
 ];

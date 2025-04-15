@@ -35,6 +35,6 @@ export default {
 }
 
 .animation {
-  @apply w-[300%] animate-carousel;
+  @apply w-[400%] animate-carousel;
 }
 </style>

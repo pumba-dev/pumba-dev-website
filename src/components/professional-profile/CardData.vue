@@ -40,7 +40,8 @@ export default {
   @apply flex flex-col items-center gap-2
   md:flex-row
   md:gap-4
-  w-full;
+  w-full
+  h-full;
 }
 
 .img-container {

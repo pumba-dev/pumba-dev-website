@@ -1,16 +1,18 @@
 <template>
   <BackgroundBlue class="first-bg-blue">
     <div class="about-me-text">
-      <h1 class="about-me-title">Olá! Sou Paulo Eduardo, desenvolvedor web.</h1>
+      <h1 class="about-me-title">
+        Olá! Sou Paulo Eduardo, Engenheiro de Software.
+      </h1>
       <h2 class="about-me-subtitle">
         Sou um entusiasta da computação desde muito cedo. Meu primeiro contato
         com um computador ocorreu aos 7 anos e, desde então, soube que esse
-        seria o meu futuro. Ao ingressar na universidade para estudar Ciência da
-        Computação, mergulhei ainda mais profundamente no fascinante mundo da
-        programação. Hoje, meus dias são preenchidos com linhas de código e com
-        a constante busca por conhecimento. Estou apaixonado por desenvolver
-        aplicações web completas, que auxiliam na transformação de ideias em
-        realidade.
+        seria o meu futuro. Foi durante a graduação em Ciência da Computação que
+        mergulhei de forma intensa no fascinante mundo da programação, ampliando
+        significativamente meus conhecimentos e habilidades. Hoje, meus dias são
+        preenchidos com linhas de código e com a constante busca por
+        conhecimento. Sou apaixonado por desenvolver aplicações e sistemas, que
+        transformam ideias em realidade.
       </h2>
     </div>
   </BackgroundBlue>
