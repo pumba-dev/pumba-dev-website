@@ -31,11 +31,11 @@
         placeholder="Deixe seu recado..."
         v-model="formInput.message"
         cols="150"
-        maxlength="650"
+        maxlength="50000"
         required
       />
     </FormInput>
-    <InputBtn @click.prevent="sendEmail()"></InputBtn>
+    <InputBtn @click.prevent="sendEmail()" :isLoading="isLoading"></InputBtn>
   </form>
 </template>
 
@@ -55,6 +55,7 @@ export default {
         message: "",
       },
       hasNotify: false,
+      isLoading: false,
       Notify: {
         text: "O serviço de mensagens estará disponível em breve!",
         type: "normal",
@@ -62,11 +63,11 @@ export default {
     };
   },
   methods: {
-    sendEmail() {
+    async sendEmail() {
       // Data
-      const SERVICEID = "service_18xgfsm";
-      const TEMPLATEID = "template_wdjv41l";
-      const USERID = "user_fFjRZ4nh2baVVBbo9WDTb";
+      const SERVICEID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const TEMPLATEID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const USERID = import.meta.env.VITE_EMAILJS_USER_ID;
       const MAILFORM = {
         user_name: this.formInput.name,
         user_email: this.formInput.email,
@@ -75,18 +76,26 @@ export default {
 
       // Verify if the form is filled
       if (this.formFilled(MAILFORM)) {
-        // Send EMAIL
-        emailjs
-          .send(SERVICEID, TEMPLATEID, MAILFORM, USERID)
-          .then((sendMailResult) => {
-            if (sendMailResult.status === 200) {
-              this.showNotify("Mensagem enviada com sucesso!", "sucess");
-              this.resetInput();
-            } else {
-              this.showNotify("Erro ao enviar mensagem!", "error");
-              this.resetInput();
-            }
-          });
+        this.isLoading = true;
+        try {
+          // Send EMAIL
+          const sendMailResult = await emailjs.send(
+            SERVICEID,
+            TEMPLATEID,
+            MAILFORM,
+            USERID
+          );
+          if (sendMailResult.status === 200) {
+            this.showNotify("Mensagem enviada com sucesso!", "sucess");
+            this.resetInput();
+          } else {
+            this.showNotify("Erro ao enviar mensagem!", "error");
+          }
+        } catch (error) {
+          this.showNotify("Erro ao enviar mensagem!", "error");
+        } finally {
+          this.isLoading = false;
+        }
       } else {
         this.showNotify("Preencha todos os campos!", "error");
       }
@@ -102,11 +111,6 @@ export default {
     showNotify(text, type) {
       this.Notify.text = text;
       this.Notify.type = type;
-      window.scroll({
-        left: 0,
-        top: this.findPos(document.getElementById("mail-form")),
-        behavior: "smooth",
-      });
       this.hasNotify = true;
     },
     findPos(obj) {
@@ -134,7 +138,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .mail-form {
   @apply flex flex-col gap-6
   w-[90%]
@@ -148,14 +152,12 @@ export default {
 }
 
 .userdata-box {
-  @apply flex flex-col justify-between gap-6 
-  md:flex-row;
+  @apply flex flex-col justify-between gap-6;
 }
 
 .input-area {
   @apply w-full h-12 px-2 text-xl sm:text-2xl 
-  border border-gray border-opacity-30 rounded-lg
-  2xl:w-[22.5rem];
+  border border-gray border-opacity-30 rounded-lg;
 }
 
 .text-area {

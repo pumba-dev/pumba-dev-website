@@ -48,7 +48,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .professional-cards {
   @apply flex flex-col justify-center gap-12 w-full items-center
    lg:flex-row;

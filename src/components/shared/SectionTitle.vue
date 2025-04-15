@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .section-title {
   @apply text-dark-blue font-bold text-center tracking-wide
   text-[1.5rem]
