@@ -44,7 +44,13 @@ export default {
 }
 
 .last-repos {
-  @apply -mt-40 mx-auto;
+  @apply -mt-24 mx-auto
+  sm:-mt-28
+  md:-mt-32
+  lg:-mt-36
+  xl:-mt-40
+  2xl:-mt-44
+  3xl:-mt-52;
 }
 
 .skill-cards {

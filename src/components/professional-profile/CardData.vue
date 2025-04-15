@@ -37,22 +37,25 @@ export default {
 
 <style scoped>
 .card-data-box {
-  @apply flex flex-col items-center gap-2
+  @apply flex flex-col items-center gap-1.5
   md:flex-row
-  md:gap-4
+  md:gap-3
   w-full
   h-full;
 }
 
 .img-container {
-  @apply w-[4rem] h-[4rem]
-  md:w-[5rem] md:h-[5rem]
+  @apply w-[3rem] h-[3rem]
+  2xs:w-[3.5rem] 2xs:h-[3.5rem]
+  sm:w-[4rem] sm:h-[4rem]
+  md:w-[4.5rem] md:h-[4.5rem]
+  lg:w-[5rem] lg:h-[5rem]
   flex-shrink-0;
 }
 
 .card-data-text {
   @apply text-dark-blue
-  flex flex-col text-center gap-1
+  flex flex-col text-center gap-0.5
   md:text-left
   h-full
   w-full;
@@ -61,29 +64,36 @@ export default {
 .card-data-title {
   @apply font-semibold
   text-lg
-  md:text-xl
+  sm:text-xl
+  md:text-2xl
   lg:text-2xl;
 }
 
 .card-data-desc {
   @apply font-medium 
   text-sm
-  md:text-base
+  sm:text-base
+  md:text-lg
   lg:text-lg
   w-full
-  max-w-[18rem]
-  xs:max-w-[20rem]
+  max-w-[14rem]
+  2xs:max-w-[16rem]
+  xs:max-w-[18rem]
+  sm:max-w-[20rem]
   md:max-w-[22rem]
-  lg:max-w-[25rem]
+  lg:max-w-[28rem]
   xl:max-w-[28rem];
-}
-
-/* Estilos para limitar o texto a 4 linhas */
-.card-data-desc {
+  line-height: 1.4;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 5;
+}
+
+@media (min-width: 640px) {
+  .card-data-desc {
+    -webkit-line-clamp: 4;
+  }
 }
 
 /* Estilização da scrollbar */

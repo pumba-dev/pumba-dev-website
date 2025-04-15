@@ -161,17 +161,19 @@ export default {
 
 <style scoped>
 .professional-card {
-  @apply flex flex-col items-center gap-6
-  md:gap-4
+  @apply flex flex-col items-center gap-4
+  md:gap-3
   w-full;
 }
 
 .carousel-container {
   @apply w-full cursor-grab active:cursor-grabbing overflow-hidden
-  min-w-[20rem]
-  xs:min-w-[22rem]
+  min-w-[16rem]
+  2xs:min-w-[18rem]
+  xs:min-w-[20rem]
+  sm:min-w-[22rem]
   md:min-w-[25rem]
-  lg:min-w-[28rem]
+  lg:min-w-[32rem]
   xl:min-w-[30rem]
   touch-pan-x
   relative;
@@ -197,7 +199,7 @@ export default {
 .carousel-content {
   @apply w-full relative;
   height: 12rem;
-  @apply md:h-[10rem] lg:h-[9rem];
+  @apply sm:h-[10rem] md:h-[8rem] lg:h-[9rem];
 }
 
 .carousel-content > * {
@@ -220,7 +222,7 @@ export default {
 }
 
 .card-nav {
-  @apply flex gap-3 mt-4;
+  @apply flex gap-3 mt-2;
 }
 
 .bubble-nav.active {

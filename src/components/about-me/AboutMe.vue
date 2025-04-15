@@ -38,11 +38,11 @@ export default {
 }
 
 .about-me-text {
-  @apply text-gray-blue mt-16 flex flex-col
-  gap-4
-  sm:gap-6
-  md:gap-8
-  lg:gap-10
+  @apply text-gray-blue mt-8 flex flex-col
+  gap-2
+  sm:gap-3
+  md:gap-4
+  lg:gap-6
   w-[18.75rem]
   2xs:w-[21.8rem]
   xs:w-[22.5rem]
@@ -50,7 +50,8 @@ export default {
   md:w-[40rem]
   lg:w-[55rem]
   xl:w-[60rem]
-  2xl:w-[65rem];
+  2xl:w-[70rem]
+  3xl:w-[90rem];
 }
 
 .titles-container {

@@ -36,8 +36,7 @@ export default {
   text-left
   
   /* Reponsivity */
-  gap-[0.1rem]
-  lg:gap-[0.2rem];
+  gap-[0.5rem];
 }
 
 .repo-container {
