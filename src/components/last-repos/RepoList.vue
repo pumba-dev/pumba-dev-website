@@ -37,8 +37,11 @@ export default {
 <style scoped>
 .repo-list {
   @apply gap-5 flex flex-col
+  w-full max-w-full
   
   /* Reponsivity */
-  md:grid md:grid-cols-2 md:grid-rows-2 md:gap-7;
+  md:grid md:grid-cols-2 md:grid-rows-2 md:gap-7
+  lg:gap-8
+  xl:gap-9;
 }
 </style>

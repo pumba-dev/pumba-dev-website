@@ -46,6 +46,8 @@ export default {
 
 .repo-name {
   @apply font-bold hover:underline tracking-wider
+  whitespace-nowrap overflow-hidden text-ellipsis
+  max-w-full
   
   /* Reponsivity */
   text-base
@@ -55,8 +57,9 @@ export default {
 
 .repo-desc {
   @apply font-medium 
-  
   overflow-hidden
+  text-ellipsis
+  transition-all duration-300
   
   /* Reponsivity */
   w-[12.8rem]  text-[0.79rem]
@@ -64,5 +67,16 @@ export default {
   lg:w-[16rem] lg:text-[0.83rem]
   xl:w-[18rem]  xl:text-[0.875rem]
   2xl:w-[20rem] 2xl:text-[0.95rem];
+
+  /* Limitar a 3 linhas */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-height: 4.5em;
+}
+
+.repo-desc:hover {
+  -webkit-line-clamp: unset;
+  max-height: none;
 }
 </style>
