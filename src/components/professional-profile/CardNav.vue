@@ -13,6 +13,6 @@ export default {
 
 <style scoped>
 .card-nav {
-  @apply flex gap-4;
+  @apply flex gap-4 mt-2;
 }
 </style>

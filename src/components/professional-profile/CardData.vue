@@ -39,30 +39,68 @@ export default {
 .card-data-box {
   @apply flex flex-col items-center gap-2
   md:flex-row
-  md:gap-4;
+  md:gap-4
+  w-full;
 }
 
 .img-container {
   @apply w-[4rem] h-[4rem]
-  md:w-[5rem] md:h-[5rem];
+  md:w-[5rem] md:h-[5rem]
+  flex-shrink-0;
 }
 
 .card-data-text {
   @apply text-dark-blue
   flex flex-col text-center gap-1
-  md:text-left;
+  md:text-left
+  h-full
+  w-full;
 }
 
 .card-data-title {
-  @apply font-semibold text-xl;
+  @apply font-semibold
+  text-lg
+  md:text-xl
+  lg:text-2xl;
 }
 
 .card-data-desc {
   @apply font-medium 
-  text-base w-[15rem] h-[8rem]
-  xs:w-[17.5rem] xs:h-[7rem]
-  md:text-base md:w-[20rem] md:h-[6rem]
-  xl:w-[23rem] xl:h-[5.25rem];
+  text-sm
+  md:text-base
+  lg:text-lg
+  w-full
+  max-w-[18rem]
+  xs:max-w-[20rem]
+  md:max-w-[22rem]
+  lg:max-w-[25rem]
+  xl:max-w-[28rem];
+}
+
+/* Estilos para limitar o texto a 4 linhas */
+.card-data-desc {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+/* Estilização da scrollbar */
+.card-data-desc::-webkit-scrollbar {
+  width: 4px;
+}
+
+.card-data-desc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card-data-desc::-webkit-scrollbar-thumb {
+  background-color: #1e3a8a; /* cor dark-blue */
+  border-radius: 4px;
+}
+
+.card-data-desc::-webkit-scrollbar-thumb:hover {
+  background-color: #1e40af; /* cor dark-blue mais escura */
 }
 
 .card-data-icon {
