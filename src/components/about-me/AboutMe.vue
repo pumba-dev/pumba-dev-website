@@ -1,9 +1,13 @@
 <template>
   <BackgroundBlue class="first-bg-blue">
     <div class="about-me-text">
-      <h1 class="about-me-title">
-        Olá! Sou Paulo Eduardo, Engenheiro de Software.
-      </h1>
+      <div class="titles-container">
+        <h1 class="about-me-title">Olá! Sou Paulo Eduardo.</h1>
+        <div class="about-me-title-2">
+          <span>Cientista da Computação e Engenheiro de Software.</span>
+        </div>
+      </div>
+
       <h2 class="about-me-subtitle">
         Sou um entusiasta da computação desde muito cedo. Meu primeiro contato
         com um computador ocorreu aos 7 anos e, desde então, soube que esse
@@ -12,7 +16,7 @@
         significativamente meus conhecimentos e habilidades. Hoje, meus dias são
         preenchidos com linhas de código e com a constante busca por
         conhecimento. Sou apaixonado por desenvolver aplicações e sistemas, que
-        transformam ideias em realidade.
+        impactam positivamente a vida das pessoas e a eficiência dos negócios.
       </h2>
     </div>
   </BackgroundBlue>
@@ -34,7 +38,11 @@ export default {
 }
 
 .about-me-text {
-  @apply text-gray-blue mt-36
+  @apply text-gray-blue mt-16 flex flex-col
+  gap-4
+  sm:gap-6
+  md:gap-8
+  lg:gap-10
   w-[18.75rem]
   2xs:w-[21.8rem]
   xs:w-[22.5rem]
@@ -44,9 +52,16 @@ export default {
   xl:w-[60rem]
   2xl:w-[65rem];
 }
+
+.titles-container {
+  @apply flex flex-col gap-1
+  sm:gap-2
+  md:gap-3;
+}
+
 .about-me-title {
   @apply text-center font-bold tracking-wide
-  text-[0.8rem]
+  text-[0.8rem] leading-tight
   2xs:text-[0.85rem]
   xs:text-[0.9rem]
   sm:text-[1.1rem]
@@ -54,6 +69,18 @@ export default {
   lg:text-[1.4rem]
   xl:text-[1.5rem] xl:tracking-widest
   2xl:text-[1.6rem];
+}
+
+.about-me-title-2 {
+  @apply text-center font-bold tracking-wide
+  text-[0.7rem] leading-tight
+  2xs:text-[0.75rem]
+  xs:text-[0.8rem]
+  sm:text-[0.9rem]
+  md:text-[1.1rem] md:tracking-wider
+  lg:text-[1.2rem]
+  xl:text-[1.3rem] xl:tracking-widest
+  2xl:text-[1.4rem];
 }
 
 .about-me-subtitle {
@@ -65,6 +92,6 @@ export default {
   md:text-[1.1rem] md:py-2 md:tracking-wider md:leading-normal
   lg:text-[1.2rem] lg:py-3
   xl:text-[1.3rem] xl:py-4 xl:tracking-wider xl:leading-relaxed
-  2xl:text-[1.4rem] 2xl:py-6;
+  2xl:text-[1.4rem] 2xl:py-5 2xl:tracking-widest 2xl:leading-loose;
 }
 </style>

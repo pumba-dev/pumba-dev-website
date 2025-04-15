@@ -24,14 +24,22 @@ export default {
 
 <style scoped>
 .nav-btn-list {
-  @apply flex justify-center items-center gap-5
+  @apply flex justify-center items-center gap-3
+  xs:gap-4
+  sm:gap-5
+  md:gap-6
   lg:gap-7;
 }
 
 .btn-text {
-  @apply text-dark-blue font-normal 
-  text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl
+  @apply text-dark-blue font-medium
+  text-sm
+  xs:text-base
+  sm:text-lg
+  md:text-xl
+  lg:text-2xl
   hover:text-blue cursor-pointer
-  hidden 2xs:inline-block;
+  transition-colors duration-300
+  inline-block;
 }
 </style>

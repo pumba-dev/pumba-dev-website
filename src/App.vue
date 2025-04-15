@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style >
+<style>
 .main {
   @apply bg-white-gray font-body w-full overflow-hidden
   flex flex-col
@@ -44,7 +44,7 @@ export default {
 }
 
 .last-repos {
-  @apply -mt-48 mx-auto;
+  @apply -mt-40 mx-auto;
 }
 
 .skill-cards {
