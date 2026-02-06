@@ -1,16 +1,14 @@
 <template>
-  <div class="lang-switcher">
+  <div class="lang-switcher" ref="languageSwitcher">
     <div
       class="lang-button-container"
       :class="{ expanded: isExpanded }"
-      @mouseenter="isExpanded = true"
-      @mouseleave="isExpanded = false"
     >
       <!-- Current language button -->
       <button
         class="lang-button current"
         :aria-label="`Current language: ${getCurrentLocaleName}`"
-        @click="toggleMenu"
+        @click.stop="toggleMenu"
       >
         <img
           :src="getFlagUrl(getCurrentFlag)"
@@ -36,7 +34,7 @@
 </template>
 
 <script>
-import { ref, computed } from "vue";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 import { useLocale } from "../../composables/useLocale";
 
 export default {
@@ -50,6 +48,7 @@ export default {
       getCurrentLocaleName,
     } = useLocale();
     const isExpanded = ref(false);
+    const languageSwitcher = ref(null);
 
     const otherLocales = computed(() => {
       return availableLocales.filter((l) => l.code !== locale.value);
@@ -69,6 +68,20 @@ export default {
       isExpanded.value = !isExpanded.value;
     };
 
+    const handleClickOutside = (event) => {
+      if (languageSwitcher.value && !languageSwitcher.value.contains(event.target)) {
+        isExpanded.value = false;
+      }
+    };
+
+    onMounted(() => {
+      document.addEventListener("click", handleClickOutside);
+    });
+
+    onUnmounted(() => {
+      document.removeEventListener("click", handleClickOutside);
+    });
+
     return {
       isExpanded,
       locale,
@@ -78,6 +91,7 @@ export default {
       getFlagUrl,
       switchLanguage,
       toggleMenu,
+      languageSwitcher,
     };
   },
 };
@@ -90,6 +104,9 @@ export default {
 
 .lang-button-container {
   @apply flex flex-col-reverse gap-2 items-center;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .lang-button {
@@ -100,6 +117,9 @@ export default {
   cursor-pointer
   flex items-center justify-center
   overflow-hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .lang-button.current {
@@ -120,6 +140,9 @@ export default {
 
 .flag-icon {
   @apply w-full h-full object-cover;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
 }
 
 .lang-options {

@@ -1,15 +1,13 @@
 <template>
   <main class="main">
-    <Home></Home>
-    <AboutMe class="about-me"></AboutMe>
-    <LastRepos class="last-repos"></LastRepos>
-    <MySkills class="my-skills section-margin"> </MySkills>
-    <ProfessionalProfile
-      class="skill-cards section-margin"
-    ></ProfessionalProfile>
-    <SendMail class="send-mail section-margin"></SendMail>
-    <Footer class="footer section-margin"></Footer>
-    <LanguageSwitcher></LanguageSwitcher>
+    <Home />
+    <AboutMe class="about-me" />
+    <LastRepos class="last-repos" />
+    <MySkills class="my-skills section-margin" />
+    <ProfessionalProfile class="skill-cards section-margin" />
+    <SendMail class="send-mail section-margin" />
+    <Footer class="footer section-margin" />
+    <LanguageSwitcher />
   </main>
 </template>
 
