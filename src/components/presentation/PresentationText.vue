@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, watch } from "vue";
 import { useI18n } from "vue-i18n";
 
 export default {
   setup() {
-    const { t } = useI18n();
+    const { t, locale } = useI18n();
     const displayTitle = ref("");
     const displaySubtitle = ref("");
     const isCodeMode = ref(false);
@@ -86,6 +86,12 @@ export default {
 
     onMounted(() => {
       // Initialize with normal text
+      displayTitle.value = t("presentation.title");
+      displaySubtitle.value = t("presentation.subtitle");
+    });
+
+    // Watch for locale changes
+    watch(locale, () => {
       displayTitle.value = t("presentation.title");
       displaySubtitle.value = t("presentation.subtitle");
     });
