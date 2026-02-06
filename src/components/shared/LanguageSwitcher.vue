@@ -94,8 +94,8 @@ export default {
 
 .lang-button {
   @apply w-12 h-12 rounded-full
-  border-2 border-blue bg-white-gray
-  shadow-lg hover:shadow-xl
+  border-2 border-blue dark:border-white-gray bg-white-gray dark:bg-dark-blue
+  shadow-lg dark:shadow-black hover:shadow-xl dark:hover:shadow-black
   transition-all duration-300
   cursor-pointer
   flex items-center justify-center

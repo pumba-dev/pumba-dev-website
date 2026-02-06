@@ -22,13 +22,13 @@ export default {
 <style scoped>
 .btn-background {
   @apply flex justify-center items-center 
-  max-w-max text-blue
-  border-solid border-2 border-blue rounded-full
+  max-w-max text-blue dark:text-white-gray
+  border-solid border-2 border-blue dark:border-white-gray rounded-full
   py-1 px-3 md:py-2 md:px-5;
 }
 
 .btn-background:hover {
-  @apply lg:text-white-gray lg:bg-blue;
+  @apply lg:text-white-gray lg:bg-blue dark:lg:bg-white-gray dark:lg:text-dark-blue;
 }
 
 .btn-text {

@@ -26,7 +26,7 @@ export default {
 .repository {
   @apply flex justify-between gap-2
   rounded-xlarge
-  bg-dark-blue text-white-gray
+  bg-dark-blue dark:bg-blue text-white-gray dark:text-white-gray
   /* Reponsivity */
   p-[1rem]
   2xs:p-[1.2rem]

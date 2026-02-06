@@ -19,7 +19,7 @@ export default {
     getImgUrl() {
       return new URL(
         `../../assets/svg/my-skills/${this.skill.src}.svg`,
-        import.meta.url
+        import.meta.url,
       ).href;
     },
   },
@@ -43,6 +43,6 @@ export default {
 }
 
 .skill-name {
-  @apply text-dark-blue text-center font-medium text-2xl select-none;
+  @apply text-dark-blue dark:text-white-gray text-center font-medium text-2xl select-none;
 }
 </style>

@@ -26,9 +26,9 @@ export default {
   @apply box-border
   flex flex-col gap-4 h-max w-max
   items-center justify-around
-  bg-white-gray rounded-2xlarge
-  shadow-gray-blue shadow-lg 
-  border-2 border-b-gray-blue
+  bg-white-gray dark:bg-dark-blue rounded-2xlarge
+  shadow-gray-blue dark:shadow-black shadow-lg 
+  border-2 border-b-gray-blue dark:border-b-white-gray
   /* Reponsivity */
   px-[1rem] py-[1.5rem]
   2xs:px-[1.5rem] 2xs:py-[2rem]
@@ -60,5 +60,10 @@ export default {
   lg:w-[4.5rem]
   xl:w-[5rem]
   2xl:w-[5.5rem];
+  filter: brightness(0) saturate(100%) invert(0%);
+}
+
+.dark .github-icon {
+  filter: brightness(0) saturate(100%) invert(100%);
 }
 </style>

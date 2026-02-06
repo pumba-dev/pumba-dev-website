@@ -8,7 +8,7 @@
 .first-bg {
   @apply flex flex-col items-center
   h-[30rem] w-full
-  bg-blue
+  bg-blue dark:bg-blue
   text-2xl
   sm:h-[32rem]
   md:h-[34rem]

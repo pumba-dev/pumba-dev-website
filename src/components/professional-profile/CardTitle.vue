@@ -10,6 +10,6 @@ export default {};
 
 <style scoped>
 .card-title {
-  @apply font-semibold text-xl text-center text-dark-blue;
+  @apply font-semibold text-xl text-center text-dark-blue dark:text-white-gray;
 }
 </style>

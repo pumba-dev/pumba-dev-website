@@ -8,6 +8,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: "PresentationFooterImage",
+};
+</script>
+
 <style scoped>
 .image-container {
   @apply w-full px-4
@@ -24,5 +30,10 @@
   xl:w-[40rem]
   2xl:w-[45rem]
   mx-auto;
+}
+
+.dark .home-img {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(5%) saturate(200%)
+    hue-rotate(180deg) brightness(105%) contrast(95%);
 }
 </style>

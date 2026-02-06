@@ -23,8 +23,8 @@ export default {
 <style scoped>
 .input-btn {
   @apply h-12 m-auto
-  text-blue font-normal text-center
-  border-solid border-2 border-blue rounded-full
+  text-blue dark:text-white-gray font-normal text-center
+  border-solid border-2 border-blue dark:border-white-gray rounded-full
   cursor-pointer
   w-[9rem] text-lg
   xs:w-[10rem]
@@ -35,7 +35,7 @@ export default {
 }
 
 .input-btn:hover {
-  @apply lg:text-white-gray lg:bg-blue;
+  @apply lg:text-white-gray lg:bg-blue dark:lg:bg-white-gray dark:lg:text-dark-blue;
 }
 
 .input-btn.loading span {
@@ -49,6 +49,11 @@ export default {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: spin 1s linear infinite;
+}
+
+.dark .loading-spinner {
+  border-color: #f7f7f7; /* cor white-gray */
+  border-top-color: transparent;
 }
 
 @keyframes spin {

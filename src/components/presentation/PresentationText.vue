@@ -102,7 +102,7 @@ export default {
 
 <style scoped>
 .home-presentation {
-  @apply text-dark-blue flex flex-col items-center text-center
+  @apply text-dark-blue dark:text-white-gray flex flex-col items-center text-center
   gap-[1px] lg:gap-[2px] xl:gap-[3px]
   cursor-pointer;
 }

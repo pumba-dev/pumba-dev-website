@@ -22,7 +22,7 @@ export default {
 }
 
 .name {
-  @apply font-normal text-gray justify-start
+  @apply font-normal text-gray dark:text-white-gray justify-start
   text-xl
   xs:text-2xl;
 }

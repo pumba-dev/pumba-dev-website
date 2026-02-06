@@ -22,4 +22,9 @@ export default {
   @apply w-12 sm:w-14 md:w-16 lg:w-20 xl:w-[5.5rem] 2xl:w-[6rem]
   lg:cursor-pointer;
 }
+
+.dark .logo {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(5%) saturate(200%)
+    hue-rotate(180deg) brightness(105%) contrast(95%);
+}
 </style>

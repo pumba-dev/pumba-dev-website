@@ -32,7 +32,7 @@ export default {
 .social-btn {
   @apply flex justify-center items-center
   rounded-full
-  border border-solid border-gray-blue border-opacity-50
+  border border-solid border-gray-blue dark:border-white-gray border-opacity-50
   w-[2rem] h-[2rem]
   2xs:w-[2.5rem] 2xs:h-[2.5rem]
   xs:w-[3rem] xs:h-[3rem]
@@ -41,7 +41,7 @@ export default {
 }
 
 .social-btn:hover {
-  @apply lg:bg-gray-blue;
+  @apply lg:bg-gray-blue dark:lg:bg-white-gray;
 }
 
 .social-btn:hover .icon {

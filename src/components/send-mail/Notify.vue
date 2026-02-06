@@ -48,7 +48,7 @@ export default {
   sm:min-w-[20rem] sm:max-w-[32rem]
   md:min-w-[22rem] md:max-w-[36rem]
   lg:min-w-[24rem] lg:max-w-[40rem]
-  bg-white rounded-large shadow-md
+  bg-white dark:bg-gray-blue rounded-large shadow-md
   overflow-hidden
   border border-gray border-opacity-20;
 }

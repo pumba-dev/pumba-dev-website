@@ -29,4 +29,9 @@ export default {
 .fork-icon {
   @apply h-4 w-4;
 }
+
+.dark .fork-icon {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(5%) saturate(200%)
+    hue-rotate(180deg) brightness(105%) contrast(95%);
+}
 </style>

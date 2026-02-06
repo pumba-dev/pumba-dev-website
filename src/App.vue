@@ -41,7 +41,7 @@ export default {
 
 <style>
 .main {
-  @apply bg-white-gray font-body w-full overflow-hidden
+  @apply bg-white-gray dark:bg-dark-blue font-body w-full overflow-hidden
   flex flex-col
   box-border;
 }

@@ -28,7 +28,7 @@ export default {
     getImgUrl() {
       return new URL(
         `../../assets/svg/${this.CardType}/${this.CardData.src}.svg`,
-        import.meta.url
+        import.meta.url,
       ).href;
     },
   },
@@ -54,7 +54,7 @@ export default {
 }
 
 .card-data-text {
-  @apply text-dark-blue
+  @apply text-dark-blue dark:text-white-gray
   flex flex-col text-center gap-0.5
   md:text-left
   h-full
@@ -118,5 +118,13 @@ export default {
   filter: brightness(0) saturate(100%) invert(8%) sepia(39%) saturate(2526%)
     hue-rotate(209deg) brightness(96%) contrast(95%);
   @apply w-24;
+}
+.card-data-icon {
+  @apply w-full h-full;
+}
+
+.dark .card-data-icon {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(5%) saturate(200%)
+    hue-rotate(180deg) brightness(105%) contrast(95%);
 }
 </style>

@@ -1,6 +1,9 @@
 <template>
   <ul class="nav-btn-list">
     <li>
+      <ThemeToggle />
+    </li>
+    <li>
       <CVButton :label="currentCV.label" :url="currentCV.url"></CVButton>
     </li>
   </ul>
@@ -10,9 +13,10 @@
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 import CVButton from "./CVButton.vue";
+import ThemeToggle from "../shared/ThemeToggle.vue";
 
 export default {
-  components: { CVButton },
+  components: { CVButton, ThemeToggle },
   setup() {
     const { locale, t } = useI18n();
 

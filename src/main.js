@@ -3,6 +3,7 @@ import { createI18n } from "vue-i18n";
 import App from "./App.vue";
 import "./global.css";
 import { locales, defaultLocale } from "./locales";
+import { useTheme } from "./composables/useTheme";
 
 // Detect browser language or use stored preference
 const getBrowserLocale = () => {
@@ -40,5 +41,9 @@ app.use(i18n);
 
 // Set HTML lang attribute
 document.documentElement.setAttribute("lang", getBrowserLocale());
+
+// Initialize theme
+const { initTheme } = useTheme();
+initTheme();
 
 app.mount("#app");

@@ -174,13 +174,15 @@ export default {
 
 .input-area {
   @apply w-full h-12 px-2 text-xl sm:text-2xl 
-  border border-gray border-opacity-30 rounded-lg;
+  border border-gray border-opacity-30 rounded-lg
+  dark:bg-gray-blue dark:text-white-gray;
 }
 
 .text-area {
   @apply w-full h-250 p-2
   resize-none text-xl sm:text-2xl 
-  border border-gray border-opacity-30 rounded-lg;
+  border border-gray border-opacity-30 rounded-lg
+  dark:bg-gray-blue dark:text-white-gray;
 }
 
 /* Transitions */

@@ -31,7 +31,7 @@ export default {
 }
 
 .about-me-text {
-  @apply text-gray-blue mt-8 flex flex-col
+  @apply text-gray-blue dark:text-white-gray mt-8 flex flex-col
   gap-2
   sm:gap-3
   md:gap-4

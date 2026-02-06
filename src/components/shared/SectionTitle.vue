@@ -15,7 +15,7 @@ export default {
 
 <style scoped>
 .section-title {
-  @apply text-dark-blue font-bold text-center tracking-wide
+  @apply text-dark-blue dark:text-white-gray font-bold text-center tracking-wide
   text-[1.5rem]
   xs:text-[1.75rem]
   sm:text-[2rem]

@@ -31,7 +31,7 @@ export default {
 
 .lang-color {
   @apply h-4 w-4
-  rounded-full border bg-white
-  border-white-gray border-opacity-25;
+  rounded-full border bg-white dark:bg-white
+  border-white-gray dark:border-white-gray border-opacity-25;
 }
 </style>

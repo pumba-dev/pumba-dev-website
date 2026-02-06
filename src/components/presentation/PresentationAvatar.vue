@@ -6,4 +6,10 @@
   />
 </template>
 
+<script>
+export default {
+  name: "PresentationAvatar",
+};
+</script>
+
 <style scoped></style>

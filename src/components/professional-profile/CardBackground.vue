@@ -7,9 +7,8 @@
 <style scoped>
 .card-background {
   @apply box-border flex flex-col items-center 
-  bg-white-gray rounded-2xlarge 
-  shadow-gray-blue shadow-2xl
-  border border-solid  border-dark-blue border-opacity-10
+  bg-white-gray dark:bg-blue rounded-2xlarge 
+  shadow-gray-blue dark:shadow-black shadow-2xl
   
   /* Reponsivity */
   px-5 py-4 gap-2
