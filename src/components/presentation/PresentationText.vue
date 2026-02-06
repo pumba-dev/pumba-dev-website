@@ -108,17 +108,20 @@ export default {
 }
 
 .home-title {
-  @apply text-sm font-black
-  2xs:text-base
-  xs:text-lg 
-  sm:text-xl
+  @apply font-black
+  transition-all duration-300
+  tracking-wide
+  md:tracking-wider
+  
+  /* Responsivity */
+  text-[0.75rem]
+  2xs:text-sm
+  xs:text-base
+  sm:text-lg
   md:text-3xl
   lg:text-3xl
   xl:text-4xl
-  2xl:text-5xl
-  transition-all duration-300
-  tracking-wide
-  md:tracking-wider;
+  2xl:text-5xl;
 }
 
 .home-title.code-mode {
@@ -128,18 +131,30 @@ export default {
 }
 
 .home-subtitle {
-  @apply text-sm font-light
-  sm:text-base
+  @apply font-light
+  transition-all duration-300
+  tracking-wide
+  
+  /* Responsivity */
+  text-[0.7rem]
+  2xs:text-xs
+  xs:text-sm
+  sm:text-lg
   lg:text-xl
   xl:text-2xl
-  2xl:text-3xl
-  transition-all duration-300
-  tracking-wide;
+  2xl:text-3xl;
 }
 
 .home-subtitle.code-mode {
   font-family: "Courier New", Consolas, monospace;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   text-shadow: 0 0 8px rgba(30, 58, 138, 0.3);
+  @apply text-[0.50rem]
+  2xs:text-[0.55rem]
+  xs:text-[0.65rem]
+  sm:text-base
+  lg:text-lg
+  xl:text-xl
+  2xl:text-2xl;
 }
 </style>
