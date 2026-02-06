@@ -1,9 +1,6 @@
 <template>
   <div class="lang-switcher" ref="languageSwitcher">
-    <div
-      class="lang-button-container"
-      :class="{ expanded: isExpanded }"
-    >
+    <div class="lang-button-container" :class="{ expanded: isExpanded }">
       <!-- Current language button -->
       <button
         class="lang-button current"
@@ -69,7 +66,10 @@ export default {
     };
 
     const handleClickOutside = (event) => {
-      if (languageSwitcher.value && !languageSwitcher.value.contains(event.target)) {
+      if (
+        languageSwitcher.value &&
+        !languageSwitcher.value.contains(event.target)
+      ) {
         isExpanded.value = false;
       }
     };
