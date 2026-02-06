@@ -1,17 +1,19 @@
 <template>
   <button class="btn-background">
-    <a :href="getImgUrl" target="_blank" class="btn-text">Currículo</a>
+    <a :href="url" target="_blank" class="btn-text">{{ label }}</a>
   </button>
 </template>
 
 <script>
 export default {
-  computed: {
-    getImgUrl() {
-      return new URL(
-        "../../assets/downloads/pumbadev-resume.pdf",
-        import.meta.url
-      ).href;
+  props: {
+    label: {
+      type: String,
+      required: true,
+    },
+    url: {
+      type: String,
+      required: true,
     },
   },
 };

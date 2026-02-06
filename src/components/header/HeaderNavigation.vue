@@ -1,9 +1,8 @@
 <template>
   <ul class="nav-btn-list">
-    <li>
-      <a :href="getImgUrl" target="_blank" class="btn-text"> English CV </a>
+    <li v-for="cv in curriculums" :key="cv.lang">
+      <CVButton :label="cv.label" :url="cv.url"></CVButton>
     </li>
-    <li><CVButton></CVButton></li>
   </ul>
 </template>
 
@@ -11,13 +10,27 @@
 import CVButton from "./CVButton.vue";
 export default {
   components: { CVButton },
-  computed: {
-    getImgUrl() {
-      return new URL(
-        "../../assets/downloads/pumbadev-english-resume.pdf",
-        import.meta.url
-      ).href;
-    },
+  data() {
+    return {
+      curriculums: [
+        {
+          lang: "en",
+          label: "English CV",
+          url: new URL(
+            "../../assets/downloads/pumbadev-en-resume.pdf",
+            import.meta.url,
+          ).href,
+        },
+        {
+          lang: "pt",
+          label: "Currículo",
+          url: new URL(
+            "../../assets/downloads/pumbadev-pt-resume.pdf",
+            import.meta.url,
+          ).href,
+        },
+      ],
+    };
   },
 };
 </script>
