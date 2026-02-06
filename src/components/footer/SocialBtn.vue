@@ -1,5 +1,10 @@
 <template>
-  <a class="social-btn" :href="socialMedia.link" target="_blank">
+  <a 
+    class="social-btn" 
+    :href="socialMedia.link" 
+    target="_blank"
+    :title="titleText"
+  >
     <div class="icon-box">
       <img class="icon" :src="getImgUrl" :alt="altText" />
     </div>
@@ -22,7 +27,12 @@ export default {
       ).href;
     },
     altText() {
-      return `${this.$t("alt.socialLink")} ${this.socialMedia.name}`;
+      const key = this.socialMedia.key || this.socialMedia.name.toLowerCase().replace(/\s+/g, '');
+      return `${this.$t("alt.socialLink")} ${this.$t(`socialMedia.${key}`)}`;
+    },
+    titleText() {
+      const key = this.socialMedia.key || this.socialMedia.name.toLowerCase().replace(/\s+/g, '');
+      return this.$t(`socialMedia.${key}`);
     },
   },
 };
@@ -38,6 +48,9 @@ export default {
   xs:w-[3rem] xs:h-[3rem]
 
   !important;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .social-btn:hover {
@@ -59,5 +72,8 @@ export default {
 
 .icon {
   @apply w-full h-full;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
 }
 </style>

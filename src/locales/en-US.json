@@ -128,5 +128,14 @@
     "forkIcon": "GitHub fork icon",
     "tailwindIcon": "Tailwind icon",
     "socialLink": "Link to"
+  },
+  "socialMedia": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "lattes": "Lattes Curriculum",
+    "twitter": "Twitter",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "email": "Email"
   }
 }
