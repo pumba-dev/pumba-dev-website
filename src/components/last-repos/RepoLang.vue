@@ -1,7 +1,7 @@
 <template>
   <div class="repo-lang">
     <div class="lang-color" :style="{ 'background-color': langColor }"></div>
-    <span>{{ language }}</span>
+    <span class="lang-text">{{ language }}</span>
   </div>
 </template>
 
@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 .repo-lang {
-  @apply flex gap-1
+  @apply flex items-center gap-1
   md:gap-2;
 }
 
@@ -33,5 +33,15 @@ export default {
   @apply h-4 w-4
   rounded-full border bg-white dark:bg-white
   border-white-gray dark:border-white-gray border-opacity-25;
+}
+
+.lang-text {
+  @apply overflow-hidden text-ellipsis whitespace-nowrap
+  max-w-[12ch]
+  
+  /* Reponsivity */
+  text-xs
+  md:text-sm
+  lg:text-base;
 }
 </style>

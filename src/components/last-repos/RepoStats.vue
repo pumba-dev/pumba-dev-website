@@ -30,7 +30,11 @@ export default {
 
 <style scoped>
 .repo-stats {
-  @apply flex w-10/12 justify-between pt-1
-  text-sm;
+  @apply grid gap-2 pt-1 text-sm
+  
+  /* Reponsivity */
+  grid-cols-[32px_32px_1fr]
+  md:grid-cols-[40px_40px_1fr]
+  lg:grid-cols-[48px_48px_1fr];
 }
 </style>

@@ -40,7 +40,7 @@ export default {
   w-full max-w-full
   
   /* Reponsivity */
-  md:grid md:grid-cols-2 md:grid-rows-2 md:gap-7
+  md:grid md:grid-cols-2 md:grid-rows-2 md:gap-4
   lg:gap-8
   xl:gap-9;
 }

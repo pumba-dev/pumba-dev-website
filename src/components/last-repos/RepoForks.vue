@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 .repo-forks {
-  @apply flex gap-1
+  @apply flex items-center gap-1
   md:gap-2;
 }
 

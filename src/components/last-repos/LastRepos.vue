@@ -30,11 +30,11 @@ export default {
   shadow-gray-blue dark:shadow-black shadow-lg 
   border-2 border-b-gray-blue dark:border-b-white-gray
   /* Reponsivity */
-  px-[1rem] py-[1.5rem]
+  px-[0.6rem] py-[1.5rem]
   2xs:px-[1.5rem] 2xs:py-[2rem]
   xs:px-[2.5rem] xs:py-[2.5rem]
-  sm:px-[5rem] sm:pb-[3rem]
-  md:px-[2rem]
+  sm:px-[3rem] sm:pb-[3rem]
+  md:px-[1.5rem]
   lg:px-[5rem]
   xl:pb-[4rem]
   2xl:px-[7rem];
