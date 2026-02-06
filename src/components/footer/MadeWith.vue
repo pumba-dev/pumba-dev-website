@@ -1,8 +1,11 @@
 <template>
   <a class="made-with" href="https://tailwindcss.com/" target="_blank">
-    <span class="madewith-title">Made With</span>
+    <span class="madewith-title">{{ $t("footer.madeWith") }}</span>
     <div class="image-box">
-      <img src="/src/assets/svg/general/tailwind.svg" alt="Ícone do Tailwind" />
+      <img
+        src="/src/assets/svg/general/tailwind.svg"
+        :alt="$t('alt.tailwindIcon')"
+      />
     </div>
   </a>
 </template>

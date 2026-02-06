@@ -9,17 +9,18 @@
 </template>
 
 <script>
-import { reactive, toRefs } from "vue";
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
 import Skill from "./Skill.vue";
-import ArrayOfSkills from "../../assets/javascripts/SkillsList";
+import getSkillsList from "../../assets/javascripts/SkillsList";
 export default {
   components: { Skill },
   setup() {
-    const data = reactive({
-      skillListArray: ArrayOfSkills,
-    });
+    const { t } = useI18n();
 
-    return { ...toRefs(data) };
+    const skillListArray = computed(() => getSkillsList(t));
+
+    return { skillListArray };
   },
 };
 </script>

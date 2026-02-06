@@ -23,7 +23,7 @@ export default {
   computed: {
     repoDescription() {
       return this.repoData.description == null
-        ? "Repositório sem descrição."
+        ? this.$t("repos.noDescription")
         : this.repoData.description;
     },
   },

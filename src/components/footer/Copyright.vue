@@ -1,5 +1,5 @@
 <template>
-  <span class="copyright-text"> Design by © 2022 Pumba Developer </span>
+  <span class="copyright-text"> {{ $t("footer.copyright") }} </span>
 </template>
 
 <style scoped>

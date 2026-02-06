@@ -1,6 +1,6 @@
 <template>
   <section class="send-mail">
-    <SectionTitle :titleText="'Mande Uma Mensagem'"></SectionTitle>
+    <SectionTitle :titleText="$t('sections.sendMessage')"></SectionTitle>
     <MailForm class="mail-form"></MailForm>
   </section>
 </template>

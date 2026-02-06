@@ -4,7 +4,7 @@
     :class="{ loading: isLoading }"
     :disabled="isLoading"
   >
-    <span v-if="!isLoading">Enviar</span>
+    <span v-if="!isLoading">{{ $t("contact.form.submitButton") }}</span>
     <div v-else class="loading-spinner"></div>
   </button>
 </template>

@@ -9,6 +9,7 @@
     ></ProfessionalProfile>
     <SendMail class="send-mail section-margin"></SendMail>
     <Footer class="footer section-margin"></Footer>
+    <LanguageSwitcher></LanguageSwitcher>
   </main>
 </template>
 
@@ -21,6 +22,7 @@ import MySkills from "./components/my-skills/MySkills.vue";
 import ProfessionalProfile from "./components/professional-profile/ProfessionalProfile.vue";
 import SendMail from "./components/send-mail/SendMail.vue";
 import Footer from "./components/footer/Footer.vue";
+import LanguageSwitcher from "./components/shared/LanguageSwitcher.vue";
 
 export default {
   components: {
@@ -32,6 +34,7 @@ export default {
     ProfessionalProfile,
     SendMail,
     Footer,
+    LanguageSwitcher,
   },
 };
 </script>

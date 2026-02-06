@@ -2,19 +2,19 @@
   <div>
     <SectionTitle
       class="mb-12"
-      :titleText="'Perfil Profissional'"
+      :titleText="$t('sections.professionalProfile')"
     ></SectionTitle>
     <section class="professional-cards">
       <ProfessionalCard
         :CardDataList="QualitiesData"
         :CardType="'qualities'"
-        :TitleText="'Qualidades'"
+        :TitleText="$t('professionalProfile.qualitiesTitle')"
       ></ProfessionalCard>
 
       <ProfessionalCard
         :CardDataList="ExperiencesData"
         :CardType="'experiences'"
-        :TitleText="'Experiências'"
+        :TitleText="$t('professionalProfile.experiencesTitle')"
       ></ProfessionalCard>
     </section>
   </div>
@@ -22,10 +22,11 @@
 
 <script>
 // Hooks
-import { reactive, toRefs } from "@vue/reactivity";
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
 // Cards Data
-import QualitiesData from "../../assets/javascripts/QualitiesList";
-import ExperiencesData from "../../assets/javascripts/ExperiencesList";
+import getQualitiesData from "../../assets/javascripts/QualitiesList";
+import getExperiencesData from "../../assets/javascripts/ExperiencesList";
 // Components
 import ProfessionalCard from "./ProfessionalCard.vue";
 import SectionTitle from "../shared/SectionTitle.vue";
@@ -38,12 +39,15 @@ export default {
     ProfessionalCard,
   },
   setup() {
-    const data = reactive({
+    const { t } = useI18n();
+
+    const QualitiesData = computed(() => getQualitiesData(t));
+    const ExperiencesData = computed(() => getExperiencesData(t));
+
+    return {
       QualitiesData,
       ExperiencesData,
-    });
-
-    return { ...toRefs(data) };
+    };
   },
 };
 </script>

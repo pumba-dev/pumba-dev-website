@@ -4,31 +4,31 @@
       <FormNotify v-if="hasNotify" :Notify="Notify"></FormNotify>
     </transition>
     <div class="userdata-box">
-      <FormInput :inputName="'Nome'">
+      <FormInput :inputName="$t('contact.form.nameLabel')">
         <input
           class="input-area"
           type="text"
-          placeholder="Insira aqui seu Nome"
+          :placeholder="$t('contact.form.namePlaceholder')"
           v-model="formInput.name"
           maxlength="30"
           required
         />
       </FormInput>
-      <FormInput :inputName="'Email'">
+      <FormInput :inputName="$t('contact.form.emailLabel')">
         <input
           class="input-area"
           type="email"
-          placeholder="Insira aqui seu Email"
+          :placeholder="$t('contact.form.emailPlaceholder')"
           v-model="formInput.email"
           maxlength="45"
           required
         />
       </FormInput>
     </div>
-    <FormInput :inputName="'Mensagem'">
+    <FormInput :inputName="$t('contact.form.messageLabel')">
       <textarea
         class="text-area"
-        placeholder="Deixe seu recado..."
+        :placeholder="$t('contact.form.messagePlaceholder')"
         v-model="formInput.message"
         cols="150"
         maxlength="50000"
@@ -41,12 +41,17 @@
 
 <script>
 import emailjs from "@emailjs/browser";
+import { useI18n } from "vue-i18n";
 
 import FormInput from "./Input.vue";
 import InputBtn from "./InputBtn.vue";
 import FormNotify from "./Notify.vue";
 export default {
   components: { FormInput, InputBtn, FormNotify },
+  setup() {
+    const { t } = useI18n();
+    return { t };
+  },
   data() {
     return {
       formInput: {
@@ -57,7 +62,7 @@ export default {
       hasNotify: false,
       isLoading: false,
       Notify: {
-        text: "O serviço de mensagens estará disponível em breve!",
+        text: this.t("contact.notifications.info.serviceUnavailable"),
         type: "normal",
       },
     };
@@ -83,21 +88,33 @@ export default {
             SERVICEID,
             TEMPLATEID,
             MAILFORM,
-            USERID
+            USERID,
           );
           if (sendMailResult.status === 200) {
-            this.showNotify("Mensagem enviada com sucesso!", "sucess");
+            this.showNotify(
+              this.t("contact.notifications.success.emailSent"),
+              "sucess",
+            );
             this.resetInput();
           } else {
-            this.showNotify("Erro ao enviar mensagem!", "error");
+            this.showNotify(
+              this.t("contact.notifications.error.emailFailed"),
+              "error",
+            );
           }
         } catch (error) {
-          this.showNotify("Erro ao enviar mensagem!", "error");
+          this.showNotify(
+            this.t("contact.notifications.error.emailFailed"),
+            "error",
+          );
         } finally {
           this.isLoading = false;
         }
       } else {
-        this.showNotify("Preencha todos os campos!", "error");
+        this.showNotify(
+          this.t("contact.notifications.error.fillFields"),
+          "error",
+        );
       }
     },
     formFilled(form) {

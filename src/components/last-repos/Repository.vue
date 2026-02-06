@@ -3,7 +3,7 @@
     <img
       class="repo-icon"
       src="/src/assets/svg/github/repo-icon.svg"
-      alt="Icone do Repositório"
+      :alt="$t('alt.repositoryIcon')"
     />
     <RepoData :repoData="repoData"></RepoData>
   </section>

@@ -1,11 +1,7 @@
 <template>
   <a class="social-btn" :href="socialMedia.link" target="_blank">
     <div class="icon-box">
-      <img
-        class="icon"
-        :src="getImgUrl"
-        :alt="'Link para o' + socialMedia.name"
-      />
+      <img class="icon" :src="getImgUrl" :alt="altText" />
     </div>
   </a>
 </template>
@@ -22,8 +18,11 @@ export default {
     getImgUrl() {
       return new URL(
         `../../assets/svg/social/${this.socialMedia.src}.svg`,
-        import.meta.url
+        import.meta.url,
       ).href;
+    },
+    altText() {
+      return `${this.$t("alt.socialLink")} ${this.socialMedia.name}`;
     },
   },
 };

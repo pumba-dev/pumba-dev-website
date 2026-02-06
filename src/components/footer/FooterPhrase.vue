@@ -1,7 +1,5 @@
 <template>
-  <span class="footer-phrase">
-    Aprendendo, Codando e Vivendo<br />um dia de cada vez.
-  </span>
+  <span class="footer-phrase" v-html="$t('footer.phrase')"></span>
 </template>
 
 <style scoped>

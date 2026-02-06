@@ -3,7 +3,7 @@
     <img
       class="star-icon"
       src="/src/assets/svg/github/star-icon.svg"
-      alt="Icone de Estrela do GitHub"
+      :alt="$t('alt.starIcon')"
     />
     <span>{{ starsCount }}</span>
   </div>

@@ -1,0 +1,132 @@
+{
+  "header": {
+    "cvButton": "Currículo"
+  },
+  "presentation": {
+    "title": "Engenharia, Desenvolvimento & Inovação",
+    "subtitle": "Transformando ideias em códigos que moldam a realidade"
+  },
+  "aboutMe": {
+    "title": "Olá! Sou Paulo Eduardo.",
+    "subtitle": "Cientista da Computação e Engenheiro de Software.",
+    "biography": "Sou um entusiasta da computação desde muito cedo. Meu primeiro contato com um computador ocorreu aos 7 anos e, desde então, soube que esse seria o meu futuro. Foi durante a graduação em Ciência da Computação que mergulhei de forma intensa no fascinante mundo da programação, ampliando significativamente meus conhecimentos e habilidades. Hoje, meus dias são preenchidos com linhas de código e com a constante busca por conhecimento. Sou apaixonado por desenvolver aplicações e sistemas, que impactam positivamente a vida das pessoas e a eficiência dos negócios."
+  },
+  "sections": {
+    "lastRepos": "Últimos Projetos",
+    "mySkills": "Minhas Habilidades",
+    "professionalProfile": "Perfil Profissional",
+    "sendMessage": "Mande Uma Mensagem"
+  },
+  "professionalProfile": {
+    "qualitiesTitle": "Qualidades",
+    "experiencesTitle": "Experiências",
+    "qualities": [
+      {
+        "title": "Desenvolvedor Pleno",
+        "description": "Com mais de 6 anos de estudo em computação e 4 anos trabalhando como desenvolvedor, tento ser a cada dia um profissional melhor do que fui ontem.",
+        "alt": "Ícone de Desenvolvedor Júnior"
+      },
+      {
+        "title": "Clean Code",
+        "description": "Durante o desenvolvimento, a qualidade do código é a diretriz mais importante. Estou sempre buscando conhecer e seguir as melhores práticas da literatura.",
+        "alt": "Ícone de Código Limpo"
+      },
+      {
+        "title": "Metodologias Ágeis",
+        "description": "Utilizo metodologias e planejamentos que otimizam o meu fluxo de produção. Utilizar metodologias de desenvolvimento tornam os processos rápidos e eficientes.",
+        "alt": "Ícone de Metodologias Ágeis"
+      },
+      {
+        "title": "Pensamento Crítico",
+        "description": "Procuro sempre agregar valor analisando os problemas e propondo soluções viáveis eficientes. Tenho facilidade na resolução de desafios lógicos.",
+        "alt": "Ícone de Pensamento Crítico"
+      }
+    ],
+    "experiences": [
+      {
+        "title": "Ciência da Computação",
+        "description": "Bacharelado em Ciência da Computação pela Universidade Federal do Piauí - UFPI.",
+        "alt": "Ícone da Universidade"
+      },
+      {
+        "title": "Iniciação Científica",
+        "description": "Pesquisa na área de Redes Ópticas Elásticas. Os resultados do estudo foram apresentados no XXXIX Simpósio Brasileiro de Redes de Computadores.",
+        "alt": "Ícone do CNPQ"
+      },
+      {
+        "title": "Ponto Sistemas Soluções Web",
+        "description": "Desenvolvimento de sistema web em tempo real para vistorias aduaneiras. Utilizando-se de tecnologias como Vue 2, SASS e Spring Boot.",
+        "alt": "Ícone da Ponto Sistemas Soluções Web"
+      },
+      {
+        "title": "IndeCX",
+        "description": "Desenvolvimento de plataforma de pesquisas de satisfação multinacional B2B. Auxiliando-se de tecnologias como Vue 3, Node.js e MongoDB.",
+        "alt": "Ícone da IndeCX"
+      }
+    ]
+  },
+  "skills": {
+    "figma": "Ícone do Figma",
+    "html": "Ícone do HTML",
+    "css": "Ícone do CSS",
+    "sass": "Ícone do SASS",
+    "tailwind": "Ícone do Tailwind",
+    "antDesign": "Ícone do Ant Design",
+    "vuetify": "Ícone do Vuetify",
+    "javascript": "Ícone do JavaScript",
+    "node": "Ícone do Node",
+    "vue": "Ícone do Vue",
+    "react": "Ícone do React",
+    "ruby": "Ícone do Ruby",
+    "rails": "Ícone do Rails",
+    "git": "Ícone do Git",
+    "sql": "Ícone do SQL",
+    "mongodb": "Ícone do MongoDB",
+    "firebase": "Ícone do Firebase"
+  },
+  "contact": {
+    "form": {
+      "nameLabel": "Nome",
+      "namePlaceholder": "Insira aqui seu Nome",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Insira aqui seu Email",
+      "messageLabel": "Mensagem",
+      "messagePlaceholder": "Deixe seu recado...",
+      "submitButton": "Enviar"
+    },
+    "notifications": {
+      "success": {
+        "title": "Sucesso!",
+        "emailSent": "Mensagem enviada com sucesso!"
+      },
+      "error": {
+        "title": "Ops!",
+        "emailFailed": "Erro ao enviar mensagem!",
+        "fillFields": "Preencha todos os campos!"
+      },
+      "info": {
+        "title": "Atenção!",
+        "serviceUnavailable": "O serviço de mensagens estará disponível em breve!"
+      }
+    }
+  },
+  "repos": {
+    "noDescription": "Repositório sem descrição."
+  },
+  "footer": {
+    "phrase": "Aprendendo, Codando e Vivendo\num dia de cada vez.",
+    "copyright": "Design by © 2022 Pumba Developer",
+    "madeWith": "Made With"
+  },
+  "alt": {
+    "developerAvatar": "Desenho de um desenvolvedor",
+    "devicesBackground": "Imagem de fundo com vários dispositivos de acesso a rede",
+    "logo": "Pumba Developer Logo",
+    "githubIcon": "Icone do GitHub",
+    "repositoryIcon": "Icone do Repositório",
+    "starIcon": "Icone de Estrela do GitHub",
+    "forkIcon": "Icone de Fork do GitHub",
+    "tailwindIcon": "Ícone do Tailwind",
+    "socialLink": "Link para o"
+  }
+}

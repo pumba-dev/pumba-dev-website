@@ -1,6 +1,6 @@
 <template>
   <section class="my-skills-container">
-    <SectionTitle :titleText="'Minhas Habilidades'"></SectionTitle>
+    <SectionTitle :titleText="$t('sections.mySkills')"></SectionTitle>
     <SkillsCarousel></SkillsCarousel>
   </section>
 </template>

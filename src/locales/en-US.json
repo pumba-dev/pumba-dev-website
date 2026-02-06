@@ -1,0 +1,132 @@
+{
+  "header": {
+    "cvButton": "Resume"
+  },
+  "presentation": {
+    "title": "Engineering, Development & Innovation",
+    "subtitle": "Transforming ideas into code that shapes reality"
+  },
+  "aboutMe": {
+    "title": "Hello! I'm Paulo Eduardo.",
+    "subtitle": "Computer Scientist and Software Engineer.",
+    "biography": "I have been a computing enthusiast from a very early age. My first contact with a computer occurred when I was 7 years old, and since then, I knew this would be my future. It was during my undergraduate studies in Computer Science that I deeply immersed myself in the fascinating world of programming, significantly expanding my knowledge and skills. Today, my days are filled with lines of code and a constant pursuit of knowledge. I am passionate about developing applications and systems that positively impact people's lives and business efficiency."
+  },
+  "sections": {
+    "lastRepos": "Latest Projects",
+    "mySkills": "My Skills",
+    "professionalProfile": "Professional Profile",
+    "sendMessage": "Send a Message"
+  },
+  "professionalProfile": {
+    "qualitiesTitle": "Qualities",
+    "experiencesTitle": "Experiences",
+    "qualities": [
+      {
+        "title": "Mid-level Developer",
+        "description": "With over 6 years of studying computing and 4 years working as a developer, I strive every day to be a better professional than I was yesterday.",
+        "alt": "Junior Developer Icon"
+      },
+      {
+        "title": "Clean Code",
+        "description": "During development, code quality is the most important guideline. I am always seeking to learn and follow best practices from literature.",
+        "alt": "Clean Code Icon"
+      },
+      {
+        "title": "Agile Methodologies",
+        "description": "I use methodologies and planning that optimize my production workflow. Using development methodologies makes processes fast and efficient.",
+        "alt": "Agile Methodologies Icon"
+      },
+      {
+        "title": "Critical Thinking",
+        "description": "I always seek to add value by analyzing problems and proposing viable, efficient solutions. I have a facility for solving logical challenges.",
+        "alt": "Critical Thinking Icon"
+      }
+    ],
+    "experiences": [
+      {
+        "title": "Computer Science",
+        "description": "Bachelor's degree in Computer Science from the Federal University of Piauí - UFPI.",
+        "alt": "University Icon"
+      },
+      {
+        "title": "Scientific Research",
+        "description": "Research in the area of Elastic Optical Networks. The study results were presented at the XXXIX Brazilian Symposium on Computer Networks.",
+        "alt": "CNPQ Icon"
+      },
+      {
+        "title": "Ponto Sistemas Web Solutions",
+        "description": "Development of a real-time web system for customs inspections. Using technologies such as Vue 2, SASS, and Spring Boot.",
+        "alt": "Ponto Sistemas Web Solutions Icon"
+      },
+      {
+        "title": "IndeCX",
+        "description": "Development of a multinational B2B satisfaction survey platform. Using technologies such as Vue 3, Node.js, and MongoDB.",
+        "alt": "IndeCX Icon"
+      }
+    ]
+  },
+  "skills": {
+    "figma": "Figma Icon",
+    "html": "HTML Icon",
+    "css": "CSS Icon",
+    "sass": "SASS Icon",
+    "tailwind": "Tailwind Icon",
+    "antDesign": "Ant Design Icon",
+    "vuetify": "Vuetify Icon",
+    "javascript": "JavaScript Icon",
+    "node": "Node Icon",
+    "vue": "Vue Icon",
+    "react": "React Icon",
+    "ruby": "Ruby Icon",
+    "rails": "Rails Icon",
+    "git": "Git Icon",
+    "sql": "SQL Icon",
+    "mongodb": "MongoDB Icon",
+    "firebase": "Firebase Icon"
+  },
+  "contact": {
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Enter your name here",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter your email here",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Leave your message...",
+      "submitButton": "Send"
+    },
+    "notifications": {
+      "success": {
+        "title": "Success!",
+        "emailSent": "Message sent successfully!"
+      },
+      "error": {
+        "title": "Oops!",
+        "emailFailed": "Error sending message!",
+        "fillFields": "Please fill all fields!"
+      },
+      "info": {
+        "title": "Attention!",
+        "serviceUnavailable": "The messaging service will be available soon!"
+      }
+    }
+  },
+  "repos": {
+    "noDescription": "Repository without description."
+  },
+  "footer": {
+    "phrase": "Learning, Coding and Living\none day at a time.",
+    "copyright": "Design by © 2022 Pumba Developer",
+    "madeWith": "Made With"
+  },
+  "alt": {
+    "developerAvatar": "Developer illustration",
+    "devicesBackground": "Background image with various network devices",
+    "logo": "Pumba Developer Logo",
+    "githubIcon": "GitHub icon",
+    "repositoryIcon": "Repository icon",
+    "starIcon": "GitHub star icon",
+    "forkIcon": "GitHub fork icon",
+    "tailwindIcon": "Tailwind icon",
+    "socialLink": "Link to"
+  }
+}

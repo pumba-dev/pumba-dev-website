@@ -3,10 +3,10 @@
     <img
       class="github-icon"
       src="/src/assets/svg/github/github-logo.svg"
-      alt="Icone do GitHub"
+      :alt="$t('alt.githubIcon')"
     />
     <SectionTitle
-      :titleText="'Últimos Projetos'"
+      :titleText="$t('sections.lastRepos')"
       class="repo-title"
     ></SectionTitle>
     <RepoList></RepoList>

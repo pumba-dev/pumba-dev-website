@@ -2,7 +2,7 @@
   <img
     class="logo"
     src="/src/assets/svg/general/logo.svg"
-    alt="Pumba Developer Logo"
+    :alt="$t('alt.logo')"
     @click="this.scrollUp()"
   />
 </template>

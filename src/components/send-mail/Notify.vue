@@ -30,11 +30,11 @@ export default {
     getTitle() {
       switch (this.Notify.type) {
         case "sucess":
-          return "Sucesso!";
+          return this.$t("contact.notifications.success.title");
         case "error":
-          return "Ops!";
+          return this.$t("contact.notifications.error.title");
         default:
-          return "Atenção!";
+          return this.$t("contact.notifications.info.title");
       }
     },
   },

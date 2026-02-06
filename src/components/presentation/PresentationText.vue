@@ -1,7 +1,7 @@
 <template>
   <section class="home-presentation">
-    <h1 class="home-title">Desenvolvimento, Arquitetura & Inovação</h1>
-    <h2 class="home-subtitle">Transformando ideias em realidade</h2>
+    <h1 class="home-title">{{ $t("presentation.title") }}</h1>
+    <h2 class="home-subtitle">{{ $t("presentation.subtitle") }}</h2>
   </section>
 </template>
 

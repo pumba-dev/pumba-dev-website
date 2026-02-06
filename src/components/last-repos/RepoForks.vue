@@ -3,7 +3,7 @@
     <img
       class="fork-icon"
       src="/src/assets/svg/github/fork-icon.svg"
-      alt="Icone de Fork do GitHub"
+      :alt="$t('alt.forkIcon')"
     />
     <span>{{ forkCount }}</span>
   </div>

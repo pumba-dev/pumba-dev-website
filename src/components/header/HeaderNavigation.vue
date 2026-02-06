@@ -1,35 +1,56 @@
 <template>
   <ul class="nav-btn-list">
-    <li v-for="cv in curriculums" :key="cv.lang">
-      <CVButton :label="cv.label" :url="cv.url"></CVButton>
+    <li>
+      <CVButton :label="currentCV.label" :url="currentCV.url"></CVButton>
     </li>
   </ul>
 </template>
 
 <script>
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
 import CVButton from "./CVButton.vue";
+
 export default {
   components: { CVButton },
-  data() {
+  setup() {
+    const { locale, t } = useI18n();
+
+    const curriculums = [
+      {
+        lang: "pt-BR",
+        label: computed(() => t("header.cvButton")),
+        filename: "pumbadev-resume-pt-BR.pdf",
+      },
+      {
+        lang: "pt-PT",
+        label: computed(() => t("header.cvButton")),
+        filename: "pumbadev-resume-pt-PT.pdf",
+      },
+      {
+        lang: "en-US",
+        label: computed(() => t("header.cvButton")),
+        filename: "pumbadev-resume-en-US.pdf",
+      },
+      {
+        lang: "es-ES",
+        label: computed(() => t("header.cvButton")),
+        filename: "pumbadev-resume-es-ES.pdf",
+      },
+    ];
+
+    const currentCV = computed(() => {
+      const cv =
+        curriculums.find((c) => c.lang === locale.value) || curriculums[0];
+      return {
+        label: cv.label.value,
+        url: new URL(`../../assets/downloads/${cv.filename}`, import.meta.url)
+          .href,
+      };
+    });
+
     return {
-      curriculums: [
-        {
-          lang: "en",
-          label: "English CV",
-          url: new URL(
-            "../../assets/downloads/pumbadev-en-resume.pdf",
-            import.meta.url,
-          ).href,
-        },
-        {
-          lang: "pt",
-          label: "Currículo",
-          url: new URL(
-            "../../assets/downloads/pumbadev-pt-resume.pdf",
-            import.meta.url,
-          ).href,
-        },
-      ],
+      currentCV,
     };
   },
 };

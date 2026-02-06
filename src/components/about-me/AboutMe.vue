@@ -2,21 +2,14 @@
   <BackgroundBlue class="first-bg-blue">
     <div class="about-me-text">
       <div class="titles-container">
-        <h1 class="about-me-title">Olá! Sou Paulo Eduardo.</h1>
+        <h1 class="about-me-title">{{ $t("aboutMe.title") }}</h1>
         <div class="about-me-title-2">
-          <span>Cientista da Computação e Engenheiro de Software.</span>
+          <span>{{ $t("aboutMe.subtitle") }}</span>
         </div>
       </div>
 
       <h2 class="about-me-subtitle">
-        Sou um entusiasta da computação desde muito cedo. Meu primeiro contato
-        com um computador ocorreu aos 7 anos e, desde então, soube que esse
-        seria o meu futuro. Foi durante a graduação em Ciência da Computação que
-        mergulhei de forma intensa no fascinante mundo da programação, ampliando
-        significativamente meus conhecimentos e habilidades. Hoje, meus dias são
-        preenchidos com linhas de código e com a constante busca por
-        conhecimento. Sou apaixonado por desenvolver aplicações e sistemas, que
-        impactam positivamente a vida das pessoas e a eficiência dos negócios.
+        {{ $t("aboutMe.biography") }}
       </h2>
     </div>
   </BackgroundBlue>

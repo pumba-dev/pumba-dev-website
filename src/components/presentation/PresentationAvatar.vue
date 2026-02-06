@@ -2,9 +2,8 @@
   <img
     class="profile-image"
     src="/src/assets/svg/general/dev-avatar.svg"
-    alt="Desenho de um desenvolvedor"
+    :alt="$t('alt.developerAvatar')"
   />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
