@@ -7,7 +7,7 @@
       aria-label="Abrir chat IA"
     >
       <img
-        src="../../assets/svg/chat-bot/ai-bot.svg"
+        src="../../assets/svg/chat-bot/ai-bot3.svg"
         alt="Abrir chat IA"
         class="chat-ia-svg"
         style="width: 2.2rem; height: 2.2rem; display: block"
@@ -176,13 +176,24 @@ export default {
 </script>
 
 <style scoped>
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .floating-chat-btn {
   position: fixed;
   right: 2rem;
   bottom: 2rem;
   z-index: 1000;
-  background: #2563eb;
-  border: 2px solid rgb(35, 43, 75);
+  background: #f0f6ff;
+  border: 2px solid #1e40af;
   border-radius: 50%;
   width: 64px;
   height: 64px;
@@ -196,11 +207,18 @@ export default {
     border-color 0.2s,
     background 0.2s;
 }
+
 .floating-chat-btn:hover {
-  background: #f0f6ff;
-  border-color: #1e40af;
+  background: #2563eb;
+  border: 2px solid rgb(35, 43, 75);
   box-shadow: 0 8px 24px rgba(37, 99, 235, 0.18);
 }
+
+.chat-ia-svg:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(323%)
+    hue-rotate(98deg) brightness(115%) contrast(100%);
+}
+
 .char-count {
   font-size: 0.85rem;
   color: #6366f1;
@@ -210,11 +228,17 @@ export default {
   letter-spacing: 0.01em;
   user-select: none;
 }
+
 .chat-modal {
   position: fixed;
-  right: 3rem;
+  right: 2rem;
   bottom: 6.5rem;
-  width: 350px;
+  width: 580px;
+  max-width: 95vw;
+  min-width: 260px;
+
+  max-height: 80vh;
+
   background: #fff;
   border-radius: 1.2rem;
   box-shadow: 0 8px 32px rgba(37, 99, 235, 0.18);
@@ -225,16 +249,102 @@ export default {
   animation: fadeIn 0.2s;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+
+@media (max-width: 900px) {
+  .chat-modal {
+    right: 2rem;
+    width: auto;
+    min-width: 0;
+    max-width: 80vw;
+    max-height: 70vh;
+    border-radius: 1rem;
+    padding: 0;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .chat-body {
+    min-height: 100px;
+    max-height: 180px;
   }
 }
+
+@media (max-width: 600px) {
+  .floating-chat-btn {
+    right: 1rem;
+    bottom: 1rem;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    max-width: 56px;
+    max-height: 56px;
+    padding: 0;
+  }
+  .chat-ia-svg {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+
+  .chat-modal {
+    right: 0.5rem;
+    left: 0.5rem;
+    bottom: 4.5rem;
+    width: auto;
+    min-width: 0;
+    max-width: 100vw;
+    max-height: 60vh;
+    border-radius: 0.8rem;
+    padding: 0;
+  }
+  .chat-header {
+    font-size: 1rem;
+    padding: 0.7rem 0.7rem;
+  }
+  .chat-body {
+    padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+    min-height: 80px;
+    max-height: 120px;
+    font-size: 0.98rem;
+  }
+  .chat-form {
+    padding: 0.5rem 0.5rem;
+    gap: 0.2rem;
+    flex-direction: row;
+    align-items: center;
+  }
+  .chat-input {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+    min-width: 40px;
+    width: 100%;
+    flex: 1 1 auto;
+    margin-right: 0.1rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 42px;
+  }
+  .send-btn {
+    font-size: 1.1rem;
+    padding: 0 0.7rem;
+    min-width: 38px;
+    height: 42px;
+    align-self: stretch;
+    border-radius: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+  .chat-bubble {
+    font-size: 0.98rem;
+    padding: 0.7rem 0.7rem;
+    max-width: 95%;
+  }
+  .char-count {
+    font-size: 0.75rem;
+  }
+}
+
 .chat-header {
   background: linear-gradient(90deg, #2563eb 70%, #6366f1 100%);
   color: #fff;
@@ -268,11 +378,13 @@ export default {
   background: #f3f4f6;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
+
 .chat-history {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
+
 .chat-bubble {
   max-width: 85%;
   padding: 0.85rem 1.15rem;
@@ -337,6 +449,7 @@ export default {
   background: #f8fafc;
   gap: 0.5rem;
 }
+
 .chat-input {
   flex: 1;
   border: none;
@@ -350,9 +463,11 @@ export default {
   color: #222;
   transition: background 0.2s;
 }
+
 .chat-input:focus {
   background: #fff;
 }
+
 .send-btn {
   background: linear-gradient(135deg, #2563eb 70%, #6366f1 100%);
   color: #fff;
@@ -365,14 +480,17 @@ export default {
   font-weight: 700;
   box-shadow: 0 1px 4px rgba(99, 102, 241, 0.08);
 }
+
 .send-btn:disabled {
   background: #a5b4fc;
   cursor: not-allowed;
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.2s;
 }
+
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
