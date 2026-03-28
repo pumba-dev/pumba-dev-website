@@ -15,8 +15,11 @@
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "axios": "^0.24.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
     "eslint": "^8.6.0",
     "express": "^4.17.2",
+    "openai": "^6.33.0",
     "vue": "^3.2.25",
     "vue-i18n": "^11.2.8",
     "vue-router": "^4.0.12"

@@ -9,6 +9,7 @@
     <Footer class="footer section-margin" />
     <LanguageSwitcher />
   </main>
+  <FloatingChat />
 </template>
 
 <script>
@@ -21,6 +22,7 @@ import ProfessionalProfile from "./components/professional-profile/ProfessionalP
 import SendMail from "./components/send-mail/SendMail.vue";
 import Footer from "./components/footer/Footer.vue";
 import LanguageSwitcher from "./components/shared/LanguageSwitcher.vue";
+import FloatingChat from "./components/chat/FloatingChat.vue";
 
 export default {
   components: {
@@ -33,6 +35,10 @@ export default {
     SendMail,
     Footer,
     LanguageSwitcher,
+    FloatingChat,
+  },
+  mounted() {
+    console.log("App mounted...");
   },
 };
 </script>
