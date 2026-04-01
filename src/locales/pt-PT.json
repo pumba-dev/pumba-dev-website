@@ -22,9 +22,9 @@
     "experiencesTitle": "Experiências",
     "qualities": [
       {
-        "title": "Programador Pleno",
-        "description": "Com mais de 6 anos de estudo em computação e 4 anos a trabalhar como programador, tento ser a cada dia um profissional melhor do que fui ontem.",
-        "alt": "Ícone de Programador Júnior"
+        "title": "Engenharia de Software",
+        "description": "Sou licenciado em Ciência da Computação, com mais de 5 anos de experiência profissional no mercado de engenharia de software.",
+        "alt": "Ícone de programador"
       },
       {
         "title": "Clean Code",
@@ -62,6 +62,11 @@
         "title": "IndeCX",
         "description": "Desenvolvimento de plataforma de inquéritos de satisfação multinacional B2B. Utilizando tecnologias como Vue 3, Node.js e MongoDB.",
         "alt": "Ícone da IndeCX"
+      },
+      {
+        "title": "Mestrado",
+        "description": "Mestrado em Ciência da Computação na área de Redes de Computadores em curso na Universidade Federal do Piauí - UFPI.",
+        "alt": "Ícone de programador"
       }
     ]
   },

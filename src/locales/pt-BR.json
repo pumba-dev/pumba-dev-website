@@ -22,9 +22,9 @@
     "experiencesTitle": "Experiências",
     "qualities": [
       {
-        "title": "Desenvolvedor Pleno",
-        "description": "Com mais de 6 anos de estudo em computação e 4 anos trabalhando como desenvolvedor, tento ser a cada dia um profissional melhor do que fui ontem.",
-        "alt": "Ícone de Desenvolvedor Júnior"
+        "title": "Engenharia de Software",
+        "description": "Sou formado em Ciência da Computação, com mais de 5 anos de experiência profissional no mercado de engenharia de software.",
+        "alt": "Ícone de desenvolvedor"
       },
       {
         "title": "Clean Code",
@@ -62,6 +62,11 @@
         "title": "IndeCX",
         "description": "Desenvolvimento de plataforma de pesquisas de satisfação multinacional B2B. Auxiliando-se de tecnologias como Vue 3, Node.js e MongoDB.",
         "alt": "Ícone da IndeCX"
+      },
+      {
+        "title": "Mestrado",
+        "description": "Mestrado em Ciência da Computação na área de Redes de Computadores em andamento na Universidade Federal do Piauí - UFPI.",
+        "alt": "Ícone de desenvolvedor"
       }
     ]
   },

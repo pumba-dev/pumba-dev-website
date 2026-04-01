@@ -1,6 +1,12 @@
 export default function getExperiencesList(t) {
   return [
     {
+      title: t("professionalProfile.experiences.4.title"),
+      desc: t("professionalProfile.experiences.4.description"),
+      src: "master-icon",
+      alt: t("professionalProfile.experiences.4.alt"),
+    },
+    {
       title: t("professionalProfile.experiences.0.title"),
       desc: t("professionalProfile.experiences.0.description"),
       src: "university-icon",
