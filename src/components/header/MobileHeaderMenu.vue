@@ -27,6 +27,29 @@
         <p class="mobile-menu-group-title">
           {{ t("header.mobileMenu.optionsTitle") }}
         </p>
+
+        <a
+          :href="currentCv.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mobile-menu-item"
+          :title="currentCv.label"
+          @click="closeMobileMenu"
+        >
+          <i class="ri-file-download-line" aria-hidden="true"></i>
+          <span>{{ currentCv.label }}</span>
+        </a>
+
+        <button
+          type="button"
+          class="mobile-menu-item"
+          :title="t('header.donation.button')"
+          @click="handleDonationClick"
+        >
+          <i class="ri-cup-line" aria-hidden="true"></i>
+          <span>{{ t("header.donation.button") }}</span>
+        </button>
+
         <button
           type="button"
           class="mobile-menu-item"
@@ -49,18 +72,6 @@
             }}
           </span>
         </button>
-
-        <a
-          :href="currentCv.url"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="mobile-menu-item"
-          :title="currentCv.label"
-          @click="closeMobileMenu"
-        >
-          <i class="ri-file-download-line" aria-hidden="true"></i>
-          <span>{{ currentCv.label }}</span>
-        </a>
       </div>
 
       <div class="mobile-menu-group">
@@ -92,13 +103,14 @@ import { useTheme } from "../../composables/useTheme";
 
 export default {
   name: "MobileHeaderMenu",
+  emits: ["open-donation"],
   props: {
     currentCv: {
       type: Object,
       required: true,
     },
   },
-  setup(props) {
+  setup(props, { emit }) {
     const currentCv = toRef(props, "currentCv");
     const { t } = useI18n();
     const { isDark, toggleTheme } = useTheme();
@@ -117,6 +129,11 @@ export default {
 
     const handleThemeToggle = () => {
       toggleTheme();
+      closeMobileMenu();
+    };
+
+    const handleDonationClick = () => {
+      emit("open-donation");
       closeMobileMenu();
     };
 
@@ -181,6 +198,7 @@ export default {
       toggleMobileMenu,
       closeMobileMenu,
       handleThemeToggle,
+      handleDonationClick,
     };
   },
 };

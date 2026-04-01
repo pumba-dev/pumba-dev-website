@@ -1,6 +1,10 @@
 <template>
   <div class="header-nav-wrapper">
-    <MobileHeaderMenu :current-cv="currentCV" class="flex sm:hidden" />
+    <MobileHeaderMenu
+      :current-cv="currentCV"
+      class="flex sm:hidden"
+      @open-donation="requestDonationModalOpen"
+    />
 
     <ul class="nav-btn-list hidden sm:flex">
       <li>
@@ -12,22 +16,33 @@
       <li>
         <CVButton :label="currentCV.label" :url="currentCV.url"></CVButton>
       </li>
+      <li>
+        <DonationButton :open-signal="donationModalOpenSignal" />
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import CVButton from "./CVButton.vue";
+import DonationButton from "./DonationButton.vue";
 import MobileHeaderMenu from "./MobileHeaderMenu.vue";
 import ProjectsDropdown from "./ProjectsDropdown.vue";
 import ThemeToggle from "../shared/ThemeToggle.vue";
 
 export default {
-  components: { CVButton, MobileHeaderMenu, ProjectsDropdown, ThemeToggle },
+  components: {
+    CVButton,
+    DonationButton,
+    MobileHeaderMenu,
+    ProjectsDropdown,
+    ThemeToggle,
+  },
   setup() {
     const { locale, t } = useI18n();
+    const donationModalOpenSignal = ref(0);
 
     const curriculums = [
       {
@@ -62,8 +77,14 @@ export default {
       };
     });
 
+    const requestDonationModalOpen = () => {
+      donationModalOpenSignal.value += 1;
+    };
+
     return {
       currentCV,
+      donationModalOpenSignal,
+      requestDonationModalOpen,
     };
   },
 };

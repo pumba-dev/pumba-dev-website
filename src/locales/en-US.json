@@ -19,6 +19,26 @@
       "themeToDark": "Switch to dark mode",
       "optionsTitle": "Options",
       "projectsTitle": "Projects"
+    },
+    "donation": {
+      "button": "Buy me a coffee",
+      "ariaLabel": "Open PIX donation modal",
+      "modalTitle": "Buy me a coffee",
+      "modalSubtitle": "Scan the PIX QR code or copy the details below to donate.",
+      "qrAriaLabel": "PIX donation QR code",
+      "qrFallback": "Could not render the QR code. You can still copy the PIX code.",
+      "copyQrCode": "Copy QR code",
+      "copyPixKey": "Copy PIX key",
+      "copySuccess": "Copied!",
+      "copyError": "Copy failed",
+      "accountTitle": "Account details",
+      "name": "Name",
+      "pixKey": "PIX key",
+      "cpf": "Tax ID",
+      "bank": "Bank",
+      "identifier": "Identifier",
+      "close": "Close",
+      "closeAriaLabel": "Close donation modal"
     }
   },
   "presentation": {

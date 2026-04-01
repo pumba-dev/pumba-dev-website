@@ -19,6 +19,26 @@
       "themeToDark": "Ativar modo escuro",
       "optionsTitle": "Opções",
       "projectsTitle": "Projetos"
+    },
+    "donation": {
+      "button": "Pagar um café",
+      "ariaLabel": "Abrir modal de doação via Pix",
+      "modalTitle": "Me paga um café?",
+      "modalSubtitle": "Escaneie o QR Code do Pix ou copie os dados abaixo para doar.",
+      "qrAriaLabel": "QR Code Pix para doação",
+      "qrFallback": "Não foi possível gerar o QR Code. Você ainda pode copiar o código Pix.",
+      "copyQrCode": "Copiar código do QR Code",
+      "copyPixKey": "Copiar chave Pix",
+      "copySuccess": "Copiado!",
+      "copyError": "Falha ao copiar",
+      "accountTitle": "Dados da conta",
+      "name": "Nome",
+      "pixKey": "Chave Pix",
+      "cpf": "CPF",
+      "bank": "Banco",
+      "identifier": "Identificador",
+      "close": "Fechar",
+      "closeAriaLabel": "Fechar modal de doação"
     }
   },
   "presentation": {
