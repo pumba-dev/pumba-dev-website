@@ -113,6 +113,31 @@
   "repos": {
     "noDescription": "Repositório sem descrição."
   },
+  "floatingChat": {
+    "button": {
+      "ariaLabel": "Abrir chat IA",
+      "sendTitle": "Enviar mensagem",
+      "clearAriaLabel": "Limpar histórico e iniciar novo chat",
+      "clearTitle": "Novo chat",
+      "closeAriaLabel": "Fechar chat",
+      "closeTitle": "Fechar chat"
+    },
+    "header": {
+      "title": "Chat com IA",
+      "subtitle": "Tire as suas dúvidas sobre mim"
+    },
+    "labels": {
+      "user": "Você"
+    },
+    "input": {
+      "placeholder": "Escreva a sua pergunta...",
+      "charLimitSuffix": "/ 1000"
+    },
+    "messages": {
+      "initial": "Olá! 👋\n\nPode perguntar o que quiser sobre mim: a minha carreira, experiências, competências ou projectos.\n\nEscreva a sua pergunta abaixo!",
+      "serverUnavailable": "Os servidores estão indisponíveis, tente novamente mais tarde."
+    }
+  },
   "footer": {
     "phrase": "A aprender, a codificar e a viver\num dia de cada vez.",
     "copyright": "Design by © 2022 Pumba Developer",

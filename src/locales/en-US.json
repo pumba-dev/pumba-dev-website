@@ -113,6 +113,31 @@
   "repos": {
     "noDescription": "Repository without description."
   },
+  "floatingChat": {
+    "button": {
+      "ariaLabel": "Open AI chat",
+      "sendTitle": "Send message",
+      "clearAriaLabel": "Clear history and start a new chat",
+      "clearTitle": "New chat",
+      "closeAriaLabel": "Close chat",
+      "closeTitle": "Close chat"
+    },
+    "header": {
+      "title": "AI Chat",
+      "subtitle": "Ask your questions about me"
+    },
+    "labels": {
+      "user": "You"
+    },
+    "input": {
+      "placeholder": "Type your question...",
+      "charLimitSuffix": "/ 1000"
+    },
+    "messages": {
+      "initial": "Hello! 👋\n\nFeel free to ask anything about me: my career, experiences, skills, or projects.\n\nType your question below!",
+      "serverUnavailable": "Servers are unavailable, please try again later."
+    }
+  },
   "footer": {
     "phrase": "Learning, Coding and Living\none day at a time.",
     "copyright": "Design by © 2022 Pumba Developer",

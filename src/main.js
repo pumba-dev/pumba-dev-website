@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 import App from "./App.vue";
 import "./global.css";
+import "remixicon/fonts/remixicon.css";
 import { locales, defaultLocale } from "./locales";
 import { useTheme } from "./composables/useTheme";
 
