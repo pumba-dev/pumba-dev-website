@@ -135,6 +135,7 @@
     },
     "messages": {
       "initial": "Olá! 👋\n\nPode perguntar o que quiser sobre mim: minha carreira, experiências, habilidades ou projetos.\n\nDigite sua pergunta abaixo!",
+      "thinking": "Pensando",
       "serverUnavailable": "Os servidores estão indisponíveis, tente novamente mais tarde."
     }
   },

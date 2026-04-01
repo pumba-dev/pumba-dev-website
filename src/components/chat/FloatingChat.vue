@@ -62,7 +62,19 @@
                     <i class="ri-ai-generate-2 bot-badge"></i>
                   </div>
                 </div>
-                <div class="bubble-content">{{ msg.text }}</div>
+                <div class="bubble-content">
+                  <template
+                    v-if="loading && streamingBotIndex === idx && !msg.text"
+                  >
+                    <span class="thinking-stream-placeholder">
+                      <span>{{ $t("floatingChat.messages.thinking") }}</span>
+                      <span class="typing-indicator">
+                        <span></span><span></span><span></span>
+                      </span>
+                    </span>
+                  </template>
+                  <template v-else>{{ msg.text }}</template>
+                </div>
               </template>
               <template v-else>
                 <div class="user-header">
@@ -73,7 +85,10 @@
                 <div class="bubble-content">{{ msg.text }}</div>
               </template>
             </div>
-            <div v-if="loading" class="chat-bubble bot-bubble loading-bubble">
+            <div
+              v-if="loading && streamingBotIndex === null"
+              class="chat-bubble bot-bubble loading-bubble"
+            >
               <div class="bot-header">
                 <i class="ri-robot-2-line bot-avatar"></i>
                 <div>
@@ -143,6 +158,8 @@ export default {
       message: "",
       chatHistory: [],
       loading: false,
+      streamAbortController: null,
+      streamingBotIndex: null,
     };
   },
   methods: {
@@ -180,10 +197,18 @@ export default {
     },
     toggleChat() {
       this.showChat = !this.showChat;
+
       if (!this.showChat) {
         this.message = "";
-        // Não limpa o histórico ao fechar
+
+        if (this.streamAbortController) {
+          this.streamAbortController.abort();
+          this.streamAbortController = null;
+        }
+
         this.loading = false;
+        this.streamingBotIndex = null;
+        this.saveHistory();
       }
     },
     addChatMessage(sender, text) {
@@ -191,26 +216,80 @@ export default {
       this.saveHistory();
       this.scrollToBottom();
     },
+    createStreamingBotMessage() {
+      this.chatHistory.push({ sender: "bot", text: "" });
+      this.streamingBotIndex = this.chatHistory.length - 1;
+      this.saveHistory();
+      this.scrollToBottom();
+    },
+    appendToStreamingBotMessage(chunk) {
+      if (this.streamingBotIndex === null) return;
+      const msg = this.chatHistory[this.streamingBotIndex];
+      if (!msg) return;
+
+      msg.text += chunk;
+      this.scrollToBottom();
+    },
+    finishStreamingBotMessage(fullText) {
+      if (this.streamingBotIndex === null) return;
+      const msg = this.chatHistory[this.streamingBotIndex];
+      if (!msg) return;
+
+      if (!msg.text && fullText) {
+        msg.text = fullText;
+      }
+
+      this.saveHistory();
+      this.streamingBotIndex = null;
+    },
     async sendMessage() {
       if (!this.message.trim()) return;
+
       const userMsg = this.message;
       this.addChatMessage("user", userMsg);
+
       this.loading = true;
       this.message = "";
 
-      await AIChartService.generateResponse(userMsg)
-        .then((response) => {
-          this.addChatMessage("bot", response.data.output);
-        })
-        .catch(() => {
-          const errorMessage = this.t(
+      this.createStreamingBotMessage();
+
+      const controller = new AbortController();
+      this.streamAbortController = controller;
+
+      try {
+        await AIChartService.generateResponseStream(userMsg, {
+          signal: controller.signal,
+          onDelta: (chunk) => {
+            this.appendToStreamingBotMessage(chunk);
+          },
+          onDone: (fullText) => {
+            this.finishStreamingBotMessage(fullText);
+          },
+          onError: (message) => {
+            console.error("Stream error:", message);
+            if (this.streamingBotIndex !== null) {
+              this.chatHistory[this.streamingBotIndex].text = message;
+              this.saveHistory();
+              this.streamingBotIndex = null;
+            }
+          },
+        });
+      } catch (error) {
+        console.error("Error during AI response stream:", error);
+        const aborted = error?.name === "AbortError";
+
+        if (!aborted && this.streamingBotIndex !== null) {
+          this.chatHistory[this.streamingBotIndex].text = this.t(
             "floatingChat.messages.serverUnavailable",
           );
-          this.addChatMessage("bot", errorMessage);
-        })
-        .finally(() => {
-          this.loading = false;
-        });
+          this.saveHistory();
+          this.streamingBotIndex = null;
+        }
+      } finally {
+        this.loading = false;
+        this.streamAbortController = null;
+        this.saveHistory();
+      }
     },
     scrollToBottom(behavior = "smooth") {
       // Usa um elemento dummy no final para garantir o scroll
@@ -223,6 +302,11 @@ export default {
         }, 30);
       });
     },
+  },
+  beforeUnmount() {
+    if (this.streamAbortController) {
+      this.streamAbortController.abort();
+    }
   },
   watch: {
     showChat(val) {
@@ -507,6 +591,12 @@ export default {
 .bubble-content {
   @apply whitespace-pre-line break-words;
   overflow-wrap: break-word;
+}
+
+.thinking-stream-placeholder {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .typing-indicator {
