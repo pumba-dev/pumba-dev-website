@@ -1,6 +1,25 @@
 {
   "header": {
-    "cvButton": "Currículum"
+    "cvButton": "Currículum",
+    "projects": {
+      "button": "Proyectos",
+      "ariaLabel": "Abrir menú de proyectos",
+      "listAriaLabel": "Lista de proyectos",
+      "items": {
+        "sortSimulator": "Algoritmos de Ordenación",
+        "lolDatabase": "League of Legends DB",
+        "puzzleAi": "Juego del 8 con IA",
+        "wonPrototype": "Simulador de Red Óptica Inalámbrica"
+      }
+    },
+    "mobileMenu": {
+      "openAriaLabel": "Abrir menú principal",
+      "closeAriaLabel": "Cerrar menú principal",
+      "themeToLight": "Activar modo claro",
+      "themeToDark": "Activar modo oscuro",
+      "optionsTitle": "Opciones",
+      "projectsTitle": "Proyectos"
+    }
   },
   "presentation": {
     "title": "Ingeniería, Desarrollo e Innovación",
