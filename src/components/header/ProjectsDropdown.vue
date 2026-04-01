@@ -108,14 +108,18 @@ export default {
 
 .menu-button {
   @apply flex justify-center items-center gap-1 cursor-pointer
-  max-w-max text-blue dark:text-white-gray rounded-full
-  border-solid border-2 border-blue dark:border-white-gray
-  py-1 px-3 md:py-2 md:px-5
-  transition-all duration-300;
+  max-w-max text-blue dark:text-white-gray
+  py-1 md:py-2
+  transition-colors duration-300;
 }
 
 .menu-button:hover {
-  @apply lg:text-white-gray lg:bg-blue dark:lg:bg-white-gray dark:lg:text-dark-blue;
+  @apply lg:text-disable-blue dark:lg:text-gray-blue;
+}
+
+.menu-button:hover .menu-button-label {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 .menu-button-label {

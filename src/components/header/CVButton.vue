@@ -23,12 +23,16 @@ export default {
 .btn-background {
   @apply flex justify-center items-center 
   max-w-max text-blue dark:text-white-gray
-  border-solid border-2 border-blue dark:border-white-gray rounded-full
-  py-1 px-3 md:py-2 md:px-5;
+  transition-colors duration-300;
 }
 
 .btn-background:hover {
-  @apply lg:text-white-gray lg:bg-blue dark:lg:bg-white-gray dark:lg:text-dark-blue;
+  @apply lg:text-disable-blue dark:lg:text-gray-blue;
+}
+
+.btn-background:hover .btn-text {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 .btn-text {
