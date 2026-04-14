@@ -91,6 +91,12 @@ export default function getSkillsList(t) {
       docLink: "https://pt.wikipedia.org/wiki/SQL",
     },
     {
+      name: "Amazon Web Services",
+      src: "aws-skill-icon",
+      alt: t("skills.aws"),
+      docLink: "https://aws.amazon.com/",
+    },
+    {
       name: "MongoDB",
       src: "mongodb-skill-icon",
       alt: t("skills.mongodb"),
