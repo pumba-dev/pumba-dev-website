@@ -5,7 +5,6 @@
       <FooterPhrase></FooterPhrase>
       <SocialLinks></SocialLinks>
       <Copyright></Copyright>
-      <MadeWith></MadeWith>
     </BackgroundBlue>
   </section>
 </template>
