@@ -1,8 +1,19 @@
 {
-  "rewrites": [
+  "redirects": [
+    {
+      "source": "/sort-simulator",
+      "destination": "https://sort-simulator-web.vercel.app",
+      "permanent": true
+    },
+    {
+      "source": "/sort-simulator/",
+      "destination": "https://sort-simulator-web.vercel.app/",
+      "permanent": true
+    },
     {
       "source": "/sort-simulator/:path*",
-      "destination": "https://sort-simulator-web.vercel.app"
+      "destination": "https://sort-simulator-web.vercel.app/:path*",
+      "permanent": true
     }
   ]
 }
