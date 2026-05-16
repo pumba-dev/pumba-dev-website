@@ -1,4 +1,5 @@
 <template>
+  <Analytics />
   <main class="main">
     <Home />
     <AboutMe class="about-me" />
@@ -23,6 +24,8 @@ import SendMail from "./components/send-mail/SendMail.vue";
 import Footer from "./components/footer/Footer.vue";
 import LanguageSwitcher from "./components/shared/LanguageSwitcher.vue";
 import FloatingChat from "./components/chat/FloatingChat.vue";
+
+import { Analytics } from "@vercel/analytics/vue";
 
 export default {
   components: {
