@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/sort-simulator/:path*",
+      "destination": "https://sort-simulator-web.vercel.app"
+    }
+  ]
+}
