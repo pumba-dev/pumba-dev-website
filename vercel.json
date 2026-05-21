@@ -1,17 +1,17 @@
 {
   "redirects": [
     {
-      "source": "/sort-simulator",
+      "source": "/sortlab",
       "destination": "https://sort-simulator-web.vercel.app",
       "permanent": true
     },
     {
-      "source": "/sort-simulator/",
+      "source": "/sortlab/",
       "destination": "https://sort-simulator-web.vercel.app/",
       "permanent": true
     },
     {
-      "source": "/sort-simulator/:path*",
+      "source": "/sortlab/:path*",
       "destination": "https://sort-simulator-web.vercel.app/:path*",
       "permanent": true
     }
